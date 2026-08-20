@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>每日五科｜TOEIC 30</title>
+  <title>每日課程｜TOEIC 30</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -30,20 +30,16 @@
 
     <p class="week-tip" id="week-tip" hidden></p>
 
-    <div class="pillar-track" id="pillar-track" aria-label="五科完成狀態"></div>
+    <div class="pillar-track" id="pillar-track" aria-label="完成狀態"></div>
 
     <div class="tabs" role="tablist">
-      <button type="button" class="tab is-active" data-panel="panel-vocab">1 單字</button>
-      <button type="button" class="tab" data-panel="panel-speak">2 朗讀</button>
-      <button type="button" class="tab" data-panel="panel-listen">3 聽力</button>
-      <button type="button" class="tab" data-panel="panel-grammar">4 文法</button>
-      <button type="button" class="tab" data-panel="panel-read">5 閱讀</button>
+      <button type="button" class="tab is-active" data-panel="panel-vocab">單字</button>
+      <button type="button" class="tab" data-panel="panel-read">閱讀</button>
     </div>
 
-    <!-- 1 單字 -->
     <section class="panel is-active" id="panel-vocab">
       <div class="panel-card">
-        <p class="module-lead">約 20 分｜先翻卡辨識，不懂的按「再複習」。可用朗讀聽單字與例句。</p>
+        <p class="module-lead">約 25–35 分｜今日約 22–25 張單字卡。先翻卡，不懂按「再複習」；可點朗聽發音與例句。</p>
         <div class="flash-card" id="flash-card" title="點擊翻面">
           <div class="flash-inner">
             <p class="flash-word" id="flash-word">—</p>
@@ -65,62 +61,17 @@
       </div>
     </section>
 
-    <!-- 2 朗讀 -->
-    <section class="panel" id="panel-speak">
-      <div class="tts-bar">
-        <button type="button" class="btn btn-primary btn-sm" id="speak-play">播放跟讀</button>
-        <button type="button" class="btn btn-ghost btn-sm" id="speak-pause">暫停</button>
-        <button type="button" class="btn btn-ghost btn-sm" id="speak-resume">繼續</button>
-        <button type="button" class="btn btn-ghost btn-sm" id="speak-stop">停止</button>
-        <label>語速 <input id="speak-rate" type="range" min="0.75" max="1.15" step="0.05" /> <span id="speak-rate-label">0.90×</span></label>
-        <label>語音 <select id="speak-voice"></select></label>
-      </div>
-      <div class="panel-card">
-        <p class="module-lead" id="speak-tip">約 15 分｜聽一句跟讀一句；第二遍可加快語速。</p>
-        <article class="article" id="speak-text"></article>
-        <div class="controls">
-          <button type="button" class="btn btn-primary" id="mark-speak">完成朗讀</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3 聽力 -->
-    <section class="panel" id="panel-listen">
-      <div class="agenda-box" id="listen-brief"></div>
-      <div class="tts-bar">
-        <button type="button" class="btn btn-primary btn-sm" id="listen-play">播放聽力音檔（本站 TTS）</button>
-        <button type="button" class="btn btn-ghost btn-sm" id="listen-stop">停止</button>
-        <span class="meta-chip">先聽再答，盡量先不要看閱讀區原文</span>
-      </div>
-      <div class="panel-card">
-        <p class="module-lead">約 40 分｜先做本站聽後 4 題，再依下方指引做外部 Part 練習。</p>
-        <div class="score-banner" id="listen-banner" hidden></div>
-        <div id="listen-root"></div>
-        <div class="controls">
-          <button type="button" class="btn btn-primary" id="listen-submit">交卷</button>
-          <button type="button" class="btn btn-ghost" id="listen-reset">重做聽力題</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4 文法 -->
-    <section class="panel" id="panel-grammar">
-      <div class="agenda-box" id="grammar-brief"></div>
-      <div class="panel-card">
-        <p class="module-lead">約 25 分｜Part 5 風格，限時感作答後再看解析。</p>
-        <div class="score-banner" id="grammar-banner" hidden></div>
-        <div id="grammar-root"></div>
-        <div class="controls">
-          <button type="button" class="btn btn-primary" id="grammar-submit">交卷</button>
-          <button type="button" class="btn btn-ghost" id="grammar-reset">重做文法題</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5 閱讀 -->
     <section class="panel" id="panel-read">
+      <div class="tts-bar">
+        <button type="button" class="btn btn-ghost btn-sm" id="tts-play">朗讀全文</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="tts-pause">暫停</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="tts-resume">繼續</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="tts-stop">停止</button>
+        <label>語速 <input id="tts-rate" type="range" min="0.8" max="1.2" step="0.05" /> <span id="tts-rate-label">0.95×</span></label>
+        <label>語音 <select id="tts-voice"></select></label>
+      </div>
       <div class="panel-card">
-        <p class="module-lead">約 45 分｜先限時讀英文 → 做 5 題 → 再打開翻譯對照。</p>
+        <p class="module-lead">約 40–50 分｜先限時讀英文 → 做理解題 → 再打開翻譯對照。</p>
         <div class="controls" style="margin-top:0;margin-bottom:1rem">
           <button type="button" class="btn btn-ghost btn-sm" id="toggle-zh">顯示翻譯</button>
           <button type="button" class="btn btn-ghost btn-sm" id="timer-toggle">開始計時</button>

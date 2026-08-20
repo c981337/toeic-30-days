@@ -49,15 +49,13 @@
           w.week +
           " " +
           w.title +
-          "</h3><p><strong>聽力</strong> " +
-          w.listen +
-          "<br /><strong>文法</strong> " +
-          w.grammar +
+          "</h3><p><strong>單字</strong> " +
+          w.vocab +
           "<br /><strong>閱讀</strong> " +
           w.read +
           '</p><div class="phase-days">Day ' +
           w.days +
-          "｜模考 " +
+          "｜" +
           w.mock +
           "</div></article>"
       )
@@ -66,25 +64,17 @@
 
   const pillarStats = document.getElementById("pillar-stats");
   if (pillarStats && summary.pillars) {
-    const labels = [
-      ["vocab", "單字"],
-      ["speak", "朗讀"],
-      ["listen", "聽力"],
-      ["grammar", "文法"],
-      ["read", "閱讀"],
-    ];
-    pillarStats.innerHTML = labels
-      .map(
-        ([k, name]) =>
-          '<div class="stat"><strong>' +
-          summary.pillars[k] +
-          "/" +
-          total +
-          "</strong><span>" +
-          name +
-          "</span></div>"
-      )
-      .join("");
+    pillarStats.innerHTML =
+      '<div class="stat"><strong>' +
+      summary.pillars.vocab +
+      "/" +
+      total +
+      "</strong><span>單字</span></div>" +
+      '<div class="stat"><strong>' +
+      summary.pillars.read +
+      "/" +
+      total +
+      "</strong><span>閱讀</span></div>";
   }
 
   const grid = document.getElementById("day-grid");
@@ -100,7 +90,9 @@
       if (st === "progress") a.classList.add("is-progress");
       if (i === suggest) a.classList.add("is-today");
       const dayMeta = days.find((d) => d.day === i);
-      a.title = dayMeta ? "Day " + i + " — " + dayMeta.title : "Day " + i;
+      a.title = dayMeta
+        ? "Day " + i + " — " + dayMeta.title + "（" + (dayMeta.vocab || []).length + " 字）"
+        : "Day " + i;
       grid.appendChild(a);
     }
   }
@@ -108,7 +100,7 @@
   const resetBtn = document.getElementById("reset-progress");
   if (resetBtn) {
     resetBtn.addEventListener("click", () => {
-      if (confirm("確定清除全部五科進度？")) {
+      if (confirm("確定清除全部進度？")) {
         ToeicProgress.resetAll();
         location.reload();
       }

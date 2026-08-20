@@ -77,6 +77,56 @@ window.TOEIC_DAYS = [
         "word": "trainee",
         "meaning": "受訓者；實習生",
         "example": "The firm planned to hire several engineering trainees."
+      },
+      {
+        "word": "applicant",
+        "meaning": "應徵者；申請人",
+        "example": "Each applicant submitted forms before the interview."
+      },
+      {
+        "word": "requirement",
+        "meaning": "要求；條件",
+        "example": "The minimum educational requirement was clearly listed."
+      },
+      {
+        "word": "certification",
+        "meaning": "證照；認證",
+        "example": "Technical certification improved a candidate's chances."
+      },
+      {
+        "word": "qualified",
+        "meaning": "合格的；具備資格的",
+        "example": "Degree holders were considered more qualified."
+      },
+      {
+        "word": "recruiter",
+        "meaning": "招募人員",
+        "example": "A senior recruiter explained the hiring standards."
+      },
+      {
+        "word": "academic",
+        "meaning": "學術的；學業的",
+        "example": "The firm valued strong academic records."
+      },
+      {
+        "word": "employment",
+        "meaning": "雇用；就業",
+        "example": "Clear conditions of employment were explained."
+      },
+      {
+        "word": "achievement",
+        "meaning": "成就；成績",
+        "example": "Applicants identified their past achievements."
+      },
+      {
+        "word": "consultant",
+        "meaning": "顧問",
+        "example": "The company planned to hire a sales consultant."
+      },
+      {
+        "word": "profession",
+        "meaning": "職業；專業",
+        "example": "The fair marked the beginning of a serious profession."
       }
     ],
     "questions": [
@@ -324,6 +374,61 @@ window.TOEIC_DAYS = [
         "word": "restricted",
         "meaning": "受限制的",
         "example": "Do not enter restricted areas without permission."
+      },
+      {
+        "word": "regulation",
+        "meaning": "規定；法規",
+        "example": "The new regulation required proper business attire."
+      },
+      {
+        "word": "incident",
+        "meaning": "事件；事故",
+        "example": "Employees should report the incident immediately."
+      },
+      {
+        "word": "exception",
+        "meaning": "例外",
+        "example": "There will be no exception without written approval."
+      },
+      {
+        "word": "approval",
+        "meaning": "核准；批准",
+        "example": "Written approval must be given by a senior manager."
+      },
+      {
+        "word": "representative",
+        "meaning": "代表",
+        "example": "A representative explained corporate compliance matters."
+      },
+      {
+        "word": "arrangement",
+        "meaning": "安排；措施",
+        "example": "Staff must adhere to the new arrangement."
+      },
+      {
+        "word": "legislation",
+        "meaning": "法規；立法",
+        "example": "Violations may face review under company legislation."
+      },
+      {
+        "word": "emergency",
+        "meaning": "緊急情況",
+        "example": "In case of an emergency, report it immediately."
+      },
+      {
+        "word": "registration",
+        "meaning": "登記；註冊",
+        "example": "Visitor registration is part of the new procedure."
+      },
+      {
+        "word": "consistently",
+        "meaning": "一貫地；持續地",
+        "example": "Team leaders must enforce the rule consistently."
+      },
+      {
+        "word": "security",
+        "meaning": "安全；保全",
+        "example": "Management expressed serious concern about security."
       }
     ],
     "questions": [
@@ -571,6 +676,61 @@ window.TOEIC_DAYS = [
         "word": "concentrate",
         "meaning": "專注",
         "example": "Those who can concentrate under pressure may be promoted."
+      },
+      {
+        "word": "headquarters",
+        "meaning": "總部",
+        "example": "The administrative division works at headquarters."
+      },
+      {
+        "word": "corporation",
+        "meaning": "公司；企業",
+        "example": "The headquarters of a large corporation starts early."
+      },
+      {
+        "word": "colleague",
+        "meaning": "同事",
+        "example": "Each colleague checks email and returns calls."
+      },
+      {
+        "word": "supervisor",
+        "meaning": "主管；督導",
+        "example": "The supervisor held a short workshop for new staff."
+      },
+      {
+        "word": "assignment",
+        "meaning": "指派工作；任務",
+        "example": "Workers should perform assignments efficiently."
+      },
+      {
+        "word": "notify",
+        "meaning": "通知",
+        "example": "Notify the team if an extension is needed."
+      },
+      {
+        "word": "paperwork",
+        "meaning": "文書工作",
+        "example": "Staff organize pending paperwork each morning."
+      },
+      {
+        "word": "marketing",
+        "meaning": "行銷",
+        "example": "Submit the sheet to the marketing manager."
+      },
+      {
+        "word": "internal",
+        "meaning": "內部的",
+        "example": "The workshop covered internal filing methods."
+      },
+      {
+        "word": "expectation",
+        "meaning": "期望；要求",
+        "example": "Staff became accustomed to company expectations."
+      },
+      {
+        "word": "responsibility",
+        "meaning": "責任",
+        "example": "A document task can show responsibility and skill."
       }
     ],
     "questions": [
@@ -818,6 +978,61 @@ window.TOEIC_DAYS = [
         "word": "consistently",
         "meaning": "一致地；持續地",
         "example": "Tasks done carefully and consistently build trust."
+      },
+      {
+        "word": "photocopier",
+        "meaning": "影印機",
+        "example": "He used the photocopier to print training manuals."
+      },
+      {
+        "word": "manual",
+        "meaning": "手冊；說明書",
+        "example": "A set of training manuals was printed for staff."
+      },
+      {
+        "word": "respectful",
+        "meaning": "有禮貌的；尊重的",
+        "example": "Complete duties in a formal and respectful manner."
+      },
+      {
+        "word": "organizer",
+        "meaning": "主辦人；籌備者",
+        "example": "He helped assist the meeting organizer."
+      },
+      {
+        "word": "professional",
+        "meaning": "專業的",
+        "example": "He showed strong professional promise."
+      },
+      {
+        "word": "operation",
+        "meaning": "營運；運作",
+        "example": "Every assignment contributes to the larger operation."
+      },
+      {
+        "word": "contribute",
+        "meaning": "貢獻；促成",
+        "example": "Small actions contribute to the larger operation."
+      },
+      {
+        "word": "server",
+        "meaning": "伺服器",
+        "example": "He logged on to the company server first."
+      },
+      {
+        "word": "upcoming",
+        "meaning": "即將到來的",
+        "example": "Documents were prepared for the upcoming store opening."
+      },
+      {
+        "word": "greet",
+        "meaning": "迎接；打招呼",
+        "example": "The employee stepped forward to greet the client."
+      },
+      {
+        "word": "bookshelf",
+        "meaning": "書架",
+        "example": "Materials were arranged on a bookshelf by reception."
       }
     ],
     "questions": [
@@ -1065,6 +1280,61 @@ window.TOEIC_DAYS = [
         "word": "forum",
         "meaning": "論壇；研討會",
         "example": "Materials must be ready before the next forum."
+      },
+      {
+        "word": "mission",
+        "meaning": "任務；使命",
+        "example": "He arrived with folders for an urgent mission."
+      },
+      {
+        "word": "announcement",
+        "meaning": "公告；宣布",
+        "example": "He reviewed the announcement from the department."
+      },
+      {
+        "word": "outline",
+        "meaning": "大綱；概要",
+        "example": "The final outline must be clear and realistic."
+      },
+      {
+        "word": "permanently",
+        "meaning": "永久地",
+        "example": "The company planned to implement a new system permanently."
+      },
+      {
+        "word": "replacement",
+        "meaning": "替換；替代品",
+        "example": "A replacement set of documents was prepared."
+      },
+      {
+        "word": "misplaced",
+        "meaning": "放錯地方的",
+        "example": "Documents may be concealed or misplaced."
+      },
+      {
+        "word": "accurate",
+        "meaning": "精確的",
+        "example": "Good office work depends on accurate records."
+      },
+      {
+        "word": "aspect",
+        "meaning": "層面；方面",
+        "example": "Clarify each aspect of the project."
+      },
+      {
+        "word": "complex",
+        "meaning": "複雜的",
+        "example": "Although the process was complex, the team succeeded."
+      },
+      {
+        "word": "feedback",
+        "meaning": "回饋",
+        "example": "Staff provided timely feedback on the report."
+      },
+      {
+        "word": "procedure",
+        "meaning": "程序",
+        "example": "Everyone was asked to follow the same procedure."
       }
     ],
     "questions": [
@@ -1312,6 +1582,61 @@ window.TOEIC_DAYS = [
         "word": "journal",
         "meaning": "期刊；雜誌",
         "example": "The current issue of the journal was available."
+      },
+      {
+        "word": "gallery",
+        "meaning": "藝廊；畫廊",
+        "example": "A local gallery announced a weekend exhibition."
+      },
+      {
+        "word": "presentation",
+        "meaning": "簡報；發表",
+        "example": "A celebrity author gave a short presentation."
+      },
+      {
+        "word": "donation",
+        "meaning": "捐贈",
+        "example": "Proceeds would support a donation program."
+      },
+      {
+        "word": "informative",
+        "meaning": "增長見聞的",
+        "example": "The event was designed to be informative."
+      },
+      {
+        "word": "beneficial",
+        "meaning": "有益的",
+        "example": "The program was beneficial to the local community."
+      },
+      {
+        "word": "participant",
+        "meaning": "參與者",
+        "example": "The program brought together many participants."
+      },
+      {
+        "word": "entertaining",
+        "meaning": "有娛樂性的",
+        "example": "Many said the event was entertaining."
+      },
+      {
+        "word": "cultural",
+        "meaning": "文化的",
+        "example": "It was a meaningful contribution to cultural life."
+      },
+      {
+        "word": "edition",
+        "meaning": "版本",
+        "example": "A new edition of the manuscript would appear next month."
+      },
+      {
+        "word": "organizer",
+        "meaning": "主辦人",
+        "example": "The organizer said admission was required."
+      },
+      {
+        "word": "publicity",
+        "meaning": "宣傳",
+        "example": "The show was not anonymous publicity."
       }
     ],
     "questions": [
@@ -1559,6 +1884,61 @@ window.TOEIC_DAYS = [
         "word": "marketplace",
         "meaning": "市場",
         "example": "The company expanded its marketplace strategy."
+      },
+      {
+        "word": "campaign",
+        "meaning": "行銷活動；宣傳活動",
+        "example": "The survey analyzed responses to seasonal campaigns."
+      },
+      {
+        "word": "competition",
+        "meaning": "競爭",
+        "example": "Competition had become more intense."
+      },
+      {
+        "word": "presentation",
+        "meaning": "簡報；說明",
+        "example": "The team must produce an effective presentation."
+      },
+      {
+        "word": "competitive",
+        "meaning": "具競爭力的",
+        "example": "The market is increasingly competitive."
+      },
+      {
+        "word": "promotion",
+        "meaning": "促銷；推廣",
+        "example": "The brand would publicize a new promotion."
+      },
+      {
+        "word": "advantage",
+        "meaning": "優勢",
+        "example": "The effort would create a stronger advantage."
+      },
+      {
+        "word": "analyst",
+        "meaning": "分析師",
+        "example": "The analyst noted the gap had narrowed."
+      },
+      {
+        "word": "performance",
+        "meaning": "績效；表現",
+        "example": "Current performance moved closer to the ideal goal."
+      },
+      {
+        "word": "consumer",
+        "meaning": "消費者",
+        "example": "Examine consumer behavior carefully."
+      },
+      {
+        "word": "cooperate",
+        "meaning": "合作",
+        "example": "Cooperate with every department."
+      },
+      {
+        "word": "strategy",
+        "meaning": "策略",
+        "example": "The impact of the new strategy was already visible."
       }
     ],
     "questions": [
@@ -1806,6 +2186,61 @@ window.TOEIC_DAYS = [
         "word": "impact",
         "meaning": "影響；衝擊",
         "example": "Accurate preference detection strengthens campaign impact."
+      },
+      {
+        "word": "consumer",
+        "meaning": "消費者",
+        "example": "A best-selling author met consumers downtown."
+      },
+      {
+        "word": "display",
+        "meaning": "陳列；展示",
+        "example": "Staff observed reactions to colorful displays."
+      },
+      {
+        "word": "promotion",
+        "meaning": "促銷",
+        "example": "Shoppers prefer creative and useful promotions."
+      },
+      {
+        "word": "advantage",
+        "meaning": "優勢",
+        "example": "Explain the advantage of subscribing early."
+      },
+      {
+        "word": "preference",
+        "meaning": "偏好",
+        "example": "Detect consumer preferences accurately."
+      },
+      {
+        "word": "photographer",
+        "meaning": "攝影師",
+        "example": "Photographers showed their work at the event."
+      },
+      {
+        "word": "valuable",
+        "meaning": "有價值的",
+        "example": "The company gained valuable experience."
+      },
+      {
+        "word": "target",
+        "meaning": "目標",
+        "example": "The experiment included a clear sales target."
+      },
+      {
+        "word": "brand",
+        "meaning": "品牌",
+        "example": "Do not disregard the importance of brand image."
+      },
+      {
+        "word": "option",
+        "meaning": "選項",
+        "example": "Advise visitors about the best options."
+      },
+      {
+        "word": "favorably",
+        "meaning": "有利地；順利地",
+        "example": "Resolve doubts favorably during the discussion."
       }
     ],
     "questions": [
@@ -2058,6 +2493,56 @@ window.TOEIC_DAYS = [
         "word": "indicator",
         "meaning": "指標",
         "example": "Every indicator must be reviewed carefully."
+      },
+      {
+        "word": "manufacturing",
+        "meaning": "製造的；製造業",
+        "example": "The CEO of a manufacturing firm made an announcement."
+      },
+      {
+        "word": "strengthen",
+        "meaning": "強化",
+        "example": "The company would strengthen its position over time."
+      },
+      {
+        "word": "evidence",
+        "meaning": "證據",
+        "example": "The report showed evidence of a possible boom."
+      },
+      {
+        "word": "operation",
+        "meaning": "營運",
+        "example": "Some branches were limited by costly operations."
+      },
+      {
+        "word": "contribution",
+        "meaning": "貢獻",
+        "example": "The contribution to future growth would be substantial."
+      },
+      {
+        "word": "competitor",
+        "meaning": "競爭對手",
+        "example": "Act differently from competitors that had struggled."
+      },
+      {
+        "word": "consequence",
+        "meaning": "後果",
+        "example": "Prosperity could wane if long-term consequences are ignored."
+      },
+      {
+        "word": "condition",
+        "meaning": "狀況；條件",
+        "example": "Economic conditions can change rapidly."
+      },
+      {
+        "word": "unexpected",
+        "meaning": "未預期的",
+        "example": "Rapid change can cause an unexpected depression."
+      },
+      {
+        "word": "boost",
+        "meaning": "提升；促進",
+        "example": "The firm promised to boost productivity."
       }
     ],
     "questions": [
@@ -2305,6 +2790,61 @@ window.TOEIC_DAYS = [
         "word": "convenient",
         "meaning": "便利的",
         "example": "The shopping experience remained convenient for visitors."
+      },
+      {
+        "word": "department",
+        "meaning": "百貨公司；部門",
+        "example": "A shopper entered a department store near the bakery."
+      },
+      {
+        "word": "display",
+        "meaning": "陳列",
+        "example": "All items on display were marked clearly."
+      },
+      {
+        "word": "assistant",
+        "meaning": "助理；店員",
+        "example": "The sales assistant explained the price carefully."
+      },
+      {
+        "word": "preference",
+        "meaning": "偏好",
+        "example": "Choose a product depending on preference."
+      },
+      {
+        "word": "purchase",
+        "meaning": "購買",
+        "example": "The customer decided to purchase the item."
+      },
+      {
+        "word": "acceptable",
+        "meaning": "可接受的",
+        "example": "Paying in installments was more acceptable."
+      },
+      {
+        "word": "discount",
+        "meaning": "折扣",
+        "example": "The store offered clearance discounts."
+      },
+      {
+        "word": "description",
+        "meaning": "說明；描述",
+        "example": "Another shopper read each product description."
+      },
+      {
+        "word": "consumer",
+        "meaning": "消費者",
+        "example": "Careful preparation helps consumers avoid overspending."
+      },
+      {
+        "word": "attractive",
+        "meaning": "有吸引力的",
+        "example": "Displays remained attractive until closing time."
+      },
+      {
+        "word": "limited",
+        "meaning": "有限的",
+        "example": "The tax-free promotion was for a limited time."
       }
     ],
     "questions": [
@@ -2552,6 +3092,61 @@ window.TOEIC_DAYS = [
         "word": "availability",
         "meaning": "可用性；供貨情況",
         "example": "They discussed the availability of updated versions."
+      },
+      {
+        "word": "appliance",
+        "meaning": "家電；器具",
+        "example": "The device was designed to improve home appliances."
+      },
+      {
+        "word": "laboratory",
+        "meaning": "實驗室",
+        "example": "The invention was handmade in the laboratory."
+      },
+      {
+        "word": "sensor",
+        "meaning": "感測器",
+        "example": "The product featured a revolutionary sensor."
+      },
+      {
+        "word": "complicated",
+        "meaning": "複雜的",
+        "example": "It could be used safely in complicated environments."
+      },
+      {
+        "word": "invest",
+        "meaning": "投資",
+        "example": "The team would invest increasingly in further development."
+      },
+      {
+        "word": "explore",
+        "meaning": "探索；開拓",
+        "example": "The company would explore various markets."
+      },
+      {
+        "word": "international",
+        "meaning": "國際的",
+        "example": "The product would be available for international distribution."
+      },
+      {
+        "word": "concept",
+        "meaning": "概念",
+        "example": "The original concept had been improved."
+      },
+      {
+        "word": "investor",
+        "meaning": "投資人",
+        "example": "Several investors expressed interest in the project."
+      },
+      {
+        "word": "updated",
+        "meaning": "更新的",
+        "example": "Discuss the availability of updated versions."
+      },
+      {
+        "word": "feedback",
+        "meaning": "回饋",
+        "example": "Upgrade the appearance following customer feedback."
       }
     ],
     "questions": [
@@ -2799,6 +3394,61 @@ window.TOEIC_DAYS = [
         "word": "productivity",
         "meaning": "生產力",
         "example": "The modification would increase productivity."
+      },
+      {
+        "word": "manufacturer",
+        "meaning": "製造商",
+        "example": "A clothing line manufacturer announced renovation plans."
+      },
+      {
+        "word": "facility",
+        "meaning": "設施；廠房",
+        "example": "Plans were made to renovate the underground facility."
+      },
+      {
+        "word": "efficiency",
+        "meaning": "效率",
+        "example": "The change was needed to improve efficiency."
+      },
+      {
+        "word": "component",
+        "meaning": "零件；元件",
+        "example": "The equipment was composed of flexible components."
+      },
+      {
+        "word": "machinery",
+        "meaning": "機械設備",
+        "example": "Workers used tailored machinery on the line."
+      },
+      {
+        "word": "utilize",
+        "meaning": "利用",
+        "example": "Utilize the system to fill orders quickly."
+      },
+      {
+        "word": "capacity",
+        "meaning": "產能；容量",
+        "example": "Manufacturing capacity was comparable to other factories."
+      },
+      {
+        "word": "cooperation",
+        "meaning": "合作",
+        "example": "Success depended on strong cooperation among departments."
+      },
+      {
+        "word": "inspection",
+        "meaning": "檢查",
+        "example": "During the inspection, the supervisor noted damage."
+      },
+      {
+        "word": "accident",
+        "meaning": "事故",
+        "example": "The team must prevent further accidents."
+      },
+      {
+        "word": "schedule",
+        "meaning": "時程；排程",
+        "example": "A new schedule was launched for the coming month."
       }
     ],
     "questions": [
@@ -3046,6 +3696,61 @@ window.TOEIC_DAYS = [
         "word": "replace",
         "meaning": "更換",
         "example": "The company would replace the product if necessary."
+      },
+      {
+        "word": "complaint",
+        "meaning": "投訴；抱怨",
+        "example": "The representative received complaints about a product."
+      },
+      {
+        "word": "packaging",
+        "meaning": "包裝",
+        "example": "The logo on the packaging was slightly damaged."
+      },
+      {
+        "word": "apologize",
+        "meaning": "道歉",
+        "example": "The representative apologized for the inconvenience."
+      },
+      {
+        "word": "resolve",
+        "meaning": "解決",
+        "example": "The issue would be resolved seriously."
+      },
+      {
+        "word": "notification",
+        "meaning": "通知",
+        "example": "A notification would be sent as soon as possible."
+      },
+      {
+        "word": "interact",
+        "meaning": "互動；應對",
+        "example": "Interact confidently with every caller."
+      },
+      {
+        "word": "politely",
+        "meaning": "有禮貌地",
+        "example": "Disclose all relevant information politely."
+      },
+      {
+        "word": "relevant",
+        "meaning": "相關的",
+        "example": "Disclose all relevant information politely."
+      },
+      {
+        "word": "positive",
+        "meaning": "正面的；積極的",
+        "example": "Guarantee a positive customer experience."
+      },
+      {
+        "word": "successfully",
+        "meaning": "成功地",
+        "example": "Several cases had been solved successfully."
+      },
+      {
+        "word": "payment",
+        "meaning": "付款；款項",
+        "example": "The company would return the payment if necessary."
       }
     ],
     "questions": [
@@ -3293,6 +3998,61 @@ window.TOEIC_DAYS = [
         "word": "destination",
         "meaning": "目的地",
         "example": "He enjoyed a comfortable journey to his destination."
+      },
+      {
+        "word": "passenger",
+        "meaning": "乘客",
+        "example": "The passenger boarded the flight in business class."
+      },
+      {
+        "word": "beverage",
+        "meaning": "飲料",
+        "example": "The crew offered unlimited beverages to passengers."
+      },
+      {
+        "word": "confusion",
+        "meaning": "混亂；困惑",
+        "example": "Staff apologized for the confusion about the bag."
+      },
+      {
+        "word": "luggage",
+        "meaning": "行李",
+        "example": "They promised to ship the luggage to his hotel."
+      },
+      {
+        "word": "attraction",
+        "meaning": "景點；吸引力",
+        "example": "Proximity to various attractions made the trip enjoyable."
+      },
+      {
+        "word": "dramatic",
+        "meaning": "戲劇性的；壯麗的",
+        "example": "The dramatic scenery was worth the long flight."
+      },
+      {
+        "word": "diverse",
+        "meaning": "多元的；多樣的",
+        "example": "The diverse culture made the journey unique."
+      },
+      {
+        "word": "arrangement",
+        "meaning": "安排",
+        "example": "The crew explained the seating arrangement."
+      },
+      {
+        "word": "promptly",
+        "meaning": "迅速地",
+        "example": "He asked them to locate the suitcase promptly."
+      },
+      {
+        "word": "journey",
+        "meaning": "旅程",
+        "example": "He enjoyed a comfortable journey to his destination."
+      },
+      {
+        "word": "indulge",
+        "meaning": "沉浸於；盡情享受",
+        "example": "He decided to indulge in the local hospitality."
       }
     ],
     "questions": [
@@ -3540,6 +4300,61 @@ window.TOEIC_DAYS = [
         "word": "foundation",
         "meaning": "基礎",
         "example": "Trust was the foundation of the deal."
+      },
+      {
+        "word": "finalize",
+        "meaning": "敲定；完成",
+        "example": "Two companies negotiated to finalize a contract."
+      },
+      {
+        "word": "proposal",
+        "meaning": "提案；建議書",
+        "example": "The proposal included several key terms."
+      },
+      {
+        "word": "confidentiality",
+        "meaning": "保密；機密性",
+        "example": "A clear stipulation covered confidentiality."
+      },
+      {
+        "word": "agreement",
+        "meaning": "協議；合約",
+        "example": "One side threatened to terminate the agreement."
+      },
+      {
+        "word": "conflict",
+        "meaning": "衝突；爭議",
+        "example": "The conflict had to be resolved quickly."
+      },
+      {
+        "word": "cooperatively",
+        "meaning": "合作地",
+        "example": "Both teams were asked to proceed cooperatively."
+      },
+      {
+        "word": "deadline",
+        "meaning": "期限",
+        "example": "A signature was required before the deadline."
+      },
+      {
+        "word": "scope",
+        "meaning": "範圍",
+        "example": "They decided to narrow the scope of the project."
+      },
+      {
+        "word": "challenging",
+        "meaning": "具挑戰性的",
+        "example": "The challenging process produced a solid foundation."
+      },
+      {
+        "word": "strengthen",
+        "meaning": "強化",
+        "example": "The alliance would strengthen their position."
+      },
+      {
+        "word": "revised",
+        "meaning": "修訂的",
+        "example": "The other party suggested a revised offer."
       }
     ],
     "questions": [
@@ -3787,6 +4602,61 @@ window.TOEIC_DAYS = [
         "word": "commodity",
         "meaning": "商品",
         "example": "The commodity was quoted at a competitive price."
+      },
+      {
+        "word": "publisher",
+        "meaning": "出版商",
+        "example": "A publisher announced a new sales trend."
+      },
+      {
+        "word": "checklist",
+        "meaning": "檢查清單",
+        "example": "The supplier provided a detailed checklist."
+      },
+      {
+        "word": "discount",
+        "meaning": "折扣",
+        "example": "The dealer offered a discount on bulk purchases."
+      },
+      {
+        "word": "retailer",
+        "meaning": "零售商",
+        "example": "Goods would be supplied to various retailers."
+      },
+      {
+        "word": "commercial",
+        "meaning": "商業的",
+        "example": "Products moved through a commercial network."
+      },
+      {
+        "word": "satisfactory",
+        "meaning": "令人滿意的",
+        "example": "Assure the clientele of satisfactory service."
+      },
+      {
+        "word": "competitive",
+        "meaning": "具競爭力的",
+        "example": "The commodity was quoted at a competitive price."
+      },
+      {
+        "word": "finalize",
+        "meaning": "敲定",
+        "example": "The consignment agreement would be finalized soon."
+      },
+      {
+        "word": "partner",
+        "meaning": "夥伴",
+        "example": "The strategy would strengthen relationships with partners."
+      },
+      {
+        "word": "enhance",
+        "meaning": "提升；增進",
+        "example": "Acquisition of new titles would enhance the rating."
+      },
+      {
+        "word": "measure",
+        "meaning": "衡量；測量",
+        "example": "The cost of each selection must be measured carefully."
       }
     ],
     "questions": [
@@ -4034,6 +4904,61 @@ window.TOEIC_DAYS = [
         "word": "shipment",
         "meaning": "出貨；運送的貨物",
         "example": "The courier checked the shipment before departure."
+      },
+      {
+        "word": "facility",
+        "meaning": "設施",
+        "example": "Goods were stored in a cold facility."
+      },
+      {
+        "word": "departure",
+        "meaning": "出發；啟程",
+        "example": "Check the weight before departure."
+      },
+      {
+        "word": "deliver",
+        "meaning": "運送；交付",
+        "example": "He planned to deliver the parcel by mail."
+      },
+      {
+        "word": "recipient",
+        "meaning": "收件人",
+        "example": "The recipient was asked to affix a signature."
+      },
+      {
+        "word": "enclose",
+        "meaning": "隨函附上；附上",
+        "example": "The agency enclosed a careful pick-up notice."
+      },
+      {
+        "word": "incorrect",
+        "meaning": "不正確的",
+        "example": "Handle every step correctly to avoid incorrect delivery."
+      },
+      {
+        "word": "temperature",
+        "meaning": "溫度",
+        "example": "The cold facility controlled the flow of temperature."
+      },
+      {
+        "word": "package",
+        "meaning": "包裹",
+        "example": "Packages of pottery were picked up nearby."
+      },
+      {
+        "word": "agency",
+        "meaning": "代理機構；公司",
+        "example": "The agency enclosed a pick-up notice."
+      },
+      {
+        "word": "process",
+        "meaning": "處理",
+        "example": "The warehouse had processed all correspondence."
+      },
+      {
+        "word": "ensure",
+        "meaning": "確保",
+        "example": "The courier ensured the shipment was handled adequately."
       }
     ],
     "questions": [
@@ -4281,6 +5206,61 @@ window.TOEIC_DAYS = [
         "word": "reservation",
         "meaning": "預約",
         "example": "The caterer made the entire reservation."
+      },
+      {
+        "word": "delicious",
+        "meaning": "美味的",
+        "example": "The delicious dessert was served in the dining room."
+      },
+      {
+        "word": "ingredient",
+        "meaning": "食材；原料",
+        "example": "The chef blended clean, fresh ingredients."
+      },
+      {
+        "word": "reception",
+        "meaning": "招待會；接待",
+        "example": "The menu was planned to accommodate a reception."
+      },
+      {
+        "word": "sequence",
+        "meaning": "順序；流程",
+        "example": "The cuisine followed a set sequence."
+      },
+      {
+        "word": "approval",
+        "meaning": "核准",
+        "example": "The extensive menu required prior approval."
+      },
+      {
+        "word": "discomfort",
+        "meaning": "不適",
+        "example": "Amenities were designed to ease discomfort."
+      },
+      {
+        "word": "elegant",
+        "meaning": "優雅的",
+        "example": "The container stored an elegant flavor."
+      },
+      {
+        "word": "available",
+        "meaning": "可取得的；有空的",
+        "example": "Staff worked to accommodate an available reception."
+      },
+      {
+        "word": "prepare",
+        "meaning": "準備",
+        "example": "A complimentary dish was prepared by the chef."
+      },
+      {
+        "word": "featuring",
+        "meaning": "以……為特色",
+        "example": "The meal featuring seafood impressed the guests."
+      },
+      {
+        "word": "advance",
+        "meaning": "事先；預先",
+        "example": "In advance, the team arranged refreshments."
       }
     ],
     "questions": [
@@ -4528,6 +5508,61 @@ window.TOEIC_DAYS = [
         "word": "steady",
         "meaning": "穩定的",
         "example": "Whole growth figures remained steady."
+      },
+      {
+        "word": "increase",
+        "meaning": "增加",
+        "example": "The projection showed a substantial increase."
+      },
+      {
+        "word": "structure",
+        "meaning": "結構",
+        "example": "A fee structure shift could affect sales."
+      },
+      {
+        "word": "expectation",
+        "meaning": "期望",
+        "example": "Recent figures exceeded expectations."
+      },
+      {
+        "word": "improvement",
+        "meaning": "改善",
+        "example": "The results showed real improvement."
+      },
+      {
+        "word": "summarize",
+        "meaning": "彙整；總結",
+        "example": "Growth figures were regularly summarized."
+      },
+      {
+        "word": "profit",
+        "meaning": "利潤",
+        "example": "Rising profit helped offset incurred costs."
+      },
+      {
+        "word": "export",
+        "meaning": "出口",
+        "example": "The company remained reliant on exports."
+      },
+      {
+        "word": "percentage",
+        "meaning": "百分比",
+        "example": "Exports illustrated a healthy percentage."
+      },
+      {
+        "word": "overseas",
+        "meaning": "海外的",
+        "example": "The decline in overseas orders was offset."
+      },
+      {
+        "word": "revising",
+        "meaning": "修訂",
+        "example": "Management will anticipate demand before revising the projection."
+      },
+      {
+        "word": "demand",
+        "meaning": "需求",
+        "example": "Anticipate a further shift in demand."
       }
     ],
     "questions": [
@@ -4775,6 +5810,61 @@ window.TOEIC_DAYS = [
         "word": "turnover",
         "meaning": "營業額",
         "example": "Turnover figures were reviewed by the finance team."
+      },
+      {
+        "word": "budget",
+        "meaning": "預算",
+        "example": "Cuts were tied to the annual budget theme."
+      },
+      {
+        "word": "generate",
+        "meaning": "產生；創造",
+        "example": "Double funding to generate more results."
+      },
+      {
+        "word": "overcome",
+        "meaning": "克服",
+        "example": "The team hoped to overcome scoring issues."
+      },
+      {
+        "word": "traditional",
+        "meaning": "傳統的",
+        "example": "Cuts were tied to traditional policy."
+      },
+      {
+        "word": "accounting",
+        "meaning": "會計",
+        "example": "The audit of the accounting budget confirmed progress."
+      },
+      {
+        "word": "capability",
+        "meaning": "能力",
+        "example": "Review the team's capability to manage proceeds."
+      },
+      {
+        "word": "inspector",
+        "meaning": "稽核員；檢查員",
+        "example": "Funds are allocated once the inspector approves."
+      },
+      {
+        "word": "preferred",
+        "meaning": "偏好的；優先的",
+        "example": "Approve the preferred quarter plan."
+      },
+      {
+        "word": "frequently",
+        "meaning": "頻繁地",
+        "example": "Departments reviewed fiscal planning more frequently."
+      },
+      {
+        "word": "spending",
+        "meaning": "支出；花費",
+        "example": "A senior manager reviewed spending carefully."
+      },
+      {
+        "word": "department",
+        "meaning": "部門",
+        "example": "Abundant funds allowed the department to hold a contest."
       }
     ],
     "questions": [
@@ -5022,6 +6112,61 @@ window.TOEIC_DAYS = [
         "word": "edge",
         "meaning": "優勢",
         "example": "Gaining an edge this quarter seemed difficult."
+      },
+      {
+        "word": "approach",
+        "meaning": "方法；途徑",
+        "example": "Staff decided to switch their approach."
+      },
+      {
+        "word": "announce",
+        "meaning": "宣布",
+        "example": "Management will announce the plan once parties accept it."
+      },
+      {
+        "word": "protect",
+        "meaning": "保護",
+        "example": "Relocating helps protect the company's asset."
+      },
+      {
+        "word": "contribute",
+        "meaning": "貢獻",
+        "example": "Employees contribute in a dedicated way."
+      },
+      {
+        "word": "emerge",
+        "meaning": "出現",
+        "example": "Sales last as new competitors emerge."
+      },
+      {
+        "word": "select",
+        "meaning": "選擇",
+        "example": "They will select a partner to merge with."
+      },
+      {
+        "word": "independent",
+        "meaning": "獨立的",
+        "example": "Persist with independent growth after the merger."
+      },
+      {
+        "word": "productivity",
+        "meaning": "生產力",
+        "example": "Premier results depend on productivity this quarter."
+      },
+      {
+        "word": "region",
+        "meaning": "地區",
+        "example": "The issue affected the region sharply."
+      },
+      {
+        "word": "vital",
+        "meaning": "極重要的",
+        "example": "Merging implies vital independent growth choices."
+      },
+      {
+        "word": "expressly",
+        "meaning": "明確地",
+        "example": "Things were done correctly and expressly."
       }
     ],
     "questions": [
@@ -5269,6 +6414,61 @@ window.TOEIC_DAYS = [
         "word": "approve",
         "meaning": "批准",
         "example": "The board will approve the enclosed record suggestion."
+      },
+      {
+        "word": "conference",
+        "meaning": "會議",
+        "example": "The annual meeting was held in the conference room."
+      },
+      {
+        "word": "schedule",
+        "meaning": "時程",
+        "example": "Staff advised the board of the schedule."
+      },
+      {
+        "word": "conversation",
+        "meaning": "對話；討論",
+        "example": "The event featured lively conversation and debate."
+      },
+      {
+        "word": "gathering",
+        "meaning": "聚會；集會",
+        "example": "He tried to express his views at the gathering."
+      },
+      {
+        "word": "convince",
+        "meaning": "說服",
+        "example": "Someone had to convince the group to reach consensus."
+      },
+      {
+        "word": "determine",
+        "meaning": "決定；判定",
+        "example": "They reschedule meetings to determine what to report."
+      },
+      {
+        "word": "comment",
+        "meaning": "評論；意見",
+        "example": "Comment on progress during each phase."
+      },
+      {
+        "word": "suggestion",
+        "meaning": "建議",
+        "example": "The board will approve the enclosed suggestion."
+      },
+      {
+        "word": "object",
+        "meaning": "反對",
+        "example": "Give full attention before anyone can object."
+      },
+      {
+        "word": "irrelevant",
+        "meaning": "不相干的",
+        "example": "Ignore irrelevant constraint issues while presiding."
+      },
+      {
+        "word": "attention",
+        "meaning": "注意；關注",
+        "example": "Giving full attention helps before anyone objects."
       }
     ],
     "questions": [
@@ -5516,6 +6716,61 @@ window.TOEIC_DAYS = [
         "word": "outstanding",
         "meaning": "傑出的",
         "example": "The event honored outstanding contributions."
+      },
+      {
+        "word": "participant",
+        "meaning": "參與者",
+        "example": "Each participant had to register in advance."
+      },
+      {
+        "word": "vacation",
+        "meaning": "休假",
+        "example": "Employees planned to take a vacation after payday."
+      },
+      {
+        "word": "introduction",
+        "meaning": "介紹；開場",
+        "example": "The introduction explained the lecture plan."
+      },
+      {
+        "word": "encourage",
+        "meaning": "鼓勵",
+        "example": "The purpose was to encourage participation."
+      },
+      {
+        "word": "contribution",
+        "meaning": "貢獻",
+        "example": "The function would honor outstanding contributions."
+      },
+      {
+        "word": "teamwork",
+        "meaning": "團隊合作",
+        "example": "The program emphasized teamwork."
+      },
+      {
+        "word": "objective",
+        "meaning": "目標；目的",
+        "example": "The objective was to commence the ceremony."
+      },
+      {
+        "word": "expense",
+        "meaning": "費用",
+        "example": "Provide reimbursement for travel expenses."
+      },
+      {
+        "word": "bonus",
+        "meaning": "獎金",
+        "example": "An entry bonus and salary increase were announced."
+      },
+      {
+        "word": "grateful",
+        "meaning": "感激的",
+        "example": "Many felt grateful for the overtime responsibility."
+      },
+      {
+        "word": "conference",
+        "meaning": "會議",
+        "example": "Enroll everyone in the annual conference."
       }
     ],
     "questions": [
@@ -5763,6 +7018,61 @@ window.TOEIC_DAYS = [
         "word": "conflict",
         "meaning": "衝突",
         "example": "Safeguards helped prevent conflicts over differing views."
+      },
+      {
+        "word": "celebration",
+        "meaning": "慶祝活動",
+        "example": "He accepted an award at the anniversary celebration."
+      },
+      {
+        "word": "explanation",
+        "meaning": "說明",
+        "example": "He gave a lengthy explanation about the chart."
+      },
+      {
+        "word": "appointment",
+        "meaning": "約會；面談",
+        "example": "He set up an appointment to review his role."
+      },
+      {
+        "word": "evaluate",
+        "meaning": "評估",
+        "example": "The team evaluated performance and new preferences."
+      },
+      {
+        "word": "candidate",
+        "meaning": "候選人",
+        "example": "The board promoted the most competent candidate."
+      },
+      {
+        "word": "performance",
+        "meaning": "績效；表現",
+        "example": "Mandatory competent performance was recognized."
+      },
+      {
+        "word": "appreciation",
+        "meaning": "賞識；感謝",
+        "example": "His exceptional appreciation impressed the team."
+      },
+      {
+        "word": "prevent",
+        "meaning": "防止",
+        "example": "Safeguards were in place to prevent conflicts."
+      },
+      {
+        "word": "skilled",
+        "meaning": "熟練的；有技術的",
+        "example": "Management promoted a skilled worker."
+      },
+      {
+        "word": "confirm",
+        "meaning": "確認",
+        "example": "He went downstairs to confirm his new job title."
+      },
+      {
+        "word": "decision",
+        "meaning": "決定",
+        "example": "The board reached a unanimous decision."
       }
     ],
     "questions": [
@@ -6010,6 +7320,61 @@ window.TOEIC_DAYS = [
         "word": "rental",
         "meaning": "租賃",
         "example": "He called a cab instead of using car rental."
+      },
+      {
+        "word": "traffic",
+        "meaning": "交通；車流",
+        "example": "Heavy traffic filled the highway."
+      },
+      {
+        "word": "alternative",
+        "meaning": "替代的；其他的",
+        "example": "An alternative route helped drivers obtain access."
+      },
+      {
+        "word": "designated",
+        "meaning": "指定的",
+        "example": "Drivers obtained access to a designated intersection."
+      },
+      {
+        "word": "transportation",
+        "meaning": "運輸；交通",
+        "example": "The car lacked a valid permit for transportation."
+      },
+      {
+        "word": "opportunity",
+        "meaning": "機會",
+        "example": "The malfunction meant a missed opportunity."
+      },
+      {
+        "word": "expense",
+        "meaning": "費用",
+        "example": "He had to pay an expense before driving out."
+      },
+      {
+        "word": "downtown",
+        "meaning": "市中心",
+        "example": "The car was equipped for a long downtown trip."
+      },
+      {
+        "word": "valid",
+        "meaning": "有效的",
+        "example": "The car lacked a valid permit."
+      },
+      {
+        "word": "delay",
+        "meaning": "延誤",
+        "example": "Drivers diverted delays by taking a detour."
+      },
+      {
+        "word": "access",
+        "meaning": "進出；通道",
+        "example": "Check the wheel's access to the garage."
+      },
+      {
+        "word": "station",
+        "meaning": "車站；加油站",
+        "example": "He stopped at the gas station before continuing."
       }
     ],
     "questions": [
@@ -6257,6 +7622,61 @@ window.TOEIC_DAYS = [
         "word": "identification",
         "meaning": "身分核實；身分證明",
         "example": "Identification revealed dissatisfaction with rates."
+      },
+      {
+        "word": "account",
+        "meaning": "帳戶",
+        "example": "He wanted to open an account and check his balance."
+      },
+      {
+        "word": "payment",
+        "meaning": "付款",
+        "example": "He was used to automatic payment by year-end."
+      },
+      {
+        "word": "password",
+        "meaning": "密碼",
+        "example": "He entered his password at the machine."
+      },
+      {
+        "word": "investigation",
+        "meaning": "調查",
+        "example": "An investigation into the statement revealed the amount."
+      },
+      {
+        "word": "dissatisfaction",
+        "meaning": "不滿",
+        "example": "Identification revealed dissatisfaction with rates."
+      },
+      {
+        "word": "attentive",
+        "meaning": "專注的；周到的",
+        "example": "Staff remained attentive to customer needs."
+      },
+      {
+        "word": "discounted",
+        "meaning": "折扣的",
+        "example": "Staff hoped to convert heavily discounted loans."
+      },
+      {
+        "word": "convert",
+        "meaning": "轉換",
+        "example": "Staff hoped to convert discounted loan offers."
+      },
+      {
+        "word": "unexpected",
+        "meaning": "未預期的",
+        "example": "Unexpected cash and mortgage fees needed review."
+      },
+      {
+        "word": "document",
+        "meaning": "文件",
+        "example": "He handed over documents next to the desk."
+      },
+      {
+        "word": "charge",
+        "meaning": "費用；收費",
+        "example": "Customers should avoid unnecessary charges."
       }
     ],
     "questions": [
@@ -6504,6 +7924,61 @@ window.TOEIC_DAYS = [
         "word": "stability",
         "meaning": "穩定性",
         "example": "He promoted a positive outlook for market stability."
+      },
+      {
+        "word": "challenge",
+        "meaning": "挑戰",
+        "example": "The challenge offered comfort through compact data."
+      },
+      {
+        "word": "accuracy",
+        "meaning": "準確度",
+        "example": "He hoped to find a good spot with accuracy."
+      },
+      {
+        "word": "inherently",
+        "meaning": "本質上",
+        "example": "It was inherently possible to secure a gain."
+      },
+      {
+        "word": "formal",
+        "meaning": "正式的",
+        "example": "Buying property required a formal lease."
+      },
+      {
+        "word": "propose",
+        "meaning": "提議",
+        "example": "A sponsor agreed to propose support."
+      },
+      {
+        "word": "consult",
+        "meaning": "諮詢",
+        "example": "They consulted for advice before deciding."
+      },
+      {
+        "word": "reliability",
+        "meaning": "可靠性",
+        "example": "Cautious insight and reliability guided decisions."
+      },
+      {
+        "word": "entrepreneur",
+        "meaning": "企業家",
+        "example": "The entrepreneur convinced a shareholder."
+      },
+      {
+        "word": "outlook",
+        "meaning": "前景",
+        "example": "Trust the positive outlook for market stability."
+      },
+      {
+        "word": "conservative",
+        "meaning": "保守的",
+        "example": "Yield figures worried conservative investors."
+      },
+      {
+        "word": "unprecedented",
+        "meaning": "前所未有的",
+        "example": "Unprecedented yield figures worried investors."
       }
     ],
     "questions": [
@@ -6751,6 +8226,61 @@ window.TOEIC_DAYS = [
         "word": "abandon",
         "meaning": "放棄",
         "example": "There are reasons to abandon the old plan."
+      },
+      {
+        "word": "decoration",
+        "meaning": "裝飾",
+        "example": "New decoration was hung near the fence."
+      },
+      {
+        "word": "furniture",
+        "meaning": "家具",
+        "example": "He added new furniture to the garage."
+      },
+      {
+        "word": "residence",
+        "meaning": "住所",
+        "example": "The furnished residence felt spacious."
+      },
+      {
+        "word": "spacious",
+        "meaning": "寬敞的",
+        "example": "The furnished residence felt spacious."
+      },
+      {
+        "word": "construction",
+        "meaning": "建設；施工",
+        "example": "Community construction was regularly monitored."
+      },
+      {
+        "word": "maintain",
+        "meaning": "維護；維持",
+        "example": "The contractor plans to develop and maintain the site."
+      },
+      {
+        "word": "populated",
+        "meaning": "有人居住的",
+        "example": "The area is densely populated."
+      },
+      {
+        "word": "property",
+        "meaning": "房地產；財產",
+        "example": "The property adjacent to the park would have utilities."
+      },
+      {
+        "word": "connection",
+        "meaning": "連接；管線",
+        "example": "The site would consist of modern utility connections."
+      },
+      {
+        "word": "appropriate",
+        "meaning": "適當的",
+        "example": "It was appropriate to expect a delay."
+      },
+      {
+        "word": "community",
+        "meaning": "社區",
+        "example": "Community construction repair was monitored."
       }
     ],
     "questions": [
@@ -6997,6 +8527,61 @@ window.TOEIC_DAYS = [
       {
         "word": "occurrence",
         "meaning": "發生；事件",
+        "example": "The solution helped prevent further occurrence."
+      },
+      {
+        "word": "landscape",
+        "meaning": "地景；景觀",
+        "example": "Dirt covered the humid landscape after harvest."
+      },
+      {
+        "word": "pattern",
+        "meaning": "模式；型態",
+        "example": "Temperature shifts caused unusual weather patterns."
+      },
+      {
+        "word": "resource",
+        "meaning": "資源",
+        "example": "Efforts to conserve resources increased."
+      },
+      {
+        "word": "significant",
+        "meaning": "重大的；顯著的",
+        "example": "A significant solution helped prevent further occurrence."
+      },
+      {
+        "word": "excessive",
+        "meaning": "過度的",
+        "example": "Avoid excessive damage to the land."
+      },
+      {
+        "word": "pollutant",
+        "meaning": "污染物",
+        "example": "Residents felt disturbed by rising pollutant emissions."
+      },
+      {
+        "word": "environmental",
+        "meaning": "環境的",
+        "example": "The environmental organization worried officials."
+      },
+      {
+        "word": "disaster",
+        "meaning": "災難",
+        "example": "Officials worried about contamination and disaster risks."
+      },
+      {
+        "word": "official",
+        "meaning": "官員",
+        "example": "The discharge report worried officials."
+      },
+      {
+        "word": "unusual",
+        "meaning": "不尋常的",
+        "example": "The temperature shift caused unusual weather patterns."
+      },
+      {
+        "word": "prevent",
+        "meaning": "防止",
         "example": "The solution helped prevent further occurrence."
       }
     ],
@@ -7245,6 +8830,61 @@ window.TOEIC_DAYS = [
         "word": "transmitted",
         "meaning": "傳染的；傳遞的",
         "example": "The exam eliminated easily transmitted reactions."
+      },
+      {
+        "word": "diagnose",
+        "meaning": "診斷",
+        "example": "A cavity and cold were diagnosed at the clinic."
+      },
+      {
+        "word": "facility",
+        "meaning": "設施；機構",
+        "example": "He visited a medical facility for a checkup."
+      },
+      {
+        "word": "treatment",
+        "meaning": "治療",
+        "example": "The toothache required treatment."
+      },
+      {
+        "word": "prescribe",
+        "meaning": "開立處方",
+        "example": "The physician prescribed a remedy."
+      },
+      {
+        "word": "wellbeing",
+        "meaning": "福祉；健康",
+        "example": "The remedy supported his overall wellbeing."
+      },
+      {
+        "word": "examination",
+        "meaning": "檢查",
+        "example": "The comprehensive examination eliminated risks."
+      },
+      {
+        "word": "periodic",
+        "meaning": "定期的",
+        "example": "Periodic dental and dietary checks were recommended."
+      },
+      {
+        "word": "symptom",
+        "meaning": "症狀",
+        "example": "Coverage helped relieve a combination of symptoms."
+      },
+      {
+        "word": "recovery",
+        "meaning": "復原",
+        "example": "By the end of the recovery, he joined a prevention program."
+      },
+      {
+        "word": "insurance",
+        "meaning": "保險",
+        "example": "Better nutrition and insurance coverage reduced risk."
+      },
+      {
+        "word": "conscious",
+        "meaning": "有意識的；察覺的",
+        "example": "He was conscious of health deprivation."
       }
     ],
     "questions": [

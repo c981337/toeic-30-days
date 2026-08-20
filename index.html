@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TOEIC 30｜五科重整｜615 → 800–900</title>
+  <title>TOEIC 30｜單字＋閱讀｜615 → 800–900</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -13,19 +13,19 @@
   <header class="hero">
     <div class="container hero-inner">
       <h1 class="brand">TOEIC <span>30</span></h1>
-      <p class="hero-lead">五科重整：單字、朗讀、聽力、文法、閱讀。從 615 衝刺 800–900，每日固定順序練習，約 150–200 分鐘。</p>
+      <p class="hero-lead">只練兩件事：單字與閱讀。每天約 22–25 張單字卡＋一篇限時閱讀理解，從 615 往 800–900 推進。</p>
       <div class="cta-row">
         <a class="btn btn-primary" id="cta-start" href="day.html?d=1"><span id="cta-label">開始 Day 1</span></a>
-        <a class="btn btn-ghost" href="#pillars">看五科結構</a>
-        <span class="meta-chip">單字→朗讀→聽力→文法→閱讀</span>
+        <a class="btn btn-ghost" href="#plan">查看計劃</a>
+        <span class="meta-chip">單字 → 閱讀｜約 70–90 分／天</span>
       </div>
     </div>
   </header>
 
   <section id="pillars">
     <div class="container">
-      <h2 class="section-title">每日五科（固定順序）</h2>
-      <p class="section-lead">不要跳著練。朗讀接在單字後，聽力才會有詞彙底；文法後再閱讀，長句比較站得住。</p>
+      <h2 class="section-title">每日兩塊</h2>
+      <p class="section-lead">先把單字做完，再進閱讀；正確率低於 80% 隔日重做錯字卡。</p>
       <div class="phase-grid" id="pillar-cards"></div>
     </div>
   </section>
@@ -33,7 +33,7 @@
   <section id="plan">
     <div class="container">
       <h2 class="section-title">四週焦點</h2>
-      <p class="section-lead">每週模考有門檻；未達標先補最弱的一科，再進下一週。</p>
+      <p class="section-lead">Day 7／14／21／28 複習錯字與弱閱讀日。</p>
       <div class="phase-grid" id="week-cards"></div>
     </div>
   </section>
@@ -44,18 +44,17 @@
       <div class="score-path">
         <div class="score-node"><strong>615</strong><span>基準</span></div>
         <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node"><strong>680</strong><span>W1 模考</span></div>
+        <div class="score-node"><strong>680</strong><span>W1</span></div>
         <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node"><strong>730</strong><span>W2 模考</span></div>
+        <div class="score-node"><strong>730</strong><span>W2</span></div>
         <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node"><strong>780</strong><span>W3 模考</span></div>
+        <div class="score-node"><strong>780</strong><span>W3</span></div>
         <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node is-goal"><strong>800–900</strong><span>正式考</span></div>
+        <div class="score-node is-goal"><strong>800–900</strong><span>目標</span></div>
       </div>
       <ul class="rule-list">
-        <li>Day 7／14／21／28 為模考日：完整計時＋當日檢討。</li>
-        <li>本站：單字卡、朗讀 TTS、聽後測驗、文法 Part 5、閱讀理解。</li>
-        <li>外部：依當日「聽力」頁的 Part 指引做官方／模擬聽力題。</li>
+        <li>本站專注閱讀字彙與 Part 7 語感；聽力／文法請另找時間補。</li>
+        <li>單字卡＋閱讀理解都完成，才算一天打勾。</li>
       </ul>
     </div>
   </section>
@@ -63,10 +62,9 @@
   <section id="progress">
     <div class="container">
       <h2 class="section-title">學習進度</h2>
-      <p class="section-lead">五科都完成（含聽力／文法／閱讀交卷）才算一天完成。</p>
       <div class="stats-bar">
         <div class="stat"><strong id="stat-done">0 / 30</strong><span>完成天數</span></div>
-        <div class="stat"><strong id="stat-acc">—</strong><span>平均正確率</span></div>
+        <div class="stat"><strong id="stat-acc">—</strong><span>閱讀正確率</span></div>
         <div class="stat"><strong id="stat-suggest">Day 01</strong><span>建議今日</span></div>
         <div class="stat" style="margin-left:auto;align-self:center">
           <button type="button" class="btn btn-ghost btn-sm" id="reset-progress">重置進度</button>
@@ -77,9 +75,7 @@
     </div>
   </section>
 
-  <footer class="container footer-note">
-    TOEIC 30 · 五科重整 · 615→800–900
-  </footer>
+  <footer class="container footer-note">TOEIC 30 · 單字＋閱讀 · 615→800–900</footer>
 
   <script src="data/days.js"></script>
   <script src="data/curriculum.js"></script>
