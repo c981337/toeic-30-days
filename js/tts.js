@@ -2,58 +2,6 @@
   const TTS_KEY = "toeic30_tts";
   const defaults = { rate: 0.95, voiceURI: "" };
 
-  // Higher = more natural / human-like for study listening
-  const PREFERRED_NAMES = [
-    "microsoft aria",
-    "microsoft jenny",
-    "microsoft guy",
-    "microsoft michelle",
-    "microsoft ana",
-    "microsoft andrew",
-    "microsoft emma",
-    "microsoft brian",
-    "google us english",
-    "google uk english female",
-    "google uk english male",
-    "samantha",
-    "nicky",
-    "aaron",
-    "evan",
-    "ava",
-    "zoe",
-    "stephanie",
-    "susan",
-    "karen",
-    "moira",
-    "daniel",
-    "martha",
-    "catherine",
-    "arthur",
-    "rishi",
-  ];
-
-  const AVOID_NAMES = [
-    "zarvox",
-    "trinoids",
-    "whisper",
-    "bells",
-    "bubbles",
-    "bad news",
-    "good news",
-    "boing",
-    "cellos",
-    "organ",
-    "superstar",
-    "jester",
-    "junior",
-    "kathy",
-    "albert",
-    "bahh",
-    "wobble",
-    "princess",
-    "ralph",
-  ];
-
   function loadPrefs() {
     try {
       return Object.assign({}, defaults, JSON.parse(localStorage.getItem(TTS_KEY) || "{}"));
@@ -71,56 +19,19 @@
     return speechSynthesis.getVoices().filter((v) => /^en(-|_|$)/i.test(v.lang));
   }
 
-  function scoreVoice(v) {
-    const name = (v.name || "").toLowerCase();
-    const lang = (v.lang || "").toLowerCase();
-    let score = 0;
-
-    if (AVOID_NAMES.some((n) => name.includes(n))) return -100;
-
-    if (/natural|neural|online \(natural\)|premium|enhanced|siri/.test(name)) score += 80;
-    if (/microsoft/.test(name) && /online|natural|neural/.test(name)) score += 40;
-    if (/google/.test(name)) score += 45;
-
-    PREFERRED_NAMES.forEach((n, i) => {
-      if (name.includes(n)) score += 30 - Math.min(i, 20);
-    });
-
-    if (/en-us/.test(lang)) score += 12;
-    else if (/en-gb/.test(lang)) score += 8;
-    else if (/en-au|en-ie|en-za/.test(lang)) score += 4;
-
-    // Compact/local default Mac voices are usually flatter
-    if (/compact/.test(name)) score -= 25;
-    if (v.localService === false) score += 15; // cloud/neural often remote
-
-    return score;
-  }
-
-  function rankedVoices() {
-    return englishVoices()
-      .map((v) => ({ voice: v, score: scoreVoice(v) }))
-      .filter((x) => x.score > -50)
-      .sort((a, b) => b.score - a.score || a.voice.name.localeCompare(b.voice.name));
-  }
-
-  function isRecommended(v) {
-    return scoreVoice(v) >= 40;
-  }
-
-  function voiceLabel(v) {
-    const tag = isRecommended(v) ? "★推薦 " : "";
-    return tag + v.name + " (" + v.lang + ")";
-  }
-
   function pickVoice(prefs) {
-    const ranked = rankedVoices();
-    if (!ranked.length) return null;
+    const voices = englishVoices();
+    if (!voices.length) return null;
     if (prefs.voiceURI) {
-      const found = ranked.find((x) => x.voice.voiceURI === prefs.voiceURI);
-      if (found) return found.voice;
+      const found = voices.find((v) => v.voiceURI === prefs.voiceURI);
+      if (found) return found;
     }
-    return ranked[0].voice;
+    return (
+      voices.find((v) => /en-US/i.test(v.lang) && /enhanced|premium|natural|samantha|daniel|google/i.test(v.name)) ||
+      voices.find((v) => /en-US/i.test(v.lang)) ||
+      voices.find((v) => /en-GB/i.test(v.lang)) ||
+      voices[0]
+    );
   }
 
   function splitParagraphs(text) {
@@ -167,7 +78,7 @@
     }
 
     return {
-      supported: !!global.speechSynthesis,
+      supported: !!(global.speechSynthesis),
       getPrefs: () => Object.assign({}, prefs),
       setRate(rate) {
         prefs.rate = Math.min(1.2, Math.max(0.8, Number(rate) || 0.95));
@@ -178,13 +89,6 @@
         savePrefs(prefs);
       },
       listVoices: englishVoices,
-      rankedVoices,
-      isRecommended,
-      voiceLabel,
-      recommendVoice() {
-        const top = rankedVoices()[0];
-        return top ? top.voice : null;
-      },
       speak(text, opts = {}) {
         if (!this.supported) return false;
         cancel();
@@ -192,6 +96,7 @@
         queue = splitParagraphs(text);
         if (!queue.length) queue = [String(text || "").trim()].filter(Boolean);
         if (!queue.length) return false;
+        // Chrome sometimes needs a kick after cancel
         setTimeout(() => speakNext(), 40);
         return true;
       },
@@ -218,10 +123,11 @@
     };
   }
 
+  // voices load async on some browsers
   if (global.speechSynthesis) {
     speechSynthesis.getVoices();
     speechSynthesis.addEventListener("voiceschanged", () => speechSynthesis.getVoices());
   }
 
-  global.ToeicTTS = { createTTS, englishVoices, rankedVoices, loadPrefs, savePrefs };
+  global.ToeicTTS = { createTTS, englishVoices, loadPrefs, savePrefs };
 })(window);

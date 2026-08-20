@@ -114,74 +114,28 @@
   });
 
   const voiceSelect = $("tts-voice");
-  const voiceTip = $("voice-tip");
-
-  function updateVoiceTip(selected) {
-    if (!voiceTip) return;
-    const best = tts.recommendVoice();
-    const bestName = best ? best.name : "（尚未偵測到英文語音）";
-    const cur = selected || pickSelectedVoice();
-    const curName = cur ? cur.name : bestName;
-    voiceTip.innerHTML =
-      "目前：<strong>" +
-      curName +
-      "</strong>。系統推薦較真人：<strong>" +
-      bestName +
-      "</strong>。" +
-      " Mac 可到「系統設定 → 輔助使用 → 朗讀內容 → 系統聲音」下載 <em>Enhanced／Premium</em>（如 Samantha、Nicky、Aaron）。" +
-      " 瀏覽器優先試 <em>Safari</em> 或 <em>Edge</em>（Microsoft 自然語音通常最像真人）。";
-  }
-
-  function pickSelectedVoice() {
-    const uri = voiceSelect.value || prefs.voiceURI;
-    return tts.listVoices().find((v) => v.voiceURI === uri) || tts.recommendVoice();
-  }
-
   function fillVoices() {
-    const ranked = tts.rankedVoices();
+    const voices = tts.listVoices();
     voiceSelect.innerHTML = "";
-    if (!ranked.length) {
+    if (!voices.length) {
       const opt = document.createElement("option");
       opt.textContent = tts.supported ? "載入英文語音中…" : "不支援朗讀";
       voiceSelect.appendChild(opt);
       voiceSelect.disabled = true;
-      updateVoiceTip(null);
       return;
     }
     voiceSelect.disabled = false;
-    const best = ranked[0].voice;
-    let selectedURI = prefs.voiceURI;
-    if (!selectedURI || !ranked.some((x) => x.voice.voiceURI === selectedURI)) {
-      selectedURI = best.voiceURI;
-      tts.setVoiceURI(selectedURI);
-      prefs.voiceURI = selectedURI;
-    }
-    ranked.forEach((x) => {
-      const v = x.voice;
+    voices.forEach((v) => {
       const opt = document.createElement("option");
       opt.value = v.voiceURI;
-      opt.textContent = tts.voiceLabel(v);
-      if (v.voiceURI === selectedURI) opt.selected = true;
+      opt.textContent = v.name + " (" + v.lang + ")";
+      if (prefs.voiceURI === v.voiceURI) opt.selected = true;
       voiceSelect.appendChild(opt);
     });
-    updateVoiceTip(pickSelectedVoice());
   }
-
   fillVoices();
   if (window.speechSynthesis) speechSynthesis.addEventListener("voiceschanged", fillVoices);
-  voiceSelect.addEventListener("change", () => {
-    tts.setVoiceURI(voiceSelect.value);
-    prefs.voiceURI = voiceSelect.value;
-    updateVoiceTip(pickSelectedVoice());
-  });
-  $("tts-best").addEventListener("click", () => {
-    const best = tts.recommendVoice();
-    if (!best) return;
-    tts.setVoiceURI(best.voiceURI);
-    prefs.voiceURI = best.voiceURI;
-    fillVoices();
-    tts.speak("This is the recommended voice for your TOEIC practice.");
-  });
+  voiceSelect.addEventListener("change", () => tts.setVoiceURI(voiceSelect.value));
   $("tts-play").addEventListener("click", () => tts.speak(data.english));
   $("tts-pause").addEventListener("click", () => tts.pause());
   $("tts-resume").addEventListener("click", () => tts.resume());

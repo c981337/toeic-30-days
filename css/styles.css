@@ -270,23 +270,6 @@ a.is-disabled, .btn.is-disabled {
   font-size: 0.95rem;
 }
 
-.voice-tip {
-  margin: 0 0 1rem;
-  padding: 0.75rem 1rem;
-  border-left: 3px solid var(--accent);
-  background: rgba(196, 163, 90, 0.1);
-  color: var(--ink-muted);
-  font-size: 0.9rem;
-}
-
-.voice-tip strong {
-  color: var(--ink);
-}
-
-#tts-voice {
-  max-width: min(100%, 280px);
-}
-
 .inline-title {
   font-family: var(--font-display);
   font-size: 1.25rem;
