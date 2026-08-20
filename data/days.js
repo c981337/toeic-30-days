@@ -135,7 +135,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "文末指出公司對能辨識過去成就並說明如何支持長期目標的申請者印象深刻。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 1",
+      "minutes": 40,
+      "warmUp": "用網站 TTS 播放本日英文文章兩次：第一次只聽大意（地點、活動、招募重點），第二次邊聽邊記下職缺類型與申請文件。",
+      "externalDrill": "今日外練 TOEIC Part 1：找 10 題照片描述題，先遮選項聽關鍵動作／人物／物件，再對答案；特別注意「正在做什麼」與背景細節。",
+      "shadowTip": "跟讀第二、三段：放慢至 0.9 倍速，模仿 application form、resume、reference 等字串的重音與節奏。",
+      "questions": [
+        {
+          "q": "Where was the job fair held?",
+          "choices": [
+            "At a university campus",
+            "At Westbridge Convention Hall",
+            "At a shopping mall",
+            "At an airport lounge"
+          ],
+          "answer": 1,
+          "explain": "開場提到 At Westbridge Convention Hall。"
+        },
+        {
+          "q": "What must applicants send before meeting a hiring team?",
+          "choices": [
+            "Only a resume",
+            "An application form, a resume, and one reference",
+            "A passport and bank statement",
+            "Only a technical certificate"
+          ],
+          "answer": 1,
+          "explain": "文中要求 application form、resume 與 one reference。"
+        },
+        {
+          "q": "Which roles did one company plan to hire?",
+          "choices": [
+            "Only accountants",
+            "A secretary, a sales consultant, and engineering trainees",
+            "Only part-time cashiers",
+            "Only senior directors"
+          ],
+          "answer": 1,
+          "explain": "公司打算雇用秘書、業務顧問與工程受訓者。"
+        },
+        {
+          "q": "What especially impressed the HR manager?",
+          "choices": [
+            "Applicants who avoided talking about goals",
+            "Applicants who identified past achievements and linked them to long-term goals",
+            "Applicants who refused training",
+            "Applicants who only asked about wages"
+          ],
+          "answer": 1,
+          "explain": "人資重視能說明過往成就如何支持公司長期目標的人。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "詞性",
+      "tip": "先判斷空格要填名詞、形容詞還是副詞；職涯文章常考 professional / professionally、eligible / eligibility。",
+      "questions": [
+        {
+          "q": "Each applicant was asked to submit _____ resume before the interview.",
+          "choices": [
+            "they",
+            "their",
+            "them",
+            "theirs"
+          ],
+          "answer": 1,
+          "explain": "空格後有名詞 resume，需所有格 their。"
+        },
+        {
+          "q": "Candidates with strong communication _____ were more likely to be interviewed.",
+          "choices": [
+            "proficient",
+            "proficiency",
+            "proficiently",
+            "profess"
+          ],
+          "answer": 1,
+          "explain": "strong 修飾名詞，故用 proficiency。"
+        },
+        {
+          "q": "The company offered fair wages and _____ training for new hires.",
+          "choices": [
+            "structure",
+            "structured",
+            "structuring",
+            "structures"
+          ],
+          "answer": 1,
+          "explain": "修飾 training 用過去分詞／形容詞 structured。"
+        },
+        {
+          "q": "She felt slightly _____ before meeting the hiring team.",
+          "choices": [
+            "apprehension",
+            "apprehensive",
+            "apprehensively",
+            "apprehend"
+          ],
+          "answer": 1,
+          "explain": "feel + 形容詞 → apprehensive。"
+        },
+        {
+          "q": "Those with a college degree were more _____ for an interview.",
+          "choices": [
+            "eligible",
+            "eligibility",
+            "eligibly",
+            "elope"
+          ],
+          "answer": 0,
+          "explain": "be + 形容詞 → eligible。"
+        }
+      ]
+    }
   },
   {
     "day": 2,
@@ -268,7 +382,121 @@ window.TOEIC_DAYS = [
         "answer": 0,
         "explain": "雖然有人覺得嚴格，但管理層強調長期會有正面效果。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 2",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽本日政策通知文章：先抓「誰發布、為何修訂、員工必須做什麼」，再複聽緊急事件與機密資訊相關句子。",
+      "externalDrill": "今日外練 TOEIC Part 2：做 20 題應答題，練習 Wh- 問句與 Yes/No；遇到政策／規定類問句，先抓 must / should / report。",
+      "shadowTip": "跟讀「must wear / must adhere / refrain from」等義務句，注意否定與禁止語氣的語調下降。",
+      "questions": [
+        {
+          "q": "Who issued the revised office policy?",
+          "choices": [
+            "The marketing team",
+            "The legal department",
+            "The cafeteria staff",
+            "The travel agency"
+          ],
+          "answer": 1,
+          "explain": "法務部門 recently issued a revised office policy。"
+        },
+        {
+          "q": "What must staff display while on duty?",
+          "choices": [
+            "A parking ticket",
+            "Identification",
+            "A sales brochure",
+            "A vacation form"
+          ],
+          "answer": 1,
+          "explain": "須穿著正式服裝並 display identification。"
+        },
+        {
+          "q": "What should employees do in case of emergency or suspected theft?",
+          "choices": [
+            "Solve it alone",
+            "Report the incident immediately",
+            "Ignore the notice",
+            "Leave supplies in open areas"
+          ],
+          "answer": 1,
+          "explain": "應立即回報，而非自行處理。"
+        },
+        {
+          "q": "When is an exception to the new rules allowed?",
+          "choices": [
+            "Whenever employees feel busy",
+            "Only with written approval from a senior manager",
+            "If visitors ask politely",
+            "During lunch only"
+          ],
+          "answer": 1,
+          "explain": "除非資深主管書面核准，否則沒有例外。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "主謂一致",
+      "tip": "主詞是 each / every / the company 時動詞用單數；複數 staff members 才用複數動詞。",
+      "questions": [
+        {
+          "q": "All staff members _____ wear proper business attire while on duty.",
+          "choices": [
+            "must",
+            "musts",
+            "is must",
+            "are must"
+          ],
+          "answer": 0,
+          "explain": "情態動詞 must 後接原形，主詞複數不影響 must 形式。"
+        },
+        {
+          "q": "The legal department _____ a revised office policy last week.",
+          "choices": [
+            "issue",
+            "issues",
+            "issued",
+            "issuing"
+          ],
+          "answer": 2,
+          "explain": "過去時間 last week → 過去式 issued。"
+        },
+        {
+          "q": "There _____ no exception unless written approval is given.",
+          "choices": [
+            "is",
+            "are",
+            "be",
+            "were"
+          ],
+          "answer": 0,
+          "explain": "主詞 exception 為單數 → is。"
+        },
+        {
+          "q": "Employees who enter restricted areas without permission _____ subject to review.",
+          "choices": [
+            "is",
+            "are",
+            "be",
+            "was"
+          ],
+          "answer": 1,
+          "explain": "主詞 Employees（複數）→ are。"
+        },
+        {
+          "q": "A recent inspection _____ that supplies were left in open areas.",
+          "choices": [
+            "show",
+            "shows",
+            "showed",
+            "showing"
+          ],
+          "answer": 2,
+          "explain": "敘述已發生的檢查結果 → showed。"
+        }
+      ]
+    }
   },
   {
     "day": 3,
@@ -401,7 +629,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "文中指出能 concentrate under pressure 者可能進入更高職位。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 1",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽行政日常：注意 Mina 的任務、截止時間，以及工作坊教了哪些歸檔步驟。",
+      "externalDrill": "今日外練 Part 1：選辦公室場景照片題 10 題，練習描述「坐在電腦前、修理印表機、整理文件」等動作。",
+      "shadowTip": "跟讀 Mina 段落：注意 placed / fixed / prepared 過去式字尾 /t/ /d/ 的輕讀。",
+      "questions": [
+        {
+          "q": "When does the administrative division begin its routine?",
+          "choices": [
+            "After lunch",
+            "Before rush hour",
+            "At midnight only",
+            "On weekends only"
+          ],
+          "answer": 1,
+          "explain": "行政部門在尖峰時段前開始日常工作。"
+        },
+        {
+          "q": "What was Mina asked to do?",
+          "choices": [
+            "Edit product information and submit it to the marketing manager",
+            "Cancel the workshop",
+            "Interview new staff",
+            "Design a new logo"
+          ],
+          "answer": 0,
+          "explain": "Mina 需編輯產品資訊並提交給行銷經理。"
+        },
+        {
+          "q": "Why did the supervisor hold a short workshop?",
+          "choices": [
+            "To raise salaries",
+            "To acquaint new staff with internal filing methods",
+            "To close the office",
+            "To sell printers"
+          ],
+          "answer": 1,
+          "explain": "因為新進員工，要熟悉內部歸檔方法。"
+        },
+        {
+          "q": "When was Mina's electronic file due?",
+          "choices": [
+            "Before the noon deadline",
+            "After midnight",
+            "Next month",
+            "Only on Friday"
+          ],
+          "answer": 0,
+          "explain": "需在中午前以電子方式送出。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "介系詞",
+      "tip": "submit to（提交給某人）、on the tabletop、before the deadline、under pressure 是行政情境高頻搭配。",
+      "questions": [
+        {
+          "q": "Mina submitted the file _____ the marketing manager before noon.",
+          "choices": [
+            "to",
+            "for",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "submit A to B = 把 A 交給 B。"
+        },
+        {
+          "q": "She placed her laptop _____ the tabletop.",
+          "choices": [
+            "on",
+            "in",
+            "at",
+            "between"
+          ],
+          "answer": 0,
+          "explain": "放在桌面上用 on。"
+        },
+        {
+          "q": "Employees learned how to store reports _____ the proper file system.",
+          "choices": [
+            "in",
+            "on",
+            "at",
+            "with"
+          ],
+          "answer": 0,
+          "explain": "store … in a system/file。"
+        },
+        {
+          "q": "Those who can concentrate _____ pressure may move into advanced positions.",
+          "choices": [
+            "under",
+            "over",
+            "above",
+            "among"
+          ],
+          "answer": 0,
+          "explain": "under pressure 為固定搭配。"
+        },
+        {
+          "q": "The supervisor held a workshop to acquaint everyone _____ filing methods.",
+          "choices": [
+            "with",
+            "to",
+            "for",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "acquaint A with B。"
+        }
+      ]
+    }
   },
   {
     "day": 4,
@@ -534,7 +876,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "即使簡單動作，仔細一致執行也能 foster trust。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 2",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽設備與責任文章：抓新進員工的任務清單、影印問題，以及接待客戶時的動作。",
+      "externalDrill": "今日外練 Part 2：練習「Who / Where / What should I do?」類問句 20 題，對照辦公室指示與責任用語。",
+      "shadowTip": "跟讀 accountable / confidential / skillfully，把重音放在倒數第二或第三音節上。",
+      "questions": [
+        {
+          "q": "What did the new employee need to do before starting tasks?",
+          "choices": [
+            "Log on to the company server and check uploaded files",
+            "Leave the office early",
+            "Cancel the store opening",
+            "Ignore the directory"
+          ],
+          "answer": 0,
+          "explain": "須先登入伺服器並確認最新檔案。"
+        },
+        {
+          "q": "Why did he make a duplicate page?",
+          "choices": [
+            "Because one page was missing",
+            "Because the client refused",
+            "Because the server crashed permanently",
+            "Because the bookshelf was full"
+          ],
+          "answer": 0,
+          "explain": "少了一頁所以影印複本。"
+        },
+        {
+          "q": "Where were the materials later arranged?",
+          "choices": [
+            "On a bookshelf next to the reception desk",
+            "In the parking lot",
+            "In the cafeteria kitchen",
+            "On the roof"
+          ],
+          "answer": 0,
+          "explain": "資料後來放在接待櫃台旁書架。"
+        },
+        {
+          "q": "What did the employee check when a client arrived?",
+          "choices": [
+            "Her visitor code on the keypad",
+            "Her vacation schedule",
+            "Her salary records",
+            "Her shopping list"
+          ],
+          "answer": 0,
+          "explain": "用鍵盤確認訪客代碼。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "連接詞",
+      "tip": "because / especially when / and / before 用來連接原因、時間與並列責任，避免只用逗號硬接。",
+      "questions": [
+        {
+          "q": "He made a duplicate _____ one page was missing.",
+          "choices": [
+            "because",
+            "although",
+            "unless",
+            "despite"
+          ],
+          "answer": 0,
+          "explain": "表示原因用 because。"
+        },
+        {
+          "q": "Employees should never procrastinate, _____ when handling confidential information.",
+          "choices": [
+            "especially",
+            "despite",
+            "unless",
+            "neither"
+          ],
+          "answer": 0,
+          "explain": "especially when = 尤其當……時。"
+        },
+        {
+          "q": "_____ starting the task, he logged on to the server.",
+          "choices": [
+            "Before",
+            "During",
+            "While",
+            "Afterward"
+          ],
+          "answer": 0,
+          "explain": "在開始任務之前 → Before。"
+        },
+        {
+          "q": "He greeted the client _____ checked her visitor code.",
+          "choices": [
+            "and",
+            "but",
+            "or",
+            "nor"
+          ],
+          "answer": 0,
+          "explain": "兩個連續動作用 and 連接。"
+        },
+        {
+          "q": "Every small assignment contributes to the larger operation, _____ it seems simple.",
+          "choices": [
+            "even if",
+            "so that",
+            "in case",
+            "as if"
+          ],
+          "answer": 0,
+          "explain": "even if = 即使看起來簡單。"
+        }
+      ]
+    }
   },
   {
     "day": 5,
@@ -667,7 +1123,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "公司必須 face changes directly 並 speak with confidence。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 1",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽商務溝通文章：先抓旅行者攜帶物品與報告截止，再聽文件備份與會議溝通重點。",
+      "externalDrill": "今日外練 Part 1：挑「手提箱、櫃台、檔案櫃、列印」相關照片題，練習物件與人物位置描述。",
+      "shadowTip": "跟讀 compile / promptly / permanently，對齊母音長度，避免把 -ly 副詞唸得過重。",
+      "questions": [
+        {
+          "q": "What did the business traveler bring?",
+          "choices": [
+            "A briefcase, a timetable, and several folders",
+            "Only a camera",
+            "Sports equipment",
+            "Kitchen tools"
+          ],
+          "answer": 0,
+          "explain": "攜帶公事包、時間表與多個資料夾。"
+        },
+        {
+          "q": "Why did the staff compile data promptly?",
+          "choices": [
+            "Because the report was due soon",
+            "Because the office closed forever",
+            "Because printing was banned",
+            "Because no meeting was planned"
+          ],
+          "answer": 0,
+          "explain": "報告即將到期。"
+        },
+        {
+          "q": "What must be done before the next forum?",
+          "choices": [
+            "The material must be revised",
+            "The company must fire the team",
+            "All emails must be deleted",
+            "The briefcase must be sold"
+          ],
+          "answer": 0,
+          "explain": "經理要求下次論壇前修訂資料。"
+        },
+        {
+          "q": "Why was a replacement set of documents prepared?",
+          "choices": [
+            "In case anything was concealed or misplaced",
+            "To decorate the lobby",
+            "For a music concert",
+            "For tax-free shopping"
+          ],
+          "answer": 0,
+          "explain": "預防文件被藏匿或放錯。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "時態",
+      "tip": "敘述已抵達／已檢查用過去式；公司計畫與規定可用過去 said + would/must 表轉述。",
+      "questions": [
+        {
+          "q": "A business traveler _____ at the office with a briefcase yesterday.",
+          "choices": [
+            "arrive",
+            "arrived",
+            "arrives",
+            "arriving"
+          ],
+          "answer": 1,
+          "explain": "yesterday 線索 → 過去式 arrived。"
+        },
+        {
+          "q": "The manager said the material _____ be revised before the next forum.",
+          "choices": [
+            "must",
+            "musts",
+            "musting",
+            "to must"
+          ],
+          "answer": 0,
+          "explain": "轉述義務仍用 must + 原形。"
+        },
+        {
+          "q": "While one assistant _____ the printing, another organized the cabinet.",
+          "choices": [
+            "handled",
+            "handle",
+            "handles",
+            "handling"
+          ],
+          "answer": 0,
+          "explain": "過去進行中的分工，文中用過去式並列 handled。"
+        },
+        {
+          "q": "The company planned to implement a new system _____.",
+          "choices": [
+            "permanently",
+            "permanent",
+            "permanence",
+            "permanency"
+          ],
+          "answer": 0,
+          "explain": "修飾動詞 implement 用副詞 permanently。"
+        },
+        {
+          "q": "By the meeting time, the team _____ the data promptly.",
+          "choices": [
+            "had compiled",
+            "compile",
+            "compiles",
+            "compiling"
+          ],
+          "answer": 0,
+          "explain": "強調會議前已完成可用過去完成 had compiled。"
+        }
+      ]
+    }
   },
   {
     "day": 6,
@@ -800,7 +1370,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "許多人說不僅 entertaining，也是 meaningful cultural contribution。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 2",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽藝文活動：記下展覽地點、名人作者行程、門票含什麼，以及義賣收益用途。",
+      "externalDrill": "今日外練 Part 2：練習活動邀請與時間地點問答（When / Where / Who will…），各做 15 題。",
+      "shadowTip": "跟讀 exhibition / manuscript / donation，注意 /ʃ/ 與重音落在第二音節。",
+      "questions": [
+        {
+          "q": "What did the local gallery announce?",
+          "choices": [
+            "A weekend exhibition",
+            "A factory shutdown",
+            "A bank merger",
+            "A flight delay"
+          ],
+          "answer": 0,
+          "explain": "藝廊宣布週末展覽。"
+        },
+        {
+          "q": "Where did the celebrity author give a short presentation?",
+          "choices": [
+            "In the theater",
+            "At the airport",
+            "In a factory",
+            "On a highway"
+          ],
+          "answer": 0,
+          "explain": "下午在劇場做簡短演講。"
+        },
+        {
+          "q": "What would book-sale proceeds support?",
+          "choices": [
+            "A donation program for the public library",
+            "A private yacht",
+            "A parking fine",
+            "A chemical plant"
+          ],
+          "answer": 0,
+          "explain": "收益支持公共圖書館捐贈計畫。"
+        },
+        {
+          "q": "What did each banquet ticket include?",
+          "choices": [
+            "A small collection of antique items on display",
+            "A free car",
+            "Unlimited flights",
+            "A hospital checkup"
+          ],
+          "answer": 0,
+          "explain": "門票含展示的小型古董收藏。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "詞性／主謂一致",
+      "tip": "admission / admission was required；many alumni planned（複數）；the show was carefully planned（被動語意＋形容詞）。",
+      "questions": [
+        {
+          "q": "Many alumni from the museum _____ to attend with their families.",
+          "choices": [
+            "plan",
+            "plans",
+            "planned",
+            "planning"
+          ],
+          "answer": 2,
+          "explain": "敘述過去計畫 → planned；alumni 複數但不影響過去式形態。"
+        },
+        {
+          "q": "The organizer said that _____ was required for the banquet.",
+          "choices": [
+            "admit",
+            "admission",
+            "admissive",
+            "admittedly"
+          ],
+          "answer": 1,
+          "explain": "主詞位置需要名詞 admission。"
+        },
+        {
+          "q": "Proceeds from the sale would support a _____ program.",
+          "choices": [
+            "donate",
+            "donation",
+            "donated",
+            "donating"
+          ],
+          "answer": 1,
+          "explain": "名詞 donation program。"
+        },
+        {
+          "q": "The event was designed to be informative and _____ to the community.",
+          "choices": [
+            "benefit",
+            "beneficial",
+            "beneficially",
+            "benefited"
+          ],
+          "answer": 1,
+          "explain": "be + 形容詞 beneficial。"
+        },
+        {
+          "q": "The current issue of the journal _____ available nearby.",
+          "choices": [
+            "was",
+            "were",
+            "are",
+            "be"
+          ],
+          "answer": 0,
+          "explain": "issue 單數 → was。"
+        }
+      ]
+    }
   },
   {
     "day": 7,
@@ -933,7 +1617,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "他要求 focus on practical changes、examine behavior 並 cooperate。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 完整聽市場調查文章兩遍：第一遍抓調查結論，第二遍記下策略（promotion、comparison charts、stores）。本日為聽力綜合日。",
+      "externalDrill": "今日 LC Mixed：Part 1 五題＋Part 2 十題，限時 25 分鐘；錯題只複習「訊號詞」不盯原文翻譯。",
+      "shadowTip": "跟讀 competitively / aggressively / positively 等 -ly 副詞，保持句尾語調自然落下。",
+      "questions": [
+        {
+          "q": "What did the public relations department conduct?",
+          "choices": [
+            "A survey on seasonal campaigns",
+            "A cooking class",
+            "A medical exam",
+            "A flight training"
+          ],
+          "answer": 0,
+          "explain": "公關部進行季節性活動調查。"
+        },
+        {
+          "q": "What did many buyers prefer?",
+          "choices": [
+            "Clear demonstrations rather than informal advertising",
+            "No product information",
+            "Only handwritten ads",
+            "Silent stores"
+          ],
+          "answer": 0,
+          "explain": "買家偏好清楚示範而非非正式廣告。"
+        },
+        {
+          "q": "What would the brand reserve resources for?",
+          "choices": [
+            "Online comparison charts",
+            "Closing all stores",
+            "Deleting surveys",
+            "Canceling promotions"
+          ],
+          "answer": 0,
+          "explain": "額外資源留給線上比較表。"
+        },
+        {
+          "q": "What did the analyst say about the performance gap?",
+          "choices": [
+            "It had narrowed",
+            "It had disappeared forever",
+            "It had doubled overnight",
+            "It was never measured"
+          ],
+          "answer": 0,
+          "explain": "現況與理想目標的差距已縮小。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "介系詞／時態",
+      "tip": "respond to campaigns；based on analysis；is expected to rise — 調查報告常用現在完成／被動預期。",
+      "questions": [
+        {
+          "q": "The survey analyzed how customers respond _____ seasonal campaigns.",
+          "choices": [
+            "to",
+            "for",
+            "at",
+            "with"
+          ],
+          "answer": 0,
+          "explain": "respond to = 對……做出反應。"
+        },
+        {
+          "q": "_____ the analysis, the company expanded its marketplace strategy.",
+          "choices": [
+            "Based on",
+            "Based in",
+            "Based at",
+            "Based for"
+          ],
+          "answer": 0,
+          "explain": "Based on = 根據。"
+        },
+        {
+          "q": "Demand for the product is expected _____ continue rising.",
+          "choices": [
+            "to",
+            "for",
+            "at",
+            "in"
+          ],
+          "answer": 0,
+          "explain": "be expected to + V。"
+        },
+        {
+          "q": "The plan was not postponed _____ management believed it would help sales.",
+          "choices": [
+            "because",
+            "despite",
+            "unless",
+            "although"
+          ],
+          "answer": 0,
+          "explain": "原因用 because。"
+        },
+        {
+          "q": "The impact of the new strategy _____ already visible in several stores.",
+          "choices": [
+            "was",
+            "were",
+            "are",
+            "be"
+          ],
+          "answer": 0,
+          "explain": "impact 單數 → was。"
+        }
+      ]
+    }
   },
   {
     "day": 8,
@@ -1066,7 +1864,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "best results come from steady effort, clear goals, and strong incentive。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 3",
+      "minutes": 40,
+      "warmUp": "用 TTS 把文章當 Part 3 對話素材：聽書店活動目的、行銷策略與品牌形象提醒。",
+      "externalDrill": "今日外練 Part 3：做 3 組對話（9 題），先看題幹再聽；練習抓 Who / Why / What will happen next。",
+      "shadowTip": "跟讀 brand image / consumer preferences / incentive，模擬對話中第二人附和的語調。",
+      "questions": [
+        {
+          "q": "Where was the best-selling author invited to meet consumers?",
+          "choices": [
+            "At a downtown shop",
+            "At a hospital",
+            "At a factory gate",
+            "At a police station"
+          ],
+          "answer": 0,
+          "explain": "在市中心書店與消費者見面。"
+        },
+        {
+          "q": "What did staff observe in the small experiment?",
+          "choices": [
+            "How customers reacted to displays, samples, and a sales target",
+            "How to close the shop forever",
+            "How to cancel subscriptions",
+            "How to fire photographers"
+          ],
+          "answer": 0,
+          "explain": "觀察顧客對陳列、樣品與銷售目標的反應。"
+        },
+        {
+          "q": "What must the company not disregard?",
+          "choices": [
+            "The importance of brand image",
+            "The need to delete ads",
+            "Parking tickets",
+            "Weather forecasts only"
+          ],
+          "answer": 0,
+          "explain": "分析師提醒不可忽視品牌形象。"
+        },
+        {
+          "q": "According to the team, what produces the best results?",
+          "choices": [
+            "Steady effort, clear goals, and a strong incentive",
+            "Ignoring customers",
+            "Removing all displays",
+            "Stopping early subscriptions"
+          ],
+          "answer": 0,
+          "explain": "文末強調持續努力、清楚目標與誘因。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "被動語態",
+      "tip": "活動與廣告常用 be launched / be invited / be made；主詞是活動或訊息時優先想被動。",
+      "questions": [
+        {
+          "q": "A celebration campaign _____ by the bookstore last weekend.",
+          "choices": [
+            "was launched",
+            "launched",
+            "was launching",
+            "has launch"
+          ],
+          "answer": 0,
+          "explain": "campaign 是被推出 → was launched。"
+        },
+        {
+          "q": "A best-selling author _____ to meet consumers downtown.",
+          "choices": [
+            "was invited",
+            "invited",
+            "was inviting",
+            "invite"
+          ],
+          "answer": 0,
+          "explain": "作者被邀請 → was invited。"
+        },
+        {
+          "q": "Every effort should _____ to resolve customer doubts.",
+          "choices": [
+            "be made",
+            "make",
+            "made",
+            "making"
+          ],
+          "answer": 0,
+          "explain": "effort should be made。"
+        },
+        {
+          "q": "If preferences _____ accurately, the campaign will have more impact.",
+          "choices": [
+            "are detected",
+            "detect",
+            "are detecting",
+            "detected"
+          ],
+          "answer": 0,
+          "explain": "preferences 被偵測 → are detected。"
+        },
+        {
+          "q": "The display was obviously _____ to many visitors.",
+          "choices": [
+            "appealing",
+            "appealed",
+            "appeal",
+            "appeals"
+          ],
+          "answer": 0,
+          "explain": "be + 形容詞 appealing。"
+        }
+      ]
+    }
   },
   {
     "day": 9,
@@ -1204,7 +2116,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "承諾 boost productivity、remain efficient 並關注 prospect。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 4",
+      "minutes": 40,
+      "warmUp": "用 TTS 把文章當 Part 4 簡報：聽 CEO 宣布、分析師數據，以及合併與風險警告。",
+      "externalDrill": "今日外練 Part 4：做 3 篇短講（9 題），練習財經簡報中的 trend / merge / warning 關鍵句。",
+      "shadowTip": "跟讀 optimistic / substantial / stagnant，用演講腔把重點字略微拉長。",
+      "questions": [
+        {
+          "q": "Why would business hours be adjusted?",
+          "choices": [
+            "To speed up trading and improve service",
+            "To close the factory permanently",
+            "To cancel all reports",
+            "To stop hiring"
+          ],
+          "answer": 0,
+          "explain": "為了加速交易並改善服務。"
+        },
+        {
+          "q": "What did the analyst say about the industry?",
+          "choices": [
+            "It was still healthy despite unstable months",
+            "It had completely collapsed",
+            "It banned all mergers",
+            "It stopped reviewing figures"
+          ],
+          "answer": 0,
+          "explain": "產業仍健康，儘管有不穩月份。"
+        },
+        {
+          "q": "What did the company decide to do?",
+          "choices": [
+            "Merge with a private partner",
+            "Remain alone forever",
+            "Sell only to competitors",
+            "Ignore all indicators"
+          ],
+          "answer": 0,
+          "explain": "決定與私人夥伴合併。"
+        },
+        {
+          "q": "What risk did the director warn about?",
+          "choices": [
+            "Prosperity could wane if long-term consequences were ignored",
+            "Prices would never change",
+            "Boom was guaranteed forever",
+            "Reports were unnecessary"
+          ],
+          "answer": 0,
+          "explain": "若忽略長期後果，繁榮可能衰退。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "不定詞／動名詞",
+      "tip": "decide to merge；aimed at improving；keep a close eye on — 記住 to V 與 V-ing 搭配差異。",
+      "questions": [
+        {
+          "q": "The company decided _____ with a private partner.",
+          "choices": [
+            "to merge",
+            "merging",
+            "merge",
+            "merged"
+          ],
+          "answer": 0,
+          "explain": "decide to + V。"
+        },
+        {
+          "q": "Management believed the contribution to future growth would be _____.",
+          "choices": [
+            "substantial",
+            "substantially",
+            "substance",
+            "substantiate"
+          ],
+          "answer": 0,
+          "explain": "be + 形容詞 substantial。"
+        },
+        {
+          "q": "The director warned that prosperity could wane if the team ignored _____ consequences.",
+          "choices": [
+            "long-term",
+            "long-termed",
+            "longer",
+            "longest"
+          ],
+          "answer": 0,
+          "explain": "複合形容詞 long-term 修飾 consequences。"
+        },
+        {
+          "q": "The firm promised _____ productivity over the coming period.",
+          "choices": [
+            "to boost",
+            "boosting",
+            "boost",
+            "boosted"
+          ],
+          "answer": 0,
+          "explain": "promise to + V。"
+        },
+        {
+          "q": "Some branches remained limited by _____ operations.",
+          "choices": [
+            "costly",
+            "cost",
+            "costs",
+            "costing"
+          ],
+          "answer": 0,
+          "explain": "形容詞 costly 修飾 operations。"
+        }
+      ]
+    }
   },
   {
     "day": 10,
@@ -1337,7 +2363,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "kept shelves tidy、displays attractive，且體驗 convenient。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 3",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽零售情境：商品種類、免稅促銷、分期與保固說明。把內容想像成店員與顧客對話。",
+      "externalDrill": "今日外練 Part 3：選購物／退換貨對話 3 組，練習 price / warranty / installment 聽取。",
+      "shadowTip": "跟讀 installments / redeemable / authentic，注意多音節字的次重音。",
+      "questions": [
+        {
+          "q": "What was the store offering for a limited time?",
+          "choices": [
+            "A tax-free promotion",
+            "Free houses",
+            "Unlimited flights",
+            "Medical surgery"
+          ],
+          "answer": 0,
+          "explain": "限時免稅促銷。"
+        },
+        {
+          "q": "What did the sales assistant explain carefully?",
+          "choices": [
+            "Price, warranty, and receipt process",
+            "Only the weather",
+            "Only flight times",
+            "Only office policy"
+          ],
+          "answer": 0,
+          "explain": "說明價格、保固與收據流程。"
+        },
+        {
+          "q": "Why did the customer purchase in installments?",
+          "choices": [
+            "Because the charge was more acceptable that way",
+            "Because cash was required only",
+            "Because the store refused cards",
+            "Because items were free"
+          ],
+          "answer": 0,
+          "explain": "分期讓費用較可接受。"
+        },
+        {
+          "q": "What else did regular subscribers receive?",
+          "choices": [
+            "Clearance discounts and redeemable benefits",
+            "A factory tour only",
+            "A passport",
+            "A merger contract"
+          ],
+          "answer": 0,
+          "explain": "還有清倉折扣與可兌換福利。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "關係代名詞",
+      "tip": "that / which 修飾商品或促銷；who 修飾顧客。先找先行詞再選關係詞。",
+      "questions": [
+        {
+          "q": "She looked for a necklace _____ would fit her new costume.",
+          "choices": [
+            "that",
+            "who",
+            "whose",
+            "where"
+          ],
+          "answer": 0,
+          "explain": "先行詞 necklace（物）→ that/which。"
+        },
+        {
+          "q": "The cashier reminded customers _____ items were marked clearly.",
+          "choices": [
+            "that",
+            "what",
+            "which",
+            "whom"
+          ],
+          "answer": 0,
+          "explain": "remind + that 子句。"
+        },
+        {
+          "q": "The vendor could provide a product _____ on the shopper's preference.",
+          "choices": [
+            "depending",
+            "depend",
+            "depends",
+            "dependent"
+          ],
+          "answer": 0,
+          "explain": "depending on = 取決於。"
+        },
+        {
+          "q": "Another shopper _____ was checking labels made a careful choice.",
+          "choices": [
+            "who",
+            "which",
+            "where",
+            "what"
+          ],
+          "answer": 0,
+          "explain": "修飾人 shopper → who。"
+        },
+        {
+          "q": "The store kept shelves tidy for every visitor _____ came before closing.",
+          "choices": [
+            "who",
+            "which",
+            "what",
+            "where"
+          ],
+          "answer": 0,
+          "explain": "visitor 是人 → who。"
+        }
+      ]
+    }
   },
   {
     "day": 11,
@@ -1470,7 +2610,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "investors expressed interest；公司計畫 follow-up meeting。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 4",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽產品發表會：新裝置特點、專利、市場與投資人興趣，當成 Part 4 技術簡報。",
+      "externalDrill": "今日外練 Part 4：選產品發表／研發報告 3 篇，練習 feature / patent / distribution 關鍵資訊。",
+      "shadowTip": "跟讀 revolutionary / innovative / compatible，把科技詞拆音節慢練再加速。",
+      "questions": [
+        {
+          "q": "What was the new device designed to improve?",
+          "choices": [
+            "The quality of home appliances",
+            "Airport security only",
+            "Restaurant menus",
+            "Bank interest rates"
+          ],
+          "answer": 0,
+          "explain": "改善家電品質。"
+        },
+        {
+          "q": "Where was the invention handmade and tested?",
+          "choices": [
+            "In the laboratory",
+            "In a bakery",
+            "On a beach",
+            "In a theater"
+          ],
+          "answer": 0,
+          "explain": "在實驗室手工製作並反覆測試。"
+        },
+        {
+          "q": "What did the new product feature?",
+          "choices": [
+            "A revolutionary sensor and an innovative control system",
+            "Only a wooden crate",
+            "A banquet ticket",
+            "A customs form"
+          ],
+          "answer": 0,
+          "explain": "革命性感測器與創新控制系統。"
+        },
+        {
+          "q": "What did several investors express by the end?",
+          "choices": [
+            "Interest in the project",
+            "Anger about lunch",
+            "Plans to ban patents",
+            "Refusal to meet again"
+          ],
+          "answer": 0,
+          "explain": "多位投資人表示興趣。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "條件句",
+      "tip": "If feedback is positive, we will upgrade…；科技文常用 If + 現在，will + 原形表真實條件。",
+      "questions": [
+        {
+          "q": "If the device _____ repeatedly, breakdowns can be avoided.",
+          "choices": [
+            "is tested",
+            "tested",
+            "testing",
+            "tests"
+          ],
+          "answer": 0,
+          "explain": "真實條件被動：is tested。"
+        },
+        {
+          "q": "The team will extend the patent if funding _____.",
+          "choices": [
+            "increases",
+            "increase",
+            "increased",
+            "increasing"
+          ],
+          "answer": 0,
+          "explain": "if + 現在簡單式。"
+        },
+        {
+          "q": "The product will be available for distribution once testing _____ successful.",
+          "choices": [
+            "is",
+            "are",
+            "be",
+            "were"
+          ],
+          "answer": 0,
+          "explain": "testing 當不可數／單數概念 → is。"
+        },
+        {
+          "q": "Customers will buy more units if the design _____ reliable.",
+          "choices": [
+            "remains",
+            "remain",
+            "remaining",
+            "remained"
+          ],
+          "answer": 0,
+          "explain": "if 子句第三人稱單數 remains。"
+        },
+        {
+          "q": "If investors _____ interest, a follow-up meeting will be held.",
+          "choices": [
+            "express",
+            "expresses",
+            "expressing",
+            "expressed"
+          ],
+          "answer": 0,
+          "explain": "複數 investors → express。"
+        }
+      ]
+    }
   },
   {
     "day": 12,
@@ -1603,7 +2857,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "success depended on careful planning and strong cooperation。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 3",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽工廠改建：自動化原因、安全規範、化學外洩與產能目標，想像成廠長與工程師對話。",
+      "externalDrill": "今日外練 Part 3：工廠／維修對話 3 組，抓 shortage / safety / productivity。",
+      "shadowTip": "跟讀 automate / specifications / economize，注意美式重音位置。",
+      "questions": [
+        {
+          "q": "Why did the manufacturer plan to renovate and automate?",
+          "choices": [
+            "Because of a shortage of raw materials and the need for efficiency",
+            "To open a restaurant",
+            "To cancel all orders",
+            "To stop safety training"
+          ],
+          "answer": 0,
+          "explain": "原料短缺與效率需求。"
+        },
+        {
+          "q": "What were workers trained to do?",
+          "choices": [
+            "Operate devices, assemble parts, and fill orders quickly",
+            "Ignore specifications",
+            "Close the plant permanently",
+            "Delete inventory only"
+          ],
+          "answer": 0,
+          "explain": "操作設備、組裝零件並快速完成訂單。"
+        },
+        {
+          "q": "What problem did the supervisor note during inspection?",
+          "choices": [
+            "The plant had been damaged by a chemical leak",
+            "The plant had too many tourists",
+            "All tools were brand new",
+            "No schedule existed"
+          ],
+          "answer": 0,
+          "explain": "化學外洩造成損害。"
+        },
+        {
+          "q": "What did the company aim to economize on?",
+          "choices": [
+            "Power, while also reducing waste",
+            "Only employee names",
+            "Banquet tickets",
+            "Flight routes"
+          ],
+          "answer": 0,
+          "explain": "節省電力並減少浪費。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "Part 6 文意",
+      "tip": "工廠文常見因果與目的：attributed to、in order to、so that；選詞時先看前後句邏輯。",
+      "questions": [
+        {
+          "q": "The decision was attributed _____ a shortage of raw materials.",
+          "choices": [
+            "to",
+            "for",
+            "with",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "be attributed to = 歸因於。"
+        },
+        {
+          "q": "Workers were trained to operate the devices _____.",
+          "choices": [
+            "properly",
+            "proper",
+            "property",
+            "propose"
+          ],
+          "answer": 0,
+          "explain": "修飾動詞用副詞 properly。"
+        },
+        {
+          "q": "Safety precautions were essential _____ every process could follow specifications.",
+          "choices": [
+            "so that",
+            "despite",
+            "because of",
+            "unless"
+          ],
+          "answer": 0,
+          "explain": "so that = 以便／使……能夠。"
+        },
+        {
+          "q": "The modification would _____ productivity across the lines.",
+          "choices": [
+            "increase",
+            "increasing",
+            "increased",
+            "increases"
+          ],
+          "answer": 0,
+          "explain": "would + 原形 increase。"
+        },
+        {
+          "q": "The director believed success _____ on careful planning.",
+          "choices": [
+            "depended",
+            "depend",
+            "depending",
+            "depends"
+          ],
+          "answer": 0,
+          "explain": "過去敘述 depended on。"
+        }
+      ]
+    }
   },
   {
     "day": 13,
@@ -1736,7 +3104,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "several cases solved successfully；commitment made a difference。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 4",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽客服處理流程：抱怨內容、更換／退款承諾、主管對禮貌與透明度的要求。",
+      "externalDrill": "今日外練 Part 4：客服廣播或訓練短講 3 篇，練習 complaint / replace / guarantee。",
+      "shadowTip": "跟讀 courteously / inconvenience / satisfaction，把客服禮貌語調練得穩、清楚。",
+      "questions": [
+        {
+          "q": "What were the complaints about?",
+          "choices": [
+            "A defective product that was incomplete with a damaged logo",
+            "A missing passport",
+            "A delayed merger",
+            "A hotel banquet"
+          ],
+          "answer": 0,
+          "explain": "產品有瑕疵、不完整且標誌受損。"
+        },
+        {
+          "q": "How did the agent respond?",
+          "choices": [
+            "Courteously, promising to handle the deal appropriately",
+            "By ending the call immediately",
+            "By refusing any help",
+            "By raising the price"
+          ],
+          "answer": 0,
+          "explain": "有禮貌並承諾妥善處理。"
+        },
+        {
+          "q": "What could the company do if necessary?",
+          "choices": [
+            "Replace the product and return the payment",
+            "Ban the customer",
+            "Delete the logo only",
+            "Ignore the evaluation"
+          ],
+          "answer": 0,
+          "explain": "必要時更換並退款。"
+        },
+        {
+          "q": "What did the supervisor say satisfaction depended on?",
+          "choices": [
+            "Clear communication",
+            "Longer hold music",
+            "Higher prices only",
+            "Fewer notifications"
+          ],
+          "answer": 0,
+          "explain": "滿意度取決於清楚溝通。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "被動／不定詞",
+      "tip": "complaints were received；promised to handle；invited to visit — 客服用被動＋不定詞很頻繁。",
+      "questions": [
+        {
+          "q": "A couple of complaints _____ about a defective product.",
+          "choices": [
+            "were received",
+            "received",
+            "was received",
+            "receiving"
+          ],
+          "answer": 0,
+          "explain": "complaints 複數被收到 → were received。"
+        },
+        {
+          "q": "The agent promised _____ the issue appropriately.",
+          "choices": [
+            "to handle",
+            "handling",
+            "handle",
+            "handled"
+          ],
+          "answer": 0,
+          "explain": "promise to + V。"
+        },
+        {
+          "q": "The customer was invited _____ the site to confirm details.",
+          "choices": [
+            "to visit",
+            "visiting",
+            "visit",
+            "visited"
+          ],
+          "answer": 0,
+          "explain": "be invited to + V。"
+        },
+        {
+          "q": "The evaluation of the complaint would be completed _____.",
+          "choices": [
+            "promptly",
+            "prompt",
+            "promptness",
+            "prompts"
+          ],
+          "answer": 0,
+          "explain": "修飾 completed 用副詞 promptly。"
+        },
+        {
+          "q": "Several cases had been _____ successfully by the end of the shift.",
+          "choices": [
+            "solved",
+            "solve",
+            "solving",
+            "solves"
+          ],
+          "answer": 0,
+          "explain": "過去完成被動 had been solved。"
+        }
+      ]
+    }
   },
   {
     "day": 14,
@@ -1869,7 +3351,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "dramatic scenery and diverse culture were worth the long flight。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 完整聽旅遊航空文章兩遍：海關、商務艙、行李遺失與後續旅遊。本日為聽力綜合複習日。",
+      "externalDrill": "今日 LC Mixed：Part 2 十題＋Part 3 一組＋Part 4 一篇，計時完成；錯題標註是「細節」還是「主旨」失誤。",
+      "shadowTip": "跟讀 itinerary / declare / proximity，模擬機場廣播速度再降回跟讀速度。",
+      "questions": [
+        {
+          "q": "What did the agent remind the traveler to do?",
+          "choices": [
+            "Fill out the customs form and declare dutiable items",
+            "Skip passport control",
+            "Leave the suitcase unattended",
+            "Cancel the itinerary"
+          ],
+          "answer": 0,
+          "explain": "填寫海關表並申報應稅物品。"
+        },
+        {
+          "q": "Which class did the passenger board?",
+          "choices": [
+            "Business class",
+            "Only cargo class",
+            "No seat assigned",
+            "Train first class only"
+          ],
+          "answer": 0,
+          "explain": "搭乘商務艙。"
+        },
+        {
+          "q": "What problem occurred upon arrival?",
+          "choices": [
+            "His baggage was missing",
+            "His passport was fake",
+            "The beach was closed forever",
+            "The hotel refused tourists"
+          ],
+          "answer": 0,
+          "explain": "抵達後發現行李遺失。"
+        },
+        {
+          "q": "Where did staff promise to ship the luggage?",
+          "choices": [
+            "To his hotel",
+            "To the factory",
+            "To a bookstore",
+            "To a bank branch"
+          ],
+          "answer": 0,
+          "explain": "答應盡快送到飯店。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "關係子句／條件句",
+      "tip": "items that might be subject to duty；if baggage is missing, contact the carrier — 旅遊文常混用關係子句與條件。",
+      "questions": [
+        {
+          "q": "Declare any items _____ might be subject to duty.",
+          "choices": [
+            "that",
+            "who",
+            "whom",
+            "whose"
+          ],
+          "answer": 0,
+          "explain": "修飾 items → that。"
+        },
+        {
+          "q": "If baggage _____ missing, contact the carrier promptly.",
+          "choices": [
+            "is",
+            "are",
+            "be",
+            "were"
+          ],
+          "answer": 0,
+          "explain": "baggage 不可數 → is。"
+        },
+        {
+          "q": "The staff promised _____ the luggage to the hotel.",
+          "choices": [
+            "to ship",
+            "shipping",
+            "ship",
+            "shipped"
+          ],
+          "answer": 0,
+          "explain": "promise to + V。"
+        },
+        {
+          "q": "He enjoyed a journey _____ was comfortable and superb.",
+          "choices": [
+            "that",
+            "who",
+            "where",
+            "what"
+          ],
+          "answer": 0,
+          "explain": "修飾 journey → that。"
+        },
+        {
+          "q": "The proximity to attractions made the trip _____ enjoyable.",
+          "choices": [
+            "even more",
+            "even most",
+            "more even",
+            "most even"
+          ],
+          "answer": 0,
+          "explain": "even more + 形容詞。"
+        }
+      ]
+    }
   },
   {
     "day": 15,
@@ -2002,7 +3598,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "director believed the alliance would strengthen their market position。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 3",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽合約談判：條款、反對、修訂報價、締約期限與最終和解，當成雙方會議對話。",
+      "externalDrill": "今日外練 Part 3：商務會議對話 3 組，重點聽 objection / revise / deadline / settlement。",
+      "shadowTip": "跟讀 stipulation / terminate / settlement，把法律商務詞唸清楚再加快。",
+      "questions": [
+        {
+          "q": "What did the proposal include regarding confidentiality?",
+          "choices": [
+            "A clear stipulation",
+            "No terms at all",
+            "Only a joke clause",
+            "A travel itinerary"
+          ],
+          "answer": 0,
+          "explain": "提案含明確的保密條款。"
+        },
+        {
+          "q": "What did one side threaten if conflict continued?",
+          "choices": [
+            "To terminate the agreement",
+            "To increase hospitality only",
+            "To donate books",
+            "To renovate a factory"
+          ],
+          "answer": 0,
+          "explain": "威脅終止協議。"
+        },
+        {
+          "q": "What was required before the deadline?",
+          "choices": [
+            "A signature",
+            "A picnic basket",
+            "A sensor patent",
+            "A boarding pass"
+          ],
+          "answer": 0,
+          "explain": "期限前需要簽名。"
+        },
+        {
+          "q": "What did the teams finally reach?",
+          "choices": [
+            "A settlement and agreement to renew the contract",
+            "A decision to never meet",
+            "A plan to ignore trust",
+            "A ban on alliances"
+          ],
+          "answer": 0,
+          "explain": "達成和解並同意續約。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "進階詞彙題",
+      "tip": "negotiate / settlement / stipulation / terminate 常作 Part 5 詞彙題；先看句子要「協議結果」還是「終止動作」。",
+      "questions": [
+        {
+          "q": "The two firms entered into a _____ to finalize the alliance.",
+          "choices": [
+            "negotiation",
+            "negotiate",
+            "negotiable",
+            "negotiator"
+          ],
+          "answer": 0,
+          "explain": "entered into a negotiation。"
+        },
+        {
+          "q": "One side threatened to _____ the agreement if talks failed.",
+          "choices": [
+            "terminate",
+            "termination",
+            "terminal",
+            "term"
+          ],
+          "answer": 0,
+          "explain": "threatened to + V → terminate。"
+        },
+        {
+          "q": "A clear _____ regarding confidentiality was included.",
+          "choices": [
+            "stipulation",
+            "stipulate",
+            "stipulated",
+            "stipulating"
+          ],
+          "answer": 0,
+          "explain": "需要名詞 stipulation。"
+        },
+        {
+          "q": "After hours of discussion, both parties reached a _____.",
+          "choices": [
+            "settlement",
+            "settle",
+            "settled",
+            "settling"
+          ],
+          "answer": 0,
+          "explain": "reach a settlement。"
+        },
+        {
+          "q": "They agreed to _____ the scope of the project.",
+          "choices": [
+            "narrow",
+            "narrowly",
+            "narrowness",
+            "narrowed"
+          ],
+          "answer": 0,
+          "explain": "agree to + V → narrow。"
+        }
+      ]
+    }
   },
   {
     "day": 16,
@@ -2135,7 +3845,121 @@ window.TOEIC_DAYS = [
         "answer": 0,
         "explain": "encompassed major regions；improve affordability and strengthen partnerships。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 4",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽出版供應鏈簡報：庫存確認、批量折扣、通路配送與寄售協議。",
+      "externalDrill": "今日外練 Part 4：物流／訂單短講 3 篇，練習 inventory / invoice / consignment。",
+      "shadowTip": "跟讀 distribution / consignment / affordability，維持簡報節奏的停頓。",
+      "questions": [
+        {
+          "q": "What did the client ask the supplier to confirm before finalizing the order?",
+          "choices": [
+            "The inventory, via a detailed checklist",
+            "The weather only",
+            "Employee vacations",
+            "Flight entertainment"
+          ],
+          "answer": 0,
+          "explain": "要求詳細清單並確認庫存。"
+        },
+        {
+          "q": "When would the invoice be sent?",
+          "choices": [
+            "Shortly",
+            "Never",
+            "After ten years",
+            "Only after the store closed"
+          ],
+          "answer": 0,
+          "explain": "發票即將寄出。"
+        },
+        {
+          "q": "What discount did the dealer offer?",
+          "choices": [
+            "A discount on bulk purchases",
+            "Free houses",
+            "Unlimited surgery",
+            "Tax-free flights only"
+          ],
+          "answer": 0,
+          "explain": "大批量採購折扣。"
+        },
+        {
+          "q": "What agreement would be finalized soon?",
+          "choices": [
+            "The consignment agreement",
+            "A sports contract",
+            "A medical leave form",
+            "A picnic permit"
+          ],
+          "answer": 0,
+          "explain": "寄售協議即將敲定。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "易混淆字",
+      "tip": "affect/effect、price/prize、assure/ensure、stock/stake — 供應鏈題常考形近義近字。",
+      "questions": [
+        {
+          "q": "The new trend would _____ the distribution of books.",
+          "choices": [
+            "affect",
+            "effect",
+            "affection",
+            "effective"
+          ],
+          "answer": 0,
+          "explain": "動詞「影響」用 affect。"
+        },
+        {
+          "q": "The manager said each selection's cost must be measured _____.",
+          "choices": [
+            "carefully",
+            "careful",
+            "care",
+            "caring"
+          ],
+          "answer": 0,
+          "explain": "副詞 carefully。"
+        },
+        {
+          "q": "The dealer offered a discount on _____ purchases.",
+          "choices": [
+            "bulk",
+            "bulky",
+            "bulletin",
+            "bulb"
+          ],
+          "answer": 0,
+          "explain": "bulk purchases = 大宗採購。"
+        },
+        {
+          "q": "They will _____ the clientele of satisfactory service.",
+          "choices": [
+            "assure",
+            "ensure",
+            "insure",
+            "secure"
+          ],
+          "answer": 0,
+          "explain": "assure someone of…；ensure 後直接接事。此處有 clientele → assure。"
+        },
+        {
+          "q": "The commodity was _____ at a competitive price.",
+          "choices": [
+            "quoted",
+            "quieted",
+            "quilted",
+            "quitted"
+          ],
+          "answer": 0,
+          "explain": "quoted = 報價。"
+        }
+      ]
+    }
   },
   {
     "day": 17,
@@ -2268,7 +4092,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "avoid incorrect delivery and oblige the client。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 3",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽物流運送：包裝、冷藏、重量檢查、易碎易腐與簽收，想像調度員與司機對話。",
+      "externalDrill": "今日外練 Part 3：運送／取件對話 3 組，抓 crate / perishable / signature / due date。",
+      "shadowTip": "跟讀 perishable / adequately / correspondence，注意咬字清晰避免吞音。",
+      "questions": [
+        {
+          "q": "How were the goods packed and stored?",
+          "choices": [
+            "In a wooden crate in a cold facility",
+            "In open sunlight only",
+            "In a theater seat",
+            "In a picnic basket"
+          ],
+          "answer": 0,
+          "explain": "木箱包裝並置於冷藏設施。"
+        },
+        {
+          "q": "What did the driver check before departure?",
+          "choices": [
+            "The weight, after getting a ticket for the load",
+            "Only the museum gift shop",
+            "Only banquet recipes",
+            "Only stock prices"
+          ],
+          "answer": 0,
+          "explain": "取得載運單據並檢查重量。"
+        },
+        {
+          "q": "Why did the courier handle the shipment carefully?",
+          "choices": [
+            "Because some items were fragile and perishable",
+            "Because items were digital only",
+            "Because no due date existed",
+            "Because the van was empty forever"
+          ],
+          "answer": 0,
+          "explain": "部分貨物易碎且易腐。"
+        },
+        {
+          "q": "What did the agency ask the recipient to do?",
+          "choices": [
+            "Affix a signature",
+            "Delete the notice",
+            "Refuse all packages",
+            "Open every crate outdoors"
+          ],
+          "answer": 0,
+          "explain": "要求收件人簽名。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "正式商務語氣",
+      "tip": "正式物流用語偏好 ensure / request that / prior to；少用口語 get / stuff。",
+      "questions": [
+        {
+          "q": "The courier _____ that the shipment was handled adequately.",
+          "choices": [
+            "ensured",
+            "ensure",
+            "ensuring",
+            "ensures"
+          ],
+          "answer": 0,
+          "explain": "過去敘述 ensured。"
+        },
+        {
+          "q": "Please complete the shipping process _____ the due date.",
+          "choices": [
+            "before",
+            "ago",
+            "since",
+            "during"
+          ],
+          "answer": 0,
+          "explain": "在到期日之前 → before。"
+        },
+        {
+          "q": "The recipient was asked to _____ a signature on the notice.",
+          "choices": [
+            "affix",
+            "fix",
+            "affect",
+            "effect"
+          ],
+          "answer": 0,
+          "explain": "affix a signature 為正式用法。"
+        },
+        {
+          "q": "Every step must be handled correctly to avoid _____ delivery.",
+          "choices": [
+            "incorrect",
+            "correct",
+            "correctly",
+            "correcting"
+          ],
+          "answer": 0,
+          "explain": "形容詞 incorrect 修飾 delivery。"
+        },
+        {
+          "q": "The goods were stored carefully _____ temperature control.",
+          "choices": [
+            "for",
+            "to",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "for = 為了溫度控制。"
+        }
+      ]
+    }
   },
   {
     "day": 18,
@@ -2401,7 +4339,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "amenities were designed to ease discomfort，包括照顧 belongings。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 4",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽餐飲服務短講：自助餐、廚師備料、招待與預約流程。",
+      "externalDrill": "今日外練 Part 4：餐廳／宴會廣播 3 篇，練習 buffet / complimentary / reservation。",
+      "shadowTip": "跟讀 complimentary / refreshments / amenities，維持服務業禮貌語氣。",
+      "questions": [
+        {
+          "q": "Where was the delicious dessert served?",
+          "choices": [
+            "In the dining room",
+            "In the garage",
+            "On the highway",
+            "In the laboratory"
+          ],
+          "answer": 0,
+          "explain": "甜點在餐廳供應。"
+        },
+        {
+          "q": "What did the chef add while preparing the seafood meal?",
+          "choices": [
+            "Garlic, with a spicy sauce",
+            "Only wooden crates",
+            "Only patents",
+            "Only customs forms"
+          ],
+          "answer": 0,
+          "explain": "加入蒜頭並搭配辣醬。"
+        },
+        {
+          "q": "What might guests receive after checking in?",
+          "choices": [
+            "A complimentary dish prepared by the chef",
+            "A factory sensor",
+            "A merger contract",
+            "A delinquent notice"
+          ],
+          "answer": 0,
+          "explain": "報到後可能獲得主廚招待菜。"
+        },
+        {
+          "q": "What did the team arrange in advance?",
+          "choices": [
+            "Refreshments and a caterer reservation",
+            "A chemical leak inspection",
+            "A stock market IPO only",
+            "A subway detour"
+          ],
+          "answer": 0,
+          "explain": "事先安排茶點與外燴預約。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "長句結構",
+      "tip": "先抓主要動詞，再看 while / before / including 引導的附加資訊，避免被插入語帶跑。",
+      "questions": [
+        {
+          "q": "_____ using the dishwasher, the chef prepared a seafood meal.",
+          "choices": [
+            "After",
+            "During",
+            "Between",
+            "Among"
+          ],
+          "answer": 0,
+          "explain": "After + V-ing。"
+        },
+        {
+          "q": "Guests were asked to check in before staff _____ a complimentary dish.",
+          "choices": [
+            "would compensate with",
+            "compensate",
+            "compensating",
+            "compensates"
+          ],
+          "answer": 0,
+          "explain": "文意為報到後才提供招待；原句結構用 would compensate with。"
+        },
+        {
+          "q": "The cook tasted the dish _____ serving it.",
+          "choices": [
+            "before",
+            "ago",
+            "since",
+            "for"
+          ],
+          "answer": 0,
+          "explain": "before serving。"
+        },
+        {
+          "q": "Every amenity, _____ care for belongings, was designed to ease discomfort.",
+          "choices": [
+            "including",
+            "include",
+            "includes",
+            "included"
+          ],
+          "answer": 0,
+          "explain": "插入語用 including。"
+        },
+        {
+          "q": "The cuisine followed a set sequence, _____ an extensive menu.",
+          "choices": [
+            "offering",
+            "offer",
+            "offered",
+            "offers"
+          ],
+          "answer": 0,
+          "explain": "分詞構句 offering。"
+        }
+      ]
+    }
   },
   {
     "day": 19,
@@ -2534,7 +4586,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "will anticipate further shift in demand before revising projection。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽財務營收段落兩遍：抓住 revenue projection、overseas vs domestic，忽略文中較雜訊的句子，訓練抓數字趨勢。",
+      "externalDrill": "今日弱項 Mixed：Part 3 一組＋Part 4 一篇財報短講；專門練習 increase / decline / offset / projection。",
+      "shadowTip": "跟讀 substantial / anticipated / projection，用平穩語氣讀數字相關句。",
+      "questions": [
+        {
+          "q": "What did the revenue projection show?",
+          "choices": [
+            "A substantial increase, though some figures declined",
+            "Only zero sales forever",
+            "A ban on exports",
+            "No change in fees"
+          ],
+          "answer": 0,
+          "explain": "營收預測大幅增加，但部分數字下降。"
+        },
+        {
+          "q": "What could a fee-structure shift affect?",
+          "choices": [
+            "Production sales",
+            "Only cafeteria recipes",
+            "Only theater tickets",
+            "Only weather"
+          ],
+          "answer": 0,
+          "explain": "可能影響生產銷售。"
+        },
+        {
+          "q": "What offset the decline in overseas orders?",
+          "choices": [
+            "A domestic increase in revenue",
+            "A permanent factory closure",
+            "A canceled projection",
+            "A lost passport"
+          ],
+          "answer": 0,
+          "explain": "國內營收增加抵銷海外訂單下降。"
+        },
+        {
+          "q": "What will management do before revising the annual projection?",
+          "choices": [
+            "Anticipate further shift in demand",
+            "Delete all figures",
+            "Stop reviewing costs",
+            "Ignore exports"
+          ],
+          "answer": 0,
+          "explain": "先預期需求再變動再修年預測。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "進階詞彙／易混淆字",
+      "tip": "revenue / profit / projection / offset / decline — 先分清「營收」與「利潤」，再看升降動詞。",
+      "questions": [
+        {
+          "q": "The revenue projection showed a substantial _____.",
+          "choices": [
+            "increase",
+            "increasingly",
+            "increased",
+            "increases"
+          ],
+          "answer": 0,
+          "explain": "a substantial increase（名詞）。"
+        },
+        {
+          "q": "Some figures _____ markedly last quarter.",
+          "choices": [
+            "declined",
+            "decline",
+            "declining",
+            "declines"
+          ],
+          "answer": 0,
+          "explain": "過去式 declined。"
+        },
+        {
+          "q": "The decline overseas was _____ by stronger domestic sales.",
+          "choices": [
+            "offset",
+            "onset",
+            "upset",
+            "reset"
+          ],
+          "answer": 0,
+          "explain": "offset = 抵銷。"
+        },
+        {
+          "q": "Management will revise the annual _____.",
+          "choices": [
+            "projection",
+            "projectile",
+            "projecting",
+            "projector"
+          ],
+          "answer": 0,
+          "explain": "projection = 預測。"
+        },
+        {
+          "q": "Rising profit slightly _____ higher costs.",
+          "choices": [
+            "offset",
+            "offended",
+            "offered",
+            "opened"
+          ],
+          "answer": 0,
+          "explain": "利潤抵銷成本 → offset。"
+        }
+      ]
+    }
   },
   {
     "day": 20,
@@ -2667,7 +4833,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "Inflation pushed departments to review fiscal planning more frequently。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 3",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽預算控管：委員會、刪減、審計減少赤字、季度計畫核可。想像財務會議對話。",
+      "externalDrill": "今日外練 Part 3：預算會議對話 3 組，聽 budget cuts / audit / allocate / fiscal year。",
+      "shadowTip": "跟讀 curtail / reimburse / inflation，把會議用語唸得乾脆。",
+      "questions": [
+        {
+          "q": "What did a senior manager call some spending cuts?",
+          "choices": [
+            "Temporary, tied to the annual budget theme",
+            "Permanent forever with no review",
+            "Unrelated to policy",
+            "Only about vacations"
+          ],
+          "answer": 0,
+          "explain": "部分刪減是暫時且與年度預算主題相關。"
+        },
+        {
+          "q": "What did the audit confirm?",
+          "choices": [
+            "The financial deficit was substantially reduced",
+            "All funds had disappeared",
+            "Inflation had stopped forever",
+            "No meetings were held"
+          ],
+          "answer": 0,
+          "explain": "審計確認赤字大幅減少。"
+        },
+        {
+          "q": "When will staff allocate funds?",
+          "choices": [
+            "Once the inspector approves the preferred quarter plan",
+            "Before any review",
+            "Without reimbursement rules",
+            "Only after the company closes"
+          ],
+          "answer": 0,
+          "explain": "稽核員核准季度計畫後。"
+        },
+        {
+          "q": "What pushed departments to review fiscal planning more often?",
+          "choices": [
+            "Inflation",
+            "A music festival",
+            "A picnic",
+            "A film premiere"
+          ],
+          "answer": 0,
+          "explain": "通膨促使更常檢視財政規劃。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "正式語氣／長句",
+      "tip": "正式預算句常用 subject + will + V once…；避免口語 gonna / a lot of 取代 allocate / substantial。",
+      "questions": [
+        {
+          "q": "Staff will allocate funds once the inspector _____ the plan.",
+          "choices": [
+            "approves",
+            "approve",
+            "approving",
+            "approved"
+          ],
+          "answer": 0,
+          "explain": "once + 現在式（時間條件）。"
+        },
+        {
+          "q": "The deficit was _____ reduced after the audit.",
+          "choices": [
+            "substantially",
+            "substantial",
+            "substance",
+            "substantiate"
+          ],
+          "answer": 0,
+          "explain": "副詞 substantially。"
+        },
+        {
+          "q": "The committee met frequently _____ review the team's capability.",
+          "choices": [
+            "to",
+            "for",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "met … to + V 表目的。"
+        },
+        {
+          "q": "Cuts were tied _____ traditional policy.",
+          "choices": [
+            "to",
+            "for",
+            "at",
+            "with"
+          ],
+          "answer": 0,
+          "explain": "be tied to。"
+        },
+        {
+          "q": "Turnover figures were reviewed _____ the finance team.",
+          "choices": [
+            "by",
+            "to",
+            "for",
+            "at"
+          ],
+          "answer": 0,
+          "explain": "被動語態 by + 行為者。"
+        }
+      ]
+    }
   },
   {
     "day": 21,
@@ -2800,7 +5080,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "contribute dedicatedly；not misplace considerable files。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽併購文章兩遍：抓 partnership、relocate、select a partner to merge、protect assets；跳過雜訊句，練主旨聽力。本日 LC Mixed。",
+      "externalDrill": "今日 LC Mixed 模考節奏：Part 1–4 各短練習一輪（約 40 分鐘），錯題只記「併購／擴張」類關鍵詞。",
+      "shadowTip": "跟讀 relocate / foresee / simultaneously，用穩速讀完長句再加速。",
+      "questions": [
+        {
+          "q": "When will management announce the plan?",
+          "choices": [
+            "Once interested, active parties accept it",
+            "Only after bankruptcy",
+            "Never",
+            "Before any partnership talk"
+          ],
+          "answer": 0,
+          "explain": "有興趣且積極的各方接受後才宣布。"
+        },
+        {
+          "q": "What does the firm plan regarding a strong competitor?",
+          "choices": [
+            "To relocate away while protecting its asset",
+            "To ignore all assets",
+            "To delete sales data",
+            "To ban employee contributions"
+          ],
+          "answer": 0,
+          "explain": "計畫搬離強大競爭對手並保護資產。"
+        },
+        {
+          "q": "What must employees be careful not to do?",
+          "choices": [
+            "Misplace considerable files",
+            "Contribute in a dedicated way",
+            "Grow sales",
+            "Protect assets"
+          ],
+          "answer": 0,
+          "explain": "小心不要放錯重要檔案。"
+        },
+        {
+          "q": "What will they select by year-end?",
+          "choices": [
+            "A partner to merge with",
+            "A picnic menu only",
+            "A theater seat",
+            "A culinary recipe"
+          ],
+          "answer": 0,
+          "explain": "年底選擇合併夥伴。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "綜合商務文法",
+      "tip": "併購句常考 once / although / to merge with；先確定時間從句與不定詞目的。",
+      "questions": [
+        {
+          "q": "Management will announce the plan once parties _____ it.",
+          "choices": [
+            "accept",
+            "accepts",
+            "accepting",
+            "accepted"
+          ],
+          "answer": 0,
+          "explain": "複數 parties → accept。"
+        },
+        {
+          "q": "The firm plans _____ away from a strong competitor.",
+          "choices": [
+            "to relocate",
+            "relocating",
+            "relocate",
+            "relocated"
+          ],
+          "answer": 0,
+          "explain": "plan to + V。"
+        },
+        {
+          "q": "Employees contribute carefully so they do not _____ files.",
+          "choices": [
+            "misplace",
+            "misplacing",
+            "misplaced",
+            "misplaces"
+          ],
+          "answer": 0,
+          "explain": "do not + 原形。"
+        },
+        {
+          "q": "They will select a partner _____ merge with.",
+          "choices": [
+            "to",
+            "for",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "to merge with。"
+        },
+        {
+          "q": "Few could _____ the expansion before it was announced.",
+          "choices": [
+            "foresee",
+            "forecasted",
+            "foreseen",
+            "foreseeing"
+          ],
+          "answer": 0,
+          "explain": "could + 原形 foresee。"
+        }
+      ]
+    }
   },
   {
     "day": 22,
@@ -2933,7 +5327,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "constructive for someone to preside... ignoring irrelevant constraint issues。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "Part 4",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽會議活動：議程、投票、共識、延期與主席主持，當成會議主持短講。",
+      "externalDrill": "今日外練 Part 4：會議開場／決議短講 3 篇，抓 agenda / unanimous / defer / preside。",
+      "shadowTip": "跟讀 unanimous / consensus / constructive，練習會議結語的下沉語調。",
+      "questions": [
+        {
+          "q": "What did the guest speaker pass out before the holiday?",
+          "choices": [
+            "A handout",
+            "A suitcase",
+            "A sensor",
+            "A mortgage"
+          ],
+          "answer": 0,
+          "explain": "會前發講義。"
+        },
+        {
+          "q": "What caused a lack of coordination?",
+          "choices": [
+            "One member tried to refute the agenda",
+            "Everyone agreed instantly",
+            "No meeting was scheduled",
+            "Plants were watered"
+          ],
+          "answer": 0,
+          "explain": "有人反駁議程導致協調不足。"
+        },
+        {
+          "q": "What was required to reach a unanimous decision?",
+          "choices": [
+            "Someone to convince the group and build consensus",
+            "Canceling all votes forever",
+            "Ignoring the board",
+            "Deleting the agenda"
+          ],
+          "answer": 0,
+          "explain": "需要說服並建立共識。"
+        },
+        {
+          "q": "What alternative exists if consensus fails?",
+          "choices": [
+            "Defer the vote or reschedule",
+            "Fire the entire board immediately",
+            "End all business talk forever",
+            "Ban handouts"
+          ],
+          "answer": 0,
+          "explain": "可延期投票或改期。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "長句／詞彙陷阱",
+      "tip": "unanimous / consensus / defer / preside 易與 similar-looking 字混淆；看空格要名詞還是動詞。",
+      "questions": [
+        {
+          "q": "Reaching a _____ decision required full agreement.",
+          "choices": [
+            "unanimous",
+            "anonymous",
+            "unanimously",
+            "unity"
+          ],
+          "answer": 0,
+          "explain": "unanimous decision。"
+        },
+        {
+          "q": "Someone needed to build _____ within the group.",
+          "choices": [
+            "consensus",
+            "census",
+            "consent",
+            "concert"
+          ],
+          "answer": 0,
+          "explain": "build consensus。"
+        },
+        {
+          "q": "If talks stall, the board may _____ the vote.",
+          "choices": [
+            "defer",
+            "prefer",
+            "refer",
+            "infer"
+          ],
+          "answer": 0,
+          "explain": "defer = 延期。"
+        },
+        {
+          "q": "It would be constructive for someone to _____ over the meeting.",
+          "choices": [
+            "preside",
+            "president",
+            "presence",
+            "present"
+          ],
+          "answer": 0,
+          "explain": "preside over = 主持。"
+        },
+        {
+          "q": "They usually _____ meetings when more information is needed.",
+          "choices": [
+            "reschedule",
+            "schedule",
+            "scheduling",
+            "rescheduled"
+          ],
+          "answer": 0,
+          "explain": "現在習慣用 reschedule。"
+        }
+      ]
+    }
   },
   {
     "day": 23,
@@ -3066,7 +5574,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "entry bonus and salary increase were announced；earned recognition。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 以模考節奏聽表揚活動：報名、研討會、表揚貢獻、差旅報銷與獎金宣布。",
+      "externalDrill": "今日 LC Mixed 考試節奏：連續做 Part 1–4 混合卷 40 分鐘，不中斷重播。",
+      "shadowTip": "跟讀 reimbursement / commence / outstanding，模擬頒獎司儀速度。",
+      "questions": [
+        {
+          "q": "What did the award ceremony application require?",
+          "choices": [
+            "Advance registration",
+            "No registration",
+            "Only a fireplace photo",
+            "A factory leak report"
+          ],
+          "answer": 0,
+          "explain": "需事先登記。"
+        },
+        {
+          "q": "Where would the lecture for all staff be hosted?",
+          "choices": [
+            "At the learning center",
+            "At the airport only",
+            "In a cave",
+            "On a highway"
+          ],
+          "answer": 0,
+          "explain": "學習中心舉辦講座。"
+        },
+        {
+          "q": "What did the schedule include?",
+          "choices": [
+            "A function to honor outstanding contributions",
+            "A plan to cancel teamwork",
+            "A ban on conferences",
+            "A chemical inspection only"
+          ],
+          "answer": 0,
+          "explain": "表揚傑出貢獻的活動。"
+        },
+        {
+          "q": "What was announced by the end of the night?",
+          "choices": [
+            "An entry bonus and salary increase",
+            "A factory closure",
+            "A baggage loss",
+            "A fee-structure ban"
+          ],
+          "answer": 0,
+          "explain": "宣布入職獎金與加薪。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "綜合錯題型",
+      "tip": "表揚／活動題常混詞性與介系詞：register in advance、reimbursement for、commence the ceremony。",
+      "questions": [
+        {
+          "q": "Participants must register _____ advance.",
+          "choices": [
+            "in",
+            "on",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "in advance。"
+        },
+        {
+          "q": "The learning center will host a lecture _____ all staff.",
+          "choices": [
+            "for",
+            "to",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "for all staff。"
+        },
+        {
+          "q": "The objective was to _____ the ceremony with excitement.",
+          "choices": [
+            "commence",
+            "commencement",
+            "commencing",
+            "commenced"
+          ],
+          "answer": 0,
+          "explain": "to + 原形 commence。"
+        },
+        {
+          "q": "The company will provide _____ for travel expenses.",
+          "choices": [
+            "reimbursement",
+            "reimburse",
+            "reimbursing",
+            "reimbursed"
+          ],
+          "answer": 0,
+          "explain": "provide + 名詞 reimbursement。"
+        },
+        {
+          "q": "Staff felt their hard work had finally earned _____.",
+          "choices": [
+            "recognition",
+            "recognize",
+            "recognizing",
+            "recognized"
+          ],
+          "answer": 0,
+          "explain": "earn recognition。"
+        }
+      ]
+    }
   },
   {
     "day": 24,
@@ -3199,7 +5821,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "unanimous decision to promote the most competent candidate。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽晉升人事：獎項、評估、任命與董事會一致決議晉升最勝任者。",
+      "externalDrill": "今日 LC Mixed：鎖定人事／升遷主題 Part 3–4 各 2 組，計時作答。",
+      "shadowTip": "跟讀 appraisal / appointed / competent，注意 /ɪd/ 字尾。",
+      "questions": [
+        {
+          "q": "Where did he confirm his new job title?",
+          "choices": [
+            "Downstairs at the greenhouse and gymnasium area mentioned",
+            "Only at the airport customs",
+            "Only in a laboratory patent office",
+            "Only on a tour bus"
+          ],
+          "answer": 0,
+          "explain": "文中提到下樓到溫室與體育館確認新職稱。"
+        },
+        {
+          "q": "What led management to promote a skilled worker?",
+          "choices": [
+            "A positive appraisal and appointment",
+            "A missing suitcase",
+            "A buffet complaint",
+            "A chemical leak"
+          ],
+          "answer": 0,
+          "explain": "正面考評後被任命並晉升。"
+        },
+        {
+          "q": "What did he consider regarding his role?",
+          "choices": [
+            "Whether to resign",
+            "Whether to ban meetings",
+            "Whether to close the bank",
+            "Whether to cancel insurance"
+          ],
+          "answer": 0,
+          "explain": "他考慮是否辭職。"
+        },
+        {
+          "q": "What decision did the board reach?",
+          "choices": [
+            "A unanimous decision to promote the most competent candidate",
+            "A decision to fire everyone",
+            "A decision to end appraisals",
+            "A decision to ignore awards"
+          ],
+          "answer": 0,
+          "explain": "一致決議晉升最勝任者。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "陷阱選項",
+      "tip": "promote / promotion、appoint / appointment、competent / competence — 陷阱常是正確詞的其他詞性。",
+      "questions": [
+        {
+          "q": "He was _____ after a positive appraisal.",
+          "choices": [
+            "appointed",
+            "appointment",
+            "appointing",
+            "appoint"
+          ],
+          "answer": 0,
+          "explain": "被動 was appointed。"
+        },
+        {
+          "q": "Management decided to _____ a skilled worker.",
+          "choices": [
+            "promote",
+            "promotion",
+            "promotional",
+            "promoter"
+          ],
+          "answer": 0,
+          "explain": "to + 原形 promote。"
+        },
+        {
+          "q": "The board reached a _____ decision.",
+          "choices": [
+            "unanimous",
+            "unanimously",
+            "unanimity",
+            "anonymous"
+          ],
+          "answer": 0,
+          "explain": "形容詞 unanimous。"
+        },
+        {
+          "q": "They promoted the most _____ candidate.",
+          "choices": [
+            "competent",
+            "competence",
+            "competently",
+            "competition"
+          ],
+          "answer": 0,
+          "explain": "形容詞 competent。"
+        },
+        {
+          "q": "He considered whether to _____ his role.",
+          "choices": [
+            "resign",
+            "resignation",
+            "resigned",
+            "resigning"
+          ],
+          "answer": 0,
+          "explain": "whether to + V。"
+        }
+      ]
+    }
   },
   {
     "day": 25,
@@ -3332,7 +6068,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "pay an expense and trust the mechanic before he could drive。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽通勤文章：計程車、加油站、塞車改道、許可證與修車費用，訓練交通場景關鍵詞。",
+      "externalDrill": "今日 LC Mixed：交通廣播＋通勤對話混合練習 40 分鐘。",
+      "shadowTip": "跟讀 congestion / detour / malfunction，把子音叢唸清楚。",
+      "questions": [
+        {
+          "q": "What did he call instead of using a car rental?",
+          "choices": [
+            "A cab",
+            "A banquet chef",
+            "A patent lawyer",
+            "A stockbroker"
+          ],
+          "answer": 0,
+          "explain": "叫計程車而非租車。"
+        },
+        {
+          "q": "How did drivers try to save fuel amid congestion?",
+          "choices": [
+            "By taking a detour",
+            "By ignoring all routes",
+            "By deleting permits",
+            "By closing the garage"
+          ],
+          "answer": 0,
+          "explain": "改道以節省燃油。"
+        },
+        {
+          "q": "What problem did the malfunction cause?",
+          "choices": [
+            "The car lacked a valid permit for transportation",
+            "The car gained unlimited fuel",
+            "The subway closed forever",
+            "The crosswalk disappeared"
+          ],
+          "answer": 0,
+          "explain": "故障導致缺乏有效運輸許可。"
+        },
+        {
+          "q": "What did he need before heading out to drive?",
+          "choices": [
+            "To pay an expense and trust the mechanic",
+            "To cancel the commute",
+            "To merge two companies",
+            "To host a lecture"
+          ],
+          "answer": 0,
+          "explain": "需付費並信任技師。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "綜合錯題型",
+      "tip": "交通題常考 instead of + V-ing、by + V-ing、lack + 名詞。",
+      "questions": [
+        {
+          "q": "He called a cab instead of _____ the car rental service.",
+          "choices": [
+            "using",
+            "use",
+            "used",
+            "uses"
+          ],
+          "answer": 0,
+          "explain": "instead of + V-ing。"
+        },
+        {
+          "q": "Drivers took a detour _____ save fuel.",
+          "choices": [
+            "to",
+            "for",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "to + V 表目的。"
+        },
+        {
+          "q": "Traffic congestion forced drivers to _____ delays.",
+          "choices": [
+            "alleviate",
+            "alleviation",
+            "alleviating",
+            "alleviated"
+          ],
+          "answer": 0,
+          "explain": "to + 原形。"
+        },
+        {
+          "q": "The car lacked a valid _____ for transportation.",
+          "choices": [
+            "permit",
+            "permissioned",
+            "permitting",
+            "permeate"
+          ],
+          "answer": 0,
+          "explain": "名詞 permit。"
+        },
+        {
+          "q": "He had to pay an expense before he could _____ out.",
+          "choices": [
+            "head",
+            "heading",
+            "headed",
+            "heads"
+          ],
+          "answer": 0,
+          "explain": "could + 原形 head。"
+        }
+      ]
+    }
   },
   {
     "day": 26,
@@ -3465,7 +6315,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "dissatisfaction with interest rates... leading the bank to reject the relation。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽銀行帳戶：開戶、自動扣款、逾期通知、對帳單與提領。抓財務關鍵句即可。",
+      "externalDrill": "今日 LC Mixed：銀行櫃檯對話＋帳戶通知短講，各練習兩輪。",
+      "shadowTip": "跟讀 delinquent / overdue / withdrawal，注意 /d/ /t/ 字尾。",
+      "questions": [
+        {
+          "q": "What did he want to do at the bank?",
+          "choices": [
+            "Open an account and check his balance",
+            "Book a theater seat",
+            "Ship perishable meat",
+            "Host an award banquet"
+          ],
+          "answer": 0,
+          "explain": "開戶並查餘額。"
+        },
+        {
+          "q": "What kind of notice did the bank send?",
+          "choices": [
+            "A delinquent notice about an overdue account",
+            "A concert invitation only",
+            "A factory renovation plan",
+            "A weather alert only"
+          ],
+          "answer": 0,
+          "explain": "逾期帳戶催繳通知。"
+        },
+        {
+          "q": "What did the account statement investigation reveal?",
+          "choices": [
+            "A withdrawal amount was due but not yet processed",
+            "The account had unlimited free cash forever",
+            "No deposits ever occurred",
+            "Passwords were unnecessary"
+          ],
+          "answer": 0,
+          "explain": "有一筆提領金額到期但尚未處理。"
+        },
+        {
+          "q": "What payment method was he using at this point?",
+          "choices": [
+            "Automatic payment",
+            "Only cash in a jar forever",
+            "Only cryptocurrency mining",
+            "Only traveler's checks from 1900"
+          ],
+          "answer": 0,
+          "explain": "使用自動付款。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "陷阱選項",
+      "tip": "interest / interesting、due / dew、balance 作名詞；陷阱常放形容詞或動詞原形。",
+      "questions": [
+        {
+          "q": "He wanted to open an _____ at the bank.",
+          "choices": [
+            "account",
+            "accountant",
+            "accounting",
+            "accountable"
+          ],
+          "answer": 0,
+          "explain": "open an account。"
+        },
+        {
+          "q": "The bank sent a notice about an _____ account.",
+          "choices": [
+            "overdue",
+            "overdo",
+            "overlook",
+            "overcome"
+          ],
+          "answer": 0,
+          "explain": "overdue = 逾期。"
+        },
+        {
+          "q": "Customers should avoid unnecessary _____.",
+          "choices": [
+            "charges",
+            "chargers",
+            "charging",
+            "charged"
+          ],
+          "answer": 0,
+          "explain": "名詞 charges = 費用。"
+        },
+        {
+          "q": "The statement showed a _____ that had not been processed.",
+          "choices": [
+            "withdrawal",
+            "withdraw",
+            "withdrew",
+            "withdrawing"
+          ],
+          "answer": 0,
+          "explain": "名詞 withdrawal。"
+        },
+        {
+          "q": "She needed a document proving her spending was _____ logged.",
+          "choices": [
+            "successfully",
+            "successful",
+            "success",
+            "succeed"
+          ],
+          "answer": 0,
+          "explain": "副詞 successfully 修飾 logged。"
+        }
+      ]
+    }
   },
   {
     "day": 27,
@@ -3598,7 +6562,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "bond depreciation... unprecedented yield figures worried conservative investors。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽投資組合：導師建議、獲利、代客購產、股東信任與債券貶值風險。",
+      "externalDrill": "今日 LC Mixed：投資顧問對話＋市場短講混合練習。",
+      "shadowTip": "跟讀 lucrative / portfolio / depreciation / yield，用冷靜語氣讀風險句。",
+      "questions": [
+        {
+          "q": "Why did he listen to his mentor?",
+          "choices": [
+            "He worried the joint investment might be fake and needed guidance",
+            "He wanted a free buffet only",
+            "He needed a customs form",
+            "He was booking a gallery ticket"
+          ],
+          "answer": 0,
+          "explain": "擔心投資可能有假，故聽取導師意見。"
+        },
+        {
+          "q": "What did the investment prove to be?",
+          "choices": [
+            "Lucrative, with a foreseeable gain",
+            "Completely worthless only",
+            "Illegal forever",
+            "Unrelated to markets"
+          ],
+          "answer": 0,
+          "explain": "投資獲利且可預見收益。"
+        },
+        {
+          "q": "What was required when buying property for a client?",
+          "choices": [
+            "A formal lease backed by a sponsor",
+            "Only a picnic basket",
+            "Only a theater handout",
+            "Only a subway map"
+          ],
+          "answer": 0,
+          "explain": "正式租約並有贊助人支持。"
+        },
+        {
+          "q": "What worried conservative investors?",
+          "choices": [
+            "Bond depreciation and rapid yield changes",
+            "A missing dessert",
+            "A printer paper jam",
+            "A dress-code memo"
+          ],
+          "answer": 0,
+          "explain": "債券貶值與殖利率急變。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "綜合錯題型",
+      "tip": "on behalf of、consult for advice、lucrative 是投資高頻；注意名詞／形容詞陷阱。",
+      "questions": [
+        {
+          "q": "Buying property _____ of a client required a formal lease.",
+          "choices": [
+            "on behalf",
+            "in behalf",
+            "for behalf",
+            "at behalf"
+          ],
+          "answer": 0,
+          "explain": "on behalf of。"
+        },
+        {
+          "q": "The investment proved _____.",
+          "choices": [
+            "lucrative",
+            "lucre",
+            "lucratively",
+            "lubricate"
+          ],
+          "answer": 0,
+          "explain": "prove + 形容詞。"
+        },
+        {
+          "q": "They consulted a mentor _____ advice.",
+          "choices": [
+            "for",
+            "to",
+            "at",
+            "by"
+          ],
+          "answer": 0,
+          "explain": "consult … for advice。"
+        },
+        {
+          "q": "Bond _____ worried conservative investors.",
+          "choices": [
+            "depreciation",
+            "depreciate",
+            "depreciating",
+            "depreciated"
+          ],
+          "answer": 0,
+          "explain": "名詞 depreciation 作主詞。"
+        },
+        {
+          "q": "He eventually convinced a shareholder to _____ the outlook.",
+          "choices": [
+            "trust",
+            "trusts",
+            "trusted",
+            "trusting"
+          ],
+          "answer": 0,
+          "explain": "to + 原形 trust。"
+        }
+      ]
+    }
   },
   {
     "day": 28,
@@ -3731,7 +6809,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "plans to develop and maintain the site, even though densely populated。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 以考試節奏聽房產裝修：地板、屋頂、供暖、延遲與承包商維護計畫。本日指定 LC Mixed。",
+      "externalDrill": "今日 LC Mixed 全真節奏：連續 40 分鐘混合題，休息只在整段結束後。",
+      "shadowTip": "跟讀 remodeling / renovation / densely，保持長句不斷氣練習。",
+      "questions": [
+        {
+          "q": "What systems or areas were upgraded or replaced?",
+          "choices": [
+            "The floor, frame, garage furniture, and lobby heating",
+            "Only a passport printer",
+            "Only a bank vault",
+            "Only an airplane seat"
+          ],
+          "answer": 0,
+          "explain": "更換地板與框架、加家具並升級大廳供暖。"
+        },
+        {
+          "q": "What did workers repair during remodeling?",
+          "choices": [
+            "The rooftop and cleaned the water tank on the veranda",
+            "Only a credit card machine",
+            "Only a merger contract",
+            "Only a survey chart"
+          ],
+          "answer": 0,
+          "explain": "修屋頂並清理阳台水箱。"
+        },
+        {
+          "q": "How did the furnished residence feel after renovation?",
+          "choices": [
+            "Spacious, with new drapes in a once unoccupied room",
+            "Smaller and empty of light",
+            "Unrelated to residents",
+            "Closed to all neighbors"
+          ],
+          "answer": 0,
+          "explain": "裝修後寬敞，窗簾覆蓋曾空置房間。"
+        },
+        {
+          "q": "Where is the property located relative to the park?",
+          "choices": [
+            "Adjacent to the park",
+            "Inside a laboratory",
+            "On an airplane wing",
+            "Under the ocean only"
+          ],
+          "answer": 0,
+          "explain": "鄰近公園。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "陷阱選項",
+      "tip": "reside / residence / residential；delay / delayed — 看空格要動詞、名詞還是形容詞。",
+      "questions": [
+        {
+          "q": "It was appropriate to expect a _____.",
+          "choices": [
+            "delay",
+            "delayed",
+            "delaying",
+            "delays"
+          ],
+          "answer": 0,
+          "explain": "expect a delay。"
+        },
+        {
+          "q": "Residents who _____ this urban area appreciate the upgrades.",
+          "choices": [
+            "inhabit",
+            "inhabitant",
+            "inhabiting",
+            "inhabited"
+          ],
+          "answer": 0,
+          "explain": "關係子句動詞 inhabit。"
+        },
+        {
+          "q": "The furnished _____ felt spacious after renovation.",
+          "choices": [
+            "residence",
+            "reside",
+            "resident",
+            "residing"
+          ],
+          "answer": 0,
+          "explain": "名詞 residence。"
+        },
+        {
+          "q": "The contractor plans to develop and _____ the site.",
+          "choices": [
+            "maintain",
+            "maintenance",
+            "maintaining",
+            "maintained"
+          ],
+          "answer": 0,
+          "explain": "to develop and maintain。"
+        },
+        {
+          "q": "The property is _____ to the park.",
+          "choices": [
+            "adjacent",
+            "adjacency",
+            "adjacently",
+            "adjust"
+          ],
+          "answer": 0,
+          "explain": "be adjacent to。"
+        }
+      ]
+    }
   },
   {
     "day": 29,
@@ -3864,7 +7056,121 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "leak, continually contaminate, disaster discharge, resource report worried officials。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽環保文章：污染源、資源節約、回收與霧霾；抓主旨句，略過雜訊詞。",
+      "externalDrill": "今日 LC Mixed：環保公告＋社區會議對話混合練。",
+      "shadowTip": "跟讀 contamination / conserve / recycling / emission，把科學詞唸準。",
+      "questions": [
+        {
+          "q": "What caused unusual weather patterns according to the text?",
+          "choices": [
+            "A southern temperature shift linked to contamination",
+            "A bookstore celebration only",
+            "A job fair schedule",
+            "A banquet reservation"
+          ],
+          "answer": 0,
+          "explain": "南方氣溫變化與污染來源相關。"
+        },
+        {
+          "q": "What did conservation efforts aim to improve?",
+          "choices": [
+            "Less waste and better recycling disposal",
+            "More factory leaks",
+            "Higher smog only",
+            "Fewer forecasts"
+          ],
+          "answer": 0,
+          "explain": "減少浪費並改善回收處理。"
+        },
+        {
+          "q": "What worried residents by season's end?",
+          "choices": [
+            "Rising pollutant emissions and dense smog",
+            "Missing dessert spoons",
+            "A lost boarding pass",
+            "An unpaid banquet tip"
+          ],
+          "answer": 0,
+          "explain": "污染物排放上升與濃霧。"
+        },
+        {
+          "q": "What weather-related risks were mentioned besides pollution?",
+          "choices": [
+            "Dust, a possible flood, and windy conditions",
+            "Only tax-free shopping",
+            "Only installment plans",
+            "Only patent filings"
+          ],
+          "answer": 0,
+          "explain": "揚塵、可能淹水與強風。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "綜合錯題型",
+      "tip": "conserve / preserve、dispose of、emission / emit — 環保題高頻詞性轉換。",
+      "questions": [
+        {
+          "q": "Efforts to _____ resources can reduce waste.",
+          "choices": [
+            "conserve",
+            "conservation",
+            "conservative",
+            "conservatively"
+          ],
+          "answer": 0,
+          "explain": "to + 原形 conserve。"
+        },
+        {
+          "q": "Better ways to _____ of trash include recycling.",
+          "choices": [
+            "dispose",
+            "disposal",
+            "disposed",
+            "disposing"
+          ],
+          "answer": 0,
+          "explain": "dispose of。"
+        },
+        {
+          "q": "The source of _____ worried local officials.",
+          "choices": [
+            "contamination",
+            "contaminate",
+            "contaminated",
+            "contaminating"
+          ],
+          "answer": 0,
+          "explain": "名詞 contamination。"
+        },
+        {
+          "q": "Rising pollutant _____ created dense smog.",
+          "choices": [
+            "emissions",
+            "emit",
+            "emitting",
+            "emitted"
+          ],
+          "answer": 0,
+          "explain": "名詞 emissions。"
+        },
+        {
+          "q": "It is ideal to _____ the land from further damage.",
+          "choices": [
+            "preserve",
+            "preservation",
+            "preserving",
+            "preserved"
+          ],
+          "answer": 0,
+          "explain": "to + 原形 preserve。"
+        }
+      ]
+    }
   },
   {
     "day": 30,
@@ -3997,6 +7303,120 @@ window.TOEIC_DAYS = [
         "answer": 1,
         "explain": "conscious of health deprivation and joined a prevention program；better nutrition and insurance。"
       }
-    ]
+    ],
+    "listening": {
+      "partFocus": "LC Mixed",
+      "minutes": 40,
+      "warmUp": "用 TTS 聽健康醫療終章：就診、處方、手術與預防計畫；當成考前最後一輪聽力暖身。",
+      "externalDrill": "今日 LC Mixed 考前總複習：完整聽力計時模考一段，錯題只複習選項陷阱類型。",
+      "shadowTip": "跟讀 prescribed / examination / susceptibility，用沉穩語氣讀醫療說明。",
+      "questions": [
+        {
+          "q": "Why did the patient visit a medical facility?",
+          "choices": [
+            "For a checkup and injection after feeling sick",
+            "To buy theater tickets",
+            "To merge companies",
+            "To ship cargo"
+          ],
+          "answer": 0,
+          "explain": "感到不適後去做檢查與注射。"
+        },
+        {
+          "q": "What did the physician prescribe a remedy for?",
+          "choices": [
+            "His stomach ache and overall wellbeing",
+            "A factory renovation",
+            "A marketing survey",
+            "A parking permit"
+          ],
+          "answer": 0,
+          "explain": "針對胃痛與整體健康開立療法。"
+        },
+        {
+          "q": "What did the comprehensive examination recommend?",
+          "choices": [
+            "Periodic dental and dietary checks",
+            "Canceling insurance forever",
+            "Ignoring nutrition",
+            "Skipping recovery"
+          ],
+          "answer": 0,
+          "explain": "建議定期牙科與飲食檢查。"
+        },
+        {
+          "q": "What did he join by the end of recovery?",
+          "choices": [
+            "A prevention program",
+            "A cargo shipping crew",
+            "A bookstore campaign only",
+            "A customs inspection team"
+          ],
+          "answer": 0,
+          "explain": "加入預防計畫。"
+        }
+      ]
+    },
+    "grammar": {
+      "focus": "陷阱選項",
+      "tip": "prescribe / prescription、conscious / consciousness、prevent / prevention — 最後一天專攻詞性陷阱。",
+      "questions": [
+        {
+          "q": "The physician _____ a remedy for his stomachache.",
+          "choices": [
+            "prescribed",
+            "prescription",
+            "prescribing",
+            "prescriptive"
+          ],
+          "answer": 0,
+          "explain": "過去式動詞 prescribed。"
+        },
+        {
+          "q": "He decided to visit a medical facility for a _____.",
+          "choices": [
+            "checkup",
+            "check",
+            "checking",
+            "checked"
+          ],
+          "answer": 0,
+          "explain": "for a checkup。"
+        },
+        {
+          "q": "The healing process required a simple _____.",
+          "choices": [
+            "operation",
+            "operate",
+            "operating",
+            "operated"
+          ],
+          "answer": 0,
+          "explain": "名詞 operation。"
+        },
+        {
+          "q": "He joined a _____ program after recovery.",
+          "choices": [
+            "prevention",
+            "prevent",
+            "preventing",
+            "prevented"
+          ],
+          "answer": 0,
+          "explain": "prevention program。"
+        },
+        {
+          "q": "Better nutrition can reduce _____ to future illness.",
+          "choices": [
+            "susceptibility",
+            "susceptible",
+            "susceptibly",
+            "suspect"
+          ],
+          "answer": 0,
+          "explain": "名詞 susceptibility。"
+        }
+      ]
+    }
   }
 ];

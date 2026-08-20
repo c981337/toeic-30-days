@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TOEIC 30｜615 → 800–900 三十日衝刺</title>
+  <title>TOEIC 30｜五科重整｜615 → 800–900</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -13,112 +13,57 @@
   <header class="hero">
     <div class="container hero-inner">
       <h1 class="brand">TOEIC <span>30</span></h1>
-      <p class="hero-lead">從年初 615 分出發，三十日對準 800–900。本站負責單字、朗讀與閱讀理解；聽力與文法依每日課表在外部教材完成。每日約 2.5–3.5 小時。</p>
+      <p class="hero-lead">五科重整：單字、朗讀、聽力、文法、閱讀。從 615 衝刺 800–900，每日固定順序練習，約 150–200 分鐘。</p>
       <div class="cta-row">
         <a class="btn btn-primary" id="cta-start" href="day.html?d=1"><span id="cta-label">開始 Day 1</span></a>
-        <a class="btn btn-ghost" href="#plan">查看衝刺計劃</a>
-        <span class="meta-chip">基準 615 → 目標 800+</span>
+        <a class="btn btn-ghost" href="#pillars">看五科結構</a>
+        <span class="meta-chip">單字→朗讀→聽力→文法→閱讀</span>
       </div>
     </div>
   </header>
 
-  <section id="reality">
+  <section id="pillars">
     <div class="container">
-      <h2 class="section-title">分數路徑</h2>
-      <p class="section-lead">約需再進步 185–285 分。主目標先穩拿 <strong>800</strong>；聽力本來就不錯、且每天練滿時，再衝 850–900。</p>
-      <div class="score-path">
-        <div class="score-node">
-          <strong>615</strong>
-          <span>現況基準</span>
-        </div>
-        <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node">
-          <strong>680</strong>
-          <span>Week 1 模考</span>
-        </div>
-        <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node">
-          <strong>730</strong>
-          <span>Week 2 模考</span>
-        </div>
-        <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node">
-          <strong>780</strong>
-          <span>Week 3 模考</span>
-        </div>
-        <div class="score-arrow" aria-hidden="true">→</div>
-        <div class="score-node is-goal">
-          <strong>800–900</strong>
-          <span>正式考試</span>
-        </div>
-      </div>
-      <ul class="rule-list">
-        <li>聽力、閱讀都要練；只做本站閱讀通常不夠到 800。</li>
-        <li>每天固定時段，漏一天隔天補完，模考日（7／14／21／28）不跳過。</li>
-        <li>所有錯題進「錯題本」：題型、錯因、正解關鍵句，隔天重做。</li>
-      </ul>
+      <h2 class="section-title">每日五科（固定順序）</h2>
+      <p class="section-lead">不要跳著練。朗讀接在單字後，聽力才會有詞彙底；文法後再閱讀，長句比較站得住。</p>
+      <div class="phase-grid" id="pillar-cards"></div>
     </div>
   </section>
 
   <section id="plan">
     <div class="container">
-      <h2 class="section-title">四週衝刺計劃</h2>
-      <p class="section-lead">每週有明確模考門檻；未達標就加練弱項 Part，不要急著進下一週新題型。</p>
-      <div class="phase-grid">
-        <article class="phase-card">
-          <h3>Week 1 基礎補洞</h3>
-          <p>釐清 LC／RC 哪邊拖分。Part 1–2 聽力、Part 5 文法高頻、本站 Day 1–7 建立商務單字與短文閱讀節奏。</p>
-          <div class="phase-days">Day 01–07｜模考目標 ≥680</div>
-        </article>
-        <article class="phase-card">
-          <h3>Week 2 聽讀加速</h3>
-          <p>Part 3–4 對話／短講、Part 6 文意填空、本站 Day 8–14 加長閱讀限時。目標把「來得及做完」變成習慣。</p>
-          <div class="phase-days">Day 08–14｜模考目標 ≥730</div>
-        </article>
-        <article class="phase-card">
-          <h3>Week 3 弱點專攻</h3>
-          <p>依錯題本重練最弱 Part。雙篇／多篇 Part 7、聽力細節題與陷阱選項。本站 Day 15–22 專業情境單字。</p>
-          <div class="phase-days">Day 15–22｜模考目標 ≥780</div>
-        </article>
-        <article class="phase-card">
-          <h3>Week 4 模考衝刺</h3>
-          <p>完整計時模考＋總複習。本站 Day 23–30 收尾高頻主題。考前兩天減量，只固錯題與睡眠。</p>
-          <div class="phase-days">Day 23–30｜正式考 800–900</div>
-        </article>
+      <h2 class="section-title">四週焦點</h2>
+      <p class="section-lead">每週模考有門檻；未達標先補最弱的一科，再進下一週。</p>
+      <div class="phase-grid" id="week-cards"></div>
+    </div>
+  </section>
+
+  <section id="reality">
+    <div class="container">
+      <h2 class="section-title">分數路徑</h2>
+      <div class="score-path">
+        <div class="score-node"><strong>615</strong><span>基準</span></div>
+        <div class="score-arrow" aria-hidden="true">→</div>
+        <div class="score-node"><strong>680</strong><span>W1 模考</span></div>
+        <div class="score-arrow" aria-hidden="true">→</div>
+        <div class="score-node"><strong>730</strong><span>W2 模考</span></div>
+        <div class="score-arrow" aria-hidden="true">→</div>
+        <div class="score-node"><strong>780</strong><span>W3 模考</span></div>
+        <div class="score-arrow" aria-hidden="true">→</div>
+        <div class="score-node is-goal"><strong>800–900</strong><span>正式考</span></div>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2 class="section-title">一般日課表（約 170–200 分）</h2>
-      <p class="section-lead">非模考日照此執行。本站完成 A＋D；B、C、E 用你的聽力音檔／題本。</p>
-      <ol class="routine-list">
-        <li><span class="step-num">A</span><div><strong>單字 25 分</strong><br />本站單字卡＋朗讀；錯字隔日必重看。一週約累積 80–100 個有效單字。</div></li>
-        <li><span class="step-num">B</span><div><strong>聽力 55 分</strong><br />W1：Part 1–2｜W2：Part 3–4｜W3–4：弱 Part 重練＋整回 LC。聽完立刻對答案、標出聽不懂的句子。</div></li>
-        <li><span class="step-num">C</span><div><strong>文法／Part 5–6　30 分</strong><br />每天 20–30 題限時。615 常見失分：詞性、介系詞、連接詞、時態一致。</div></li>
-        <li><span class="step-num">D</span><div><strong>本站閱讀 40–50 分</strong><br />朗讀全文 → 限時讀英文 → 5 題測驗 → 對照翻譯。正確率 &lt;80% 隔日重做單字卡。</div></li>
-        <li><span class="step-num">E</span><div><strong>錯題本 15 分</strong><br />寫下「為何錯／關鍵句在哪」。每週模考前只複習錯題本，不開新書。</div></li>
-      </ol>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <h2 class="section-title">模考日（Day 7／14／21／28）</h2>
-      <p class="section-lead">用官方或同等難度完整試題，嚴格計時（聽力約 45 分＋閱讀 75 分）。</p>
-      <ol class="routine-list">
-        <li><span class="step-num">1</span><div><strong>上午：完整模考</strong><br />一次做完，中間不查單字、不暫停音檔。</div></li>
-        <li><span class="step-num">2</span><div><strong>下午：精準檢討（≥模考時間）</strong><br />每題標記：單字／沒聽到／沒讀到／推理錯／粗心。未達該週門檻 → 隔天只補該弱 Part。</div></li>
-        <li><span class="step-num">3</span><div><strong>仍完成本站當日閱讀</strong><br />維持單字與 Part 7 節奏，但可縮短聽讀時間，把精力放在模考檢討。</div></li>
-      </ol>
+      <ul class="rule-list">
+        <li>Day 7／14／21／28 為模考日：完整計時＋當日檢討。</li>
+        <li>本站：單字卡、朗讀 TTS、聽後測驗、文法 Part 5、閱讀理解。</li>
+        <li>外部：依當日「聽力」頁的 Part 指引做官方／模擬聽力題。</li>
+      </ul>
     </div>
   </section>
 
   <section id="progress">
     <div class="container">
-      <h2 class="section-title">本站進度（閱讀＋單字）</h2>
-      <p class="section-lead">這裡追蹤 30 天文章進度。聽力／文法請另外用行事曆勾選課表。</p>
+      <h2 class="section-title">學習進度</h2>
+      <p class="section-lead">五科都完成（含聽力／文法／閱讀交卷）才算一天完成。</p>
       <div class="stats-bar">
         <div class="stat"><strong id="stat-done">0 / 30</strong><span>完成天數</span></div>
         <div class="stat"><strong id="stat-acc">—</strong><span>平均正確率</span></div>
@@ -127,15 +72,17 @@
           <button type="button" class="btn btn-ghost btn-sm" id="reset-progress">重置進度</button>
         </div>
       </div>
+      <div class="pillar-stats" id="pillar-stats"></div>
       <div class="day-grid" id="day-grid" aria-label="30 天進度地圖"></div>
     </div>
   </section>
 
   <footer class="container footer-note">
-    TOEIC 30 · 615→800–900 衝刺計劃 · 本站＝單字／朗讀／閱讀｜聽力與文法請搭配外部題本
+    TOEIC 30 · 五科重整 · 615→800–900
   </footer>
 
   <script src="data/days.js"></script>
+  <script src="data/curriculum.js"></script>
   <script src="js/progress.js"></script>
   <script src="js/home.js"></script>
 </body>

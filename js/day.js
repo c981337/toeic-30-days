@@ -2,42 +2,30 @@
   const params = new URLSearchParams(location.search);
   const dayNum = Math.max(1, Math.min(30, parseInt(params.get("d") || "1", 10) || 1));
   const days = window.TOEIC_DAYS || [];
+  const curri = window.TOEIC_CURRICULUM || {};
   const data = days.find((d) => d.day === dayNum);
 
   const $ = (id) => document.getElementById(id);
 
   if (!data) {
-    document.body.innerHTML = '<main class="container" style="padding:3rem 0"><h1>找不到此日課程</h1><a href="index.html">回首頁</a></main>';
+    document.body.innerHTML =
+      '<main class="container" style="padding:3rem 0"><h1>找不到此日課程</h1><a href="index.html">回首頁</a></main>';
     return;
   }
 
   const tts = ToeicTTS.createTTS();
   const prefs = tts.getPrefs();
+  const week =
+    (curri.weeks || []).find((w) => {
+      const [a, b] = w.days.split("–").map((x) => parseInt(x, 10));
+      return dayNum >= a && dayNum <= b;
+    }) || { week: data.phase, title: "衝刺", mock: "800–900" };
 
-  const weekMeta = [
-    { max: 7, label: "Week 1 基礎補洞", mock: "≥680", listen: "Part 1–2 為主（照片／應答）", grammar: "Part 5 詞性、介系詞、連接詞" },
-    { max: 14, label: "Week 2 聽讀加速", mock: "≥730", listen: "Part 3–4 對話／短講，練習邊聽邊記關鍵字", grammar: "Part 5–6 限時，文意填空上下句" },
-    { max: 22, label: "Week 3 弱點專攻", mock: "≥780", listen: "錯題本最弱 Part 重練＋整回 LC", grammar: "錯題本 Part 5–6 重做，不開新單元硬衝" },
-    { max: 30, label: "Week 4 模考衝刺", mock: "800–900", listen: "完整聽力模考節奏，考前兩天減量", grammar: "只複習錯題與高頻陷阱" },
-  ];
-  const meta = weekMeta.find((w) => dayNum <= w.max) || weekMeta[3];
-
-  $("day-eyebrow").textContent = meta.label + " · " + (data.themeZh || data.theme);
+  $("day-eyebrow").textContent =
+    "Week " + week.week + " " + week.title + " · " + (data.themeZh || data.theme);
   $("day-title").textContent = "Day " + String(dayNum).padStart(2, "0") + " — " + data.title;
-  $("day-sub").textContent = "基準 615 → 目標 800–900｜本站：單字卡 → 朗讀 → 測驗";
-
-  const agenda = document.createElement("aside");
-  agenda.className = "agenda-box";
-  agenda.innerHTML =
-    "<h2>今日全科課表</h2><ul>" +
-    "<li><strong>本站（必做）</strong>：單字卡 25 分 → 朗讀＋限時閱讀 → 5 題測驗</li>" +
-    "<li><strong>聽力（外部）55 分</strong>：" + meta.listen + "</li>" +
-    "<li><strong>文法（外部）30 分</strong>：" + meta.grammar + "</li>" +
-    "<li><strong>錯題本 15 分</strong>：記錄錯因與關鍵句</li>" +
-    "<li><strong>本週模考門檻</strong>：" + meta.mock + "</li>" +
-    "</ul>";
-  const header = document.querySelector(".day-header");
-  if (header && header.parentNode) header.parentNode.insertBefore(agenda, header.nextSibling);
+  $("day-sub").textContent =
+    "順序：單字 → 朗讀 → 聽力 → 文法 → 閱讀｜基準 615 → 目標 800–900";
 
   const prev = $("nav-prev");
   const next = $("nav-next");
@@ -46,16 +34,38 @@
   if (dayNum <= 1) prev.classList.add("is-disabled");
   if (dayNum >= 30) next.classList.add("is-disabled");
 
-  if ([7, 14, 21, 28].includes(dayNum)) {
+  if ((curri.mockDays || [7, 14, 21, 28]).includes(dayNum)) {
     const tip = $("week-tip");
     tip.hidden = false;
     tip.textContent =
-      "模考日：上午完整計時模考，下午檢討（時間不少於模考）。仍完成本站閱讀；未達門檻 " +
-      meta.mock +
-      " 則隔天只補最弱 Part。";
+      "模考日：上午完整計時模考，下午檢討。五科仍建議做完本站內容；本週門檻 " +
+      (week.mock || "") +
+      "。";
   }
 
-  // Tabs
+  function refreshPillars() {
+    const p = ToeicProgress.getDay(dayNum);
+    const items = [
+      ["vocab", "單字", p.vocabDone],
+      ["speak", "朗讀", p.speakDone],
+      ["listen", "聽力", p.listenDone],
+      ["grammar", "文法", p.grammarDone],
+      ["read", "閱讀", p.readDone && p.quizScore != null],
+    ];
+    const root = $("pillar-track");
+    root.innerHTML = items
+      .map(
+        ([, label, ok]) =>
+          '<span class="pillar-chip' +
+          (ok ? " is-on" : "") +
+          '">' +
+          label +
+          (ok ? " ✓" : "") +
+          "</span>"
+      )
+      .join("");
+  }
+
   document.querySelectorAll(".tab").forEach((tab) => {
     tab.addEventListener("click", () => {
       document.querySelectorAll(".tab").forEach((t) => t.classList.remove("is-active"));
@@ -66,125 +76,234 @@
     });
   });
 
-  // —— Flashcards ——
-  const flashUI = {
-    card: $("flash-card"),
-    word: $("flash-word"),
-    sub: $("flash-sub"),
-    example: $("flash-example"),
-    progress: $("flash-progress"),
-    doneBox: $("flash-done"),
-  };
-
-  const deck = ToeicFlashcards.createFlashcards(data.vocab, {
-    onChange: renderFlash,
-  });
-
-  function renderFlash(st) {
-    if (st.done) {
-      flashUI.card.hidden = true;
-      flashUI.doneBox.hidden = false;
-      flashUI.progress.textContent = "記住 " + st.knownCount + "／再看 " + st.againCount;
-      ToeicProgress.updateDay(dayNum, { vocabDone: true });
-      return;
+  function bindVoiceSelect(selectEl) {
+    function fill() {
+      const voices = tts.listVoices();
+      selectEl.innerHTML = "";
+      if (!voices.length) {
+        const opt = document.createElement("option");
+        opt.textContent = tts.supported ? "載入英文語音中…" : "不支援朗讀";
+        selectEl.appendChild(opt);
+        selectEl.disabled = true;
+        return;
+      }
+      selectEl.disabled = false;
+      voices.forEach((v) => {
+        const opt = document.createElement("option");
+        opt.value = v.voiceURI;
+        opt.textContent = v.name + " (" + v.lang + ")";
+        if (prefs.voiceURI === v.voiceURI) opt.selected = true;
+        selectEl.appendChild(opt);
+      });
     }
-    flashUI.card.hidden = false;
-    flashUI.doneBox.hidden = true;
-    const it = st.item;
-    if (!st.flipped) {
-      flashUI.word.textContent = it.word;
-      flashUI.sub.textContent = "點卡片查看中文意思";
-      flashUI.example.textContent = "";
-    } else {
-      flashUI.word.textContent = it.meaning;
-      flashUI.sub.textContent = it.word;
-      flashUI.example.textContent = it.example || "";
-    }
-    flashUI.progress.textContent = (st.index + 1) + " / " + st.total;
+    fill();
+    if (window.speechSynthesis) speechSynthesis.addEventListener("voiceschanged", fill);
+    selectEl.addEventListener("change", () => tts.setVoiceURI(selectEl.value));
   }
 
-  flashUI.card.addEventListener("click", () => deck.flip());
+  // —— 1 Vocab ——
+  const deck = ToeicFlashcards.createFlashcards(data.vocab, { onChange: renderFlash });
+  function renderFlash(st) {
+    if (st.done) {
+      $("flash-card").hidden = true;
+      $("flash-done").hidden = false;
+      $("flash-progress").textContent = "記住 " + st.knownCount + "／再看 " + st.againCount;
+      ToeicProgress.updateDay(dayNum, { vocabDone: true });
+      refreshPillars();
+      return;
+    }
+    $("flash-card").hidden = false;
+    $("flash-done").hidden = true;
+    const it = st.item;
+    if (!st.flipped) {
+      $("flash-word").textContent = it.word;
+      $("flash-sub").textContent = "點卡片查看中文意思";
+      $("flash-example").textContent = "";
+    } else {
+      $("flash-word").textContent = it.meaning;
+      $("flash-sub").textContent = it.word;
+      $("flash-example").textContent = it.example || "";
+    }
+    $("flash-progress").textContent = st.index + 1 + " / " + st.total;
+  }
+  $("flash-card").addEventListener("click", () => deck.flip());
   $("flash-known").addEventListener("click", () => deck.markKnown());
   $("flash-again").addEventListener("click", () => deck.markAgain());
   $("flash-speak").addEventListener("click", () => {
     const st = deck.state();
     if (!st.item) return;
-    const text = st.flipped && st.item.example ? st.item.word + ". " + st.item.example : st.item.word;
-    tts.speak(text);
+    tts.speak(st.flipped && st.item.example ? st.item.word + ". " + st.item.example : st.item.word);
   });
   $("flash-restart").addEventListener("click", () => deck.restartAll());
   $("flash-restart-wrong").addEventListener("click", () => deck.restartWrongOnly());
   renderFlash(deck.state());
 
-  // —— Reading + TTS ——
-  const articleEl = $("article-en");
-  const translationEl = $("article-zh");
-  articleEl.textContent = data.english;
-  translationEl.textContent = data.chinese;
-  translationEl.hidden = true;
+  // —— 2 Speak ——
+  $("speak-text").textContent = data.english;
+  const L = data.listening || {};
+  $("speak-tip").textContent =
+    "約 15 分｜" + (L.shadowTip || "聽一句跟讀一句；第二遍可加快語速。");
+  const speakRate = $("speak-rate");
+  const speakRateLabel = $("speak-rate-label");
+  const speakDefault = Math.min(prefs.rate, 0.9);
+  speakRate.value = speakDefault;
+  speakRateLabel.textContent = Number(speakDefault).toFixed(2) + "×";
+  speakRate.addEventListener("input", () => {
+    tts.setRate(speakRate.value);
+    speakRateLabel.textContent = Number(speakRate.value).toFixed(2) + "×";
+  });
+  bindVoiceSelect($("speak-voice"));
+  $("speak-play").addEventListener("click", () => {
+    tts.setRate(speakRate.value);
+    tts.speak(data.english);
+  });
+  $("speak-pause").addEventListener("click", () => tts.pause());
+  $("speak-resume").addEventListener("click", () => tts.resume());
+  $("speak-stop").addEventListener("click", () => tts.stop());
+  $("mark-speak").addEventListener("click", () => {
+    ToeicProgress.updateDay(dayNum, { speakDone: true });
+    $("mark-speak").textContent = "已完成朗讀";
+    $("mark-speak").disabled = true;
+    refreshPillars();
+  });
 
+  // —— 3 Listen ——
+  $("listen-brief").innerHTML =
+    "<h2>今日聽力｜" +
+    (L.partFocus || "LC") +
+    "</h2><ul>" +
+    "<li><strong>暖身</strong>：" +
+    (L.warmUp || "先用本站播放聽一遍大意") +
+    "</li>" +
+    "<li><strong>外部練習</strong>：" +
+    (L.externalDrill || "依本週 Part 焦點做官方／模擬題") +
+    "</li>" +
+    "<li><strong>跟讀提醒</strong>：" +
+    (L.shadowTip || "") +
+    "</li></ul>";
+
+  $("listen-play").addEventListener("click", () => {
+    tts.setRate(0.95);
+    tts.speak(data.english);
+  });
+  $("listen-stop").addEventListener("click", () => tts.stop());
+
+  function mountQuiz(rootId, bannerId, submitId, resetId, questions, onSubmit) {
+    const quiz = ToeicQuiz.createQuiz(questions || [], { onChange: render });
+    function render(st) {
+      const root = $(rootId);
+      const banner = $(bannerId);
+      root.innerHTML = "";
+      if (st.submitted) {
+        banner.hidden = false;
+        banner.textContent =
+          "得分：" +
+          st.score +
+          " / " +
+          st.total +
+          "（" +
+          Math.round((st.score / st.total) * 100) +
+          "%）";
+        onSubmit(st);
+      } else {
+        banner.hidden = true;
+      }
+      st.questions.forEach((q, qi) => {
+        const wrap = document.createElement("div");
+        wrap.className = "quiz-item";
+        const title = document.createElement("p");
+        title.className = "quiz-q";
+        title.textContent = qi + 1 + ". " + q.q;
+        wrap.appendChild(title);
+        const choices = document.createElement("div");
+        choices.className = "choices";
+        q.choices.forEach((c, ci) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "choice";
+          btn.textContent = String.fromCharCode(65 + ci) + ". " + c;
+          if (st.answers[qi] === ci) btn.classList.add("is-selected");
+          if (st.submitted) {
+            btn.disabled = true;
+            if (ci === q.answer) btn.classList.add("is-correct");
+            else if (st.answers[qi] === ci) btn.classList.add("is-wrong");
+          } else {
+            btn.addEventListener("click", () => quiz.select(qi, ci));
+          }
+          choices.appendChild(btn);
+        });
+        wrap.appendChild(choices);
+        if (st.submitted) {
+          const ex = document.createElement("p");
+          ex.className = "explain";
+          ex.textContent = "解析：" + q.explain;
+          wrap.appendChild(ex);
+        }
+        root.appendChild(wrap);
+      });
+      $(submitId).disabled = st.submitted || !st.allAnswered;
+      $(submitId).textContent = st.submitted ? "已交卷" : "交卷";
+    }
+    $(submitId).addEventListener("click", () => quiz.submit());
+    $(resetId).addEventListener("click", () => quiz.reset());
+    render(quiz.state());
+    return quiz;
+  }
+
+  mountQuiz("listen-root", "listen-banner", "listen-submit", "listen-reset", L.questions, (st) => {
+    ToeicProgress.updateDay(dayNum, {
+      listenDone: true,
+      listenScore: st.score,
+      listenTotal: st.total,
+    });
+    refreshPillars();
+  });
+
+  // —— 4 Grammar ——
+  const G = data.grammar || {};
+  $("grammar-brief").innerHTML =
+    "<h2>今日文法｜" +
+    (G.focus || "Part 5") +
+    "</h2><ul><li>" +
+    (G.tip || "先判斷空格需要的詞性，再排除干擾選項。") +
+    "</li></ul>";
+
+  mountQuiz(
+    "grammar-root",
+    "grammar-banner",
+    "grammar-submit",
+    "grammar-reset",
+    G.questions,
+    (st) => {
+      ToeicProgress.updateDay(dayNum, {
+        grammarDone: true,
+        grammarScore: st.score,
+        grammarTotal: st.total,
+      });
+      refreshPillars();
+    }
+  );
+
+  // —— 5 Reading ——
+  $("article-en").textContent = data.english;
+  $("article-zh").textContent = data.chinese;
+  $("article-zh").hidden = true;
   let showZh = false;
   let timerId = null;
   let timerStart = null;
 
   $("toggle-zh").addEventListener("click", () => {
     showZh = !showZh;
-    translationEl.hidden = !showZh;
+    $("article-zh").hidden = !showZh;
     $("toggle-zh").textContent = showZh ? "隱藏翻譯" : "顯示翻譯";
-    if (showZh) ToeicProgress.updateDay(dayNum, { readDone: true });
   });
 
   $("mark-read").addEventListener("click", () => {
     ToeicProgress.updateDay(dayNum, { readDone: true });
     $("mark-read").textContent = "已標記讀完";
     $("mark-read").disabled = true;
+    refreshPillars();
   });
-
-  const rateInput = $("tts-rate");
-  const rateLabel = $("tts-rate-label");
-  rateInput.value = prefs.rate;
-  rateLabel.textContent = prefs.rate.toFixed(2) + "×";
-  rateInput.addEventListener("input", () => {
-    const v = Number(rateInput.value);
-    tts.setRate(v);
-    rateLabel.textContent = v.toFixed(2) + "×";
-  });
-
-  const voiceSelect = $("tts-voice");
-  function fillVoices() {
-    const voices = tts.listVoices();
-    voiceSelect.innerHTML = "";
-    if (!voices.length) {
-      const opt = document.createElement("option");
-      opt.textContent = tts.supported ? "尚無英文語音（請稍候或換瀏覽器）" : "此瀏覽器不支援朗讀";
-      voiceSelect.appendChild(opt);
-      voiceSelect.disabled = true;
-      return;
-    }
-    voiceSelect.disabled = false;
-    voices.forEach((v) => {
-      const opt = document.createElement("option");
-      opt.value = v.voiceURI;
-      opt.textContent = v.name + " (" + v.lang + ")";
-      if (prefs.voiceURI === v.voiceURI) opt.selected = true;
-      voiceSelect.appendChild(opt);
-    });
-  }
-  fillVoices();
-  if (window.speechSynthesis) {
-    speechSynthesis.addEventListener("voiceschanged", fillVoices);
-  }
-  voiceSelect.addEventListener("change", () => tts.setVoiceURI(voiceSelect.value));
-
-  $("tts-play").addEventListener("click", () => {
-    const ok = tts.speak(data.english, {
-      onEnd: () => ToeicProgress.updateDay(dayNum, { listened: true }),
-    });
-    if (ok) ToeicProgress.updateDay(dayNum, { listened: true });
-  });
-  $("tts-pause").addEventListener("click", () => tts.pause());
-  $("tts-resume").addEventListener("click", () => tts.resume());
-  $("tts-stop").addEventListener("click", () => tts.stop());
 
   $("timer-toggle").addEventListener("click", () => {
     const display = $("timer-display");
@@ -204,77 +323,27 @@
     }, 250);
   });
 
-  // —— Quiz ——
-  const quizRoot = $("quiz-root");
-  const quizBanner = $("quiz-banner");
-
-  const quiz = ToeicQuiz.createQuiz(data.questions, { onChange: renderQuiz });
-
-  function renderQuiz(st) {
-    quizRoot.innerHTML = "";
-    if (st.submitted) {
-      quizBanner.hidden = false;
-      quizBanner.textContent =
-        "得分：" + st.score + " / " + st.total +
-        "（" + Math.round((st.score / st.total) * 100) + "%）" +
-        (st.score / st.total < 0.8 ? "｜建議隔日重做單字卡" : "｜表現優秀");
-      ToeicProgress.updateDay(dayNum, {
-        quizScore: st.score,
-        quizTotal: st.total,
-        readDone: true,
-      });
-    } else {
-      quizBanner.hidden = true;
-    }
-
-    st.questions.forEach((q, qi) => {
-      const wrap = document.createElement("div");
-      wrap.className = "quiz-item";
-      const title = document.createElement("p");
-      title.className = "quiz-q";
-      title.textContent = qi + 1 + ". " + q.q;
-      wrap.appendChild(title);
-      const choices = document.createElement("div");
-      choices.className = "choices";
-      q.choices.forEach((c, ci) => {
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "choice";
-        btn.textContent = String.fromCharCode(65 + ci) + ". " + c;
-        if (st.answers[qi] === ci) btn.classList.add("is-selected");
-        if (st.submitted) {
-          btn.disabled = true;
-          if (ci === q.answer) btn.classList.add("is-correct");
-          else if (st.answers[qi] === ci) btn.classList.add("is-wrong");
-        } else {
-          btn.addEventListener("click", () => quiz.select(qi, ci));
-        }
-        choices.appendChild(btn);
-      });
-      wrap.appendChild(choices);
-      if (st.submitted) {
-        const ex = document.createElement("p");
-        ex.className = "explain";
-        ex.textContent = "解析：" + q.explain;
-        wrap.appendChild(ex);
-      }
-      quizRoot.appendChild(wrap);
+  mountQuiz("quiz-root", "quiz-banner", "quiz-submit", "quiz-reset", data.questions, (st) => {
+    ToeicProgress.updateDay(dayNum, {
+      quizScore: st.score,
+      quizTotal: st.total,
+      readDone: true,
     });
+    $("mark-read").textContent = "已標記讀完";
+    $("mark-read").disabled = true;
+    refreshPillars();
+  });
 
-    $("quiz-submit").disabled = st.submitted || !st.allAnswered;
-    $("quiz-submit").textContent = st.submitted ? "已交卷" : "交卷看解析";
-  }
-
-  $("quiz-submit").addEventListener("click", () => quiz.submit());
-  $("quiz-reset").addEventListener("click", () => quiz.reset());
-  renderQuiz(quiz.state());
-
-  // Restore mark-read button if already done
+  // restore UI state
   const prog = ToeicProgress.getDay(dayNum);
+  if (prog.speakDone) {
+    $("mark-speak").textContent = "已完成朗讀";
+    $("mark-speak").disabled = true;
+  }
   if (prog.readDone) {
     $("mark-read").textContent = "已標記讀完";
     $("mark-read").disabled = true;
   }
-
+  refreshPillars();
   window.addEventListener("beforeunload", () => tts.stop());
 })();

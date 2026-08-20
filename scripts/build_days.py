@@ -7,6 +7,8 @@ import json
 import re
 from pathlib import Path
 
+from listening_grammar_data import ENRICHMENT, validate_enrichment
+
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "_parsed_raw.json"
 OUT = ROOT / "data" / "days.js"
@@ -1566,16 +1568,24 @@ def build_days(raw: list[dict]) -> list[dict]:
         content = DAY_CONTENT[day]
         vocab = content["vocab"]
         questions = content["questions"]
+        enrich = ENRICHMENT[day]
+        listening = enrich["listening"]
+        grammar = enrich["grammar"]
 
         if not (12 <= len(vocab) <= 15):
             raise ValueError(f"Day {day}: vocab count {len(vocab)} not in 12–15")
         if len(questions) != 5:
             raise ValueError(f"Day {day}: questions count {len(questions)} != 5")
-        for i, q in enumerate(questions):
-            if len(q["choices"]) != 4:
-                raise ValueError(f"Day {day} Q{i}: need 4 choices")
-            if not (0 <= q["answer"] <= 3):
-                raise ValueError(f"Day {day} Q{i}: answer out of range")
+        if len(listening["questions"]) != 4:
+            raise ValueError(f"Day {day}: listening questions != 4")
+        if len(grammar["questions"]) != 5:
+            raise ValueError(f"Day {day}: grammar questions != 5")
+        for label, qs in (("reading", questions), ("listening", listening["questions"]), ("grammar", grammar["questions"])):
+            for i, q in enumerate(qs):
+                if len(q["choices"]) != 4:
+                    raise ValueError(f"Day {day} {label} Q{i}: need 4 choices")
+                if not (0 <= q["answer"] <= 3):
+                    raise ValueError(f"Day {day} {label} Q{i}: answer out of range")
 
         english = item["english"].strip()
         # Soft check: vocab words should appear in English (case-insensitive root)
@@ -1602,6 +1612,8 @@ def build_days(raw: list[dict]) -> list[dict]:
                 "chinese": clean_chinese(item["chinese"]).strip(),
                 "vocab": vocab,
                 "questions": questions,
+                "listening": listening,
+                "grammar": grammar,
             }
         )
     days.sort(key=lambda d: d["day"])
@@ -1611,6 +1623,7 @@ def build_days(raw: list[dict]) -> list[dict]:
 
 
 def main() -> None:
+    validate_enrichment()
     raw = json.loads(SRC.read_text(encoding="utf-8"))
     days = build_days(raw)
     js = "window.TOEIC_DAYS = " + to_js_literal(days) + ";\n"
@@ -1625,6 +1638,8 @@ def main() -> None:
     d1 = days[0]
     print("Sample day1 vocab[0]:", json.dumps(d1["vocab"][0], ensure_ascii=False))
     print("Sample day1 questions[0]:", json.dumps(d1["questions"][0], ensure_ascii=False))
+    print("Sample day1 listening:", json.dumps(d1["listening"], ensure_ascii=False)[:200], "...")
+    print("Sample day1 grammar focus:", d1["grammar"]["focus"])
 
 
 if __name__ == "__main__":

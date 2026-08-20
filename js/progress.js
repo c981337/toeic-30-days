@@ -1,11 +1,17 @@
 (function (global) {
-  const KEY = "toeic30_progress";
+  const KEY = "toeic30_progress_v2";
 
   function emptyDay() {
     return {
       vocabDone: false,
+      speakDone: false,
+      listenDone: false,
+      listenScore: null,
+      listenTotal: null,
+      grammarDone: false,
+      grammarScore: null,
+      grammarTotal: null,
       readDone: false,
-      listened: false,
       quizScore: null,
       quizTotal: null,
       completedAt: null,
@@ -30,16 +36,24 @@
     return Object.assign(emptyDay(), all[String(day)] || {});
   }
 
+  function isComplete(cur) {
+    return !!(
+      cur.vocabDone &&
+      cur.speakDone &&
+      cur.listenDone &&
+      cur.grammarDone &&
+      cur.readDone &&
+      cur.quizScore != null &&
+      cur.listenScore != null &&
+      cur.grammarScore != null
+    );
+  }
+
   function updateDay(day, patch) {
     const all = load();
     const cur = Object.assign(emptyDay(), all[String(day)] || {}, patch);
-    const done =
-      cur.vocabDone &&
-      cur.readDone &&
-      cur.quizScore != null &&
-      cur.quizTotal != null;
-    if (done && !cur.completedAt) cur.completedAt = new Date().toISOString();
-    if (!done) cur.completedAt = null;
+    if (isComplete(cur) && !cur.completedAt) cur.completedAt = new Date().toISOString();
+    if (!isComplete(cur)) cur.completedAt = null;
     all[String(day)] = cur;
     save(all);
     return cur;
@@ -47,13 +61,42 @@
 
   function resetAll() {
     localStorage.removeItem(KEY);
+    // also clear legacy key so old partial state does not confuse
+    localStorage.removeItem("toeic30_progress");
   }
 
   function statusOf(day) {
     const d = getDay(day);
     if (d.completedAt) return "done";
-    if (d.vocabDone || d.readDone || d.listened || d.quizScore != null) return "progress";
-    return "idle";
+    const started =
+      d.vocabDone ||
+      d.speakDone ||
+      d.listenDone ||
+      d.grammarDone ||
+      d.readDone ||
+      d.quizScore != null ||
+      d.listenScore != null ||
+      d.grammarScore != null;
+    return started ? "progress" : "idle";
+  }
+
+  function pillarStats(totalDays) {
+    const pillars = {
+      vocab: 0,
+      speak: 0,
+      listen: 0,
+      grammar: 0,
+      read: 0,
+    };
+    for (let i = 1; i <= totalDays; i++) {
+      const d = getDay(i);
+      if (d.vocabDone) pillars.vocab++;
+      if (d.speakDone) pillars.speak++;
+      if (d.listenDone) pillars.listen++;
+      if (d.grammarDone) pillars.grammar++;
+      if (d.readDone && d.quizScore != null) pillars.read++;
+    }
+    return pillars;
   }
 
   function summary(totalDays) {
@@ -62,28 +105,34 @@
     let scoreCount = 0;
     let suggest = 1;
     for (let i = 1; i <= totalDays; i++) {
-      const st = statusOf(i);
-      if (st === "done") done++;
+      if (statusOf(i) === "done") done++;
       const d = getDay(i);
-      if (d.quizScore != null && d.quizTotal) {
-        scoreSum += d.quizScore / d.quizTotal;
-        scoreCount++;
-      }
+      [
+        [d.quizScore, d.quizTotal],
+        [d.listenScore, d.listenTotal],
+        [d.grammarScore, d.grammarTotal],
+      ].forEach(([s, t]) => {
+        if (s != null && t) {
+          scoreSum += s / t;
+          scoreCount++;
+        }
+      });
     }
     for (let i = 1; i <= totalDays; i++) {
       if (statusOf(i) !== "done") {
         suggest = i;
         break;
       }
-      if (i === totalDays) suggest = totalDays;
+      suggest = totalDays;
     }
     return {
       done,
       total: totalDays,
       avgAccuracy: scoreCount ? Math.round((scoreSum / scoreCount) * 100) : null,
       suggest,
+      pillars: pillarStats(totalDays),
     };
   }
 
-  global.ToeicProgress = { load, getDay, updateDay, resetAll, statusOf, summary };
+  global.ToeicProgress = { load, getDay, updateDay, resetAll, statusOf, summary, pillarStats };
 })(window);
