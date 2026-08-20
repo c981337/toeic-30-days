@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>每日課程｜TOEIC 30</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand-mini" href="index.html">TOEIC <span>30</span></a>
+      <nav class="nav-days">
+        <a class="btn btn-ghost btn-sm" id="nav-prev" href="#">上一天</a>
+        <a class="btn btn-ghost btn-sm" href="index.html">進度地圖</a>
+        <a class="btn btn-ghost btn-sm" id="nav-next" href="#">下一天</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="day-header">
+      <p class="eyebrow" id="day-eyebrow">Phase</p>
+      <h1 id="day-title">Day</h1>
+      <p id="day-sub"></p>
+    </header>
+
+    <p class="week-tip" id="week-tip" hidden></p>
+
+    <div class="tabs" role="tablist">
+      <button type="button" class="tab is-active" data-panel="panel-vocab">單字卡</button>
+      <button type="button" class="tab" data-panel="panel-read">閱讀／朗讀</button>
+      <button type="button" class="tab" data-panel="panel-quiz">閱讀理解</button>
+    </div>
+
+    <section class="panel is-active" id="panel-vocab">
+      <div class="panel-card">
+        <div class="flash-card" id="flash-card" title="點擊翻面">
+          <div class="flash-inner">
+            <p class="flash-word" id="flash-word">—</p>
+            <p class="flash-sub" id="flash-sub"></p>
+            <p class="flash-example" id="flash-example"></p>
+          </div>
+        </div>
+        <div id="flash-done" hidden>
+          <p class="score-banner" style="margin:0">本輪單字卡完成。可重開全部或只練錯字。</p>
+        </div>
+        <div class="controls">
+          <button type="button" class="btn btn-ghost btn-sm" id="flash-speak">朗讀</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="flash-again">再複習</button>
+          <button type="button" class="btn btn-primary btn-sm" id="flash-known">認識了</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="flash-restart">重開全部</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="flash-restart-wrong">只練錯字</button>
+          <span class="progress-text" id="flash-progress">1 / 1</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-read">
+      <div class="tts-bar">
+        <button type="button" class="btn btn-primary btn-sm" id="tts-play">播放全文</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="tts-pause">暫停</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="tts-resume">繼續</button>
+        <button type="button" class="btn btn-ghost btn-sm" id="tts-stop">停止</button>
+        <label>語速 <input id="tts-rate" type="range" min="0.8" max="1.2" step="0.05" /> <span id="tts-rate-label">0.95×</span></label>
+        <label>語音 <select id="tts-voice"></select></label>
+      </div>
+      <div class="panel-card">
+        <div class="controls" style="margin-top:0;margin-bottom:1rem">
+          <button type="button" class="btn btn-ghost btn-sm" id="toggle-zh">顯示翻譯</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="timer-toggle">開始計時</button>
+          <span class="progress-text" id="timer-display">00:00</span>
+          <button type="button" class="btn btn-primary btn-sm" id="mark-read">標記讀完</button>
+        </div>
+        <article class="article" id="article-en"></article>
+        <div class="translation" id="article-zh" hidden></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-quiz">
+      <div class="panel-card">
+        <div class="score-banner" id="quiz-banner" hidden></div>
+        <div id="quiz-root"></div>
+        <div class="controls">
+          <button type="button" class="btn btn-primary" id="quiz-submit">交卷看解析</button>
+          <button type="button" class="btn btn-ghost" id="quiz-reset">重做本測驗</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/days.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/flashcards.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/day.js"></script>
+</body>
+</html>

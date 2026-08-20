@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOEIC 30｜三十日高分閱讀計劃</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-inner">
+      <h1 class="brand">TOEIC <span>30</span></h1>
+      <p class="hero-lead">三十日商務閱讀衝刺，對準 800–900。每日單字卡、英文朗讀、限時閱讀與五題理解測驗，進度保存在本機。</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" id="cta-start" href="day.html?d=1"><span id="cta-label">開始 Day 1</span></a>
+        <a class="btn btn-ghost" href="#plan">查看學習計劃</a>
+        <span class="meta-chip">約 45–60 分鐘／天</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="plan">
+    <div class="container">
+      <h2 class="section-title">四階段學習計劃</h2>
+      <p class="section-lead">從職場基礎到高分衝刺，循序建立 Part 7 語感、商務單字深度與推論能力。</p>
+      <div class="phase-grid">
+        <article class="phase-card">
+          <h3>Phase 1 職場基礎</h3>
+          <p>求職、辦公政策、行政、設備、溝通、休閒、行銷、廣告。</p>
+          <div class="phase-days">Day 01–08</div>
+        </article>
+        <article class="phase-card">
+          <h3>Phase 2 商務擴展</h3>
+          <p>經濟、零售、科技、工廠、客服、旅行、合約、供應鏈。</p>
+          <div class="phase-days">Day 09–16</div>
+        </article>
+        <article class="phase-card">
+          <h3>Phase 3 專業情境</h3>
+          <p>物流、餐飲、財務、預算、併購、會議、活動、人事。</p>
+          <div class="phase-days">Day 17–24</div>
+        </article>
+        <article class="phase-card">
+          <h3>Phase 4 高分衝刺</h3>
+          <p>通勤、銀行、投資、房產、環境、醫療；跨主題推論＋聽讀。</p>
+          <div class="phase-days">Day 25–30</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">每日流程</h2>
+      <p class="section-lead">依序完成即可標記進度；正確率低於 80% 建議隔日重做單字卡。</p>
+      <ol class="routine-list">
+        <li><span class="step-num">1</span><div><strong>單字卡暖身</strong><br />12–15 個關鍵字，可朗讀單字與例句。</div></li>
+        <li><span class="step-num">2</span><div><strong>聽讀結合</strong><br />先聽全文朗讀，再開英文閱讀；可計時、可對照翻譯。</div></li>
+        <li><span class="step-num">3</span><div><strong>閱讀理解</strong><br />5 題四選一（細節／主旨／推論／詞義／語氣）。</div></li>
+        <li><span class="step-num">4</span><div><strong>複習收斂</strong><br />錯題解析＋錯字卡；Day 7／14／21／28 為週複習提示日。</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="progress">
+    <div class="container">
+      <h2 class="section-title">學習進度</h2>
+      <p class="section-lead">進度存在瀏覽器 localStorage，重新整理不會遺失。</p>
+      <div class="stats-bar">
+        <div class="stat"><strong id="stat-done">0 / 30</strong><span>完成天數</span></div>
+        <div class="stat"><strong id="stat-acc">—</strong><span>平均正確率</span></div>
+        <div class="stat"><strong id="stat-suggest">Day 01</strong><span>建議今日</span></div>
+        <div class="stat" style="margin-left:auto;align-self:center">
+          <button type="button" class="btn btn-ghost btn-sm" id="reset-progress">重置進度</button>
+        </div>
+      </div>
+      <div class="day-grid" id="day-grid" aria-label="30 天進度地圖"></div>
+    </div>
+  </section>
+
+  <footer class="container footer-note">
+    TOEIC 30 · 靜態網站 · 朗讀使用瀏覽器 Web Speech API · 教材為商務閱讀短文與繁中翻譯
+  </footer>
+
+  <script src="data/days.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

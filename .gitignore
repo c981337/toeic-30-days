@@ -1,0 +1,4 @@
+.DS_Store
+*.log
+.env
+_parsed_raw.json
