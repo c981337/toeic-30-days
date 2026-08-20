@@ -14,9 +14,30 @@
   const tts = ToeicTTS.createTTS();
   const prefs = tts.getPrefs();
 
-  $("day-eyebrow").textContent = "Phase " + data.phase + " · " + (data.themeZh || data.theme);
+  const weekMeta = [
+    { max: 7, label: "Week 1 基礎補洞", mock: "≥680", listen: "Part 1–2 為主（照片／應答）", grammar: "Part 5 詞性、介系詞、連接詞" },
+    { max: 14, label: "Week 2 聽讀加速", mock: "≥730", listen: "Part 3–4 對話／短講，練習邊聽邊記關鍵字", grammar: "Part 5–6 限時，文意填空上下句" },
+    { max: 22, label: "Week 3 弱點專攻", mock: "≥780", listen: "錯題本最弱 Part 重練＋整回 LC", grammar: "錯題本 Part 5–6 重做，不開新單元硬衝" },
+    { max: 30, label: "Week 4 模考衝刺", mock: "800–900", listen: "完整聽力模考節奏，考前兩天減量", grammar: "只複習錯題與高頻陷阱" },
+  ];
+  const meta = weekMeta.find((w) => dayNum <= w.max) || weekMeta[3];
+
+  $("day-eyebrow").textContent = meta.label + " · " + (data.themeZh || data.theme);
   $("day-title").textContent = "Day " + String(dayNum).padStart(2, "0") + " — " + data.title;
-  $("day-sub").textContent = "目標 800–900｜單字卡 → 聽讀 → 測驗";
+  $("day-sub").textContent = "基準 615 → 目標 800–900｜本站：單字卡 → 朗讀 → 測驗";
+
+  const agenda = document.createElement("aside");
+  agenda.className = "agenda-box";
+  agenda.innerHTML =
+    "<h2>今日全科課表</h2><ul>" +
+    "<li><strong>本站（必做）</strong>：單字卡 25 分 → 朗讀＋限時閱讀 → 5 題測驗</li>" +
+    "<li><strong>聽力（外部）55 分</strong>：" + meta.listen + "</li>" +
+    "<li><strong>文法（外部）30 分</strong>：" + meta.grammar + "</li>" +
+    "<li><strong>錯題本 15 分</strong>：記錄錯因與關鍵句</li>" +
+    "<li><strong>本週模考門檻</strong>：" + meta.mock + "</li>" +
+    "</ul>";
+  const header = document.querySelector(".day-header");
+  if (header && header.parentNode) header.parentNode.insertBefore(agenda, header.nextSibling);
 
   const prev = $("nav-prev");
   const next = $("nav-next");
@@ -28,7 +49,10 @@
   if ([7, 14, 21, 28].includes(dayNum)) {
     const tip = $("week-tip");
     tip.hidden = false;
-    tip.textContent = "週複習日：建議重做本週錯字卡與正確率低於 80% 的測驗。";
+    tip.textContent =
+      "模考日：上午完整計時模考，下午檢討（時間不少於模考）。仍完成本站閱讀；未達門檻 " +
+      meta.mock +
+      " 則隔天只補最弱 Part。";
   }
 
   // Tabs
